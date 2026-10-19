@@ -141,7 +141,7 @@ QUERY = """
   nwr["amenity"~"^(police|drinking_water|car_wash|toilets)$"]{A};
   nwr["shop"~"^(car_repair|tyres|car_parts|convenience|kiosk|supermarket)$"]{A};
   nwr["craft"]{A};
-  nwr["man_made"~"^(water_tower|pumping_station|tower)$"]{A};
+  nwr["man_made"~"^(water_tower|pumping_station)$"]{A};
   nwr["tourism"~"^(camp_site|caravan_site|viewpoint)$"]{A};
   nwr["amenity"~"^(restaurant|cafe|fast_food)$"]{A};
   nwr["shop"]["name"]{A};
@@ -163,7 +163,7 @@ def classify(t):
         return "border"
     if t.get("barrier") in ("toll_booth", "checkpoint") or t.get("amenity") == "police":
         return "rest"
-    if t.get("man_made") in ("water_tower", "pumping_station", "tower"):
+    if t.get("man_made") in ("water_tower", "pumping_station"):
         return "station"
     if t.get("tourism") in ("camp_site", "caravan_site", "viewpoint"):
         return "rest"
@@ -221,7 +221,7 @@ def main():
     pois = load("osm_pois.json", {"items": []})
     # keep only roadside places outside the towns (also cleans data from older, wider scans)
     by_id = {p["id"]: p for p in pois["items"]
-             if not in_town(p["lat"], p["lon"], wps) and dist_to_line_km(road, p["lat"], p["lon"]) <= CORRIDOR_M / 1000 + 0.2}
+             if not in_town(p["lat"], p["lon"], wps) and p.get("tags", {}).get("man_made") != "tower" and dist_to_line_km(road, p["lat"], p["lon"]) <= CORRIDOR_M / 1000 + 0.2}
     full = args.full or not by_id
 
     line = densify(route_line())  # ~4 km steps

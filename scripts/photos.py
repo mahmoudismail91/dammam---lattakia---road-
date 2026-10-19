@@ -59,7 +59,7 @@ def commons(line):
             continue
         kept = 0
         for pg in pages.values():
-            if not re.search(r"\.(jpe?g|png|webp)$", pg["title"], re.I) or "coordinates" not in pg:
+            if not re.search(r"\.(jpe?g|png|webp)$", pg["title"], re.I) or "coordinates" not in pg or not pg.get("imageinfo"):
                 continue
             c = pg["coordinates"][0]
             if min(haversine(p, [c["lon"], c["lat"]]) for p in nearby) > PHOTO_CORRIDOR_KM:
