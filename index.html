@@ -20,6 +20,7 @@
 
     <nav class="tabs">
       <button data-tab="stops" class="on">Route</button>
+      <button data-tab="drive">Drive</button>
       <button data-tab="layers">Layers</button>
       <button data-tab="new">New <b id="newCount"></b></button>
     </nav>
@@ -27,6 +28,7 @@
     <div class="search"><input id="q" type="search" placeholder="Search places… (e.g. Arar, hotel, mosque)"></div>
 
     <section id="tab-stops" class="tab on"><ol id="stops" class="stops"></ol></section>
+    <section id="tab-drive" class="tab"><div id="drive"></div></section>
     <section id="tab-layers" class="tab"><div id="layers" class="layers"></div>
       <label class="toggle"><input type="checkbox" id="showOsm" checked> Show OpenStreetMap places (auto-updated)</label>
       <label class="toggle"><input type="checkbox" id="onlyNew"> Only places added in the last 7 days</label>
@@ -47,7 +49,7 @@
     <div id="detailBody"></div>
   </article>
 
-  <div id="lightbox" hidden><figure><img alt=""><figcaption></figcaption></figure></div>
+  <div id="lightbox" hidden><button class="prev" aria-label="Previous">‹</button><figure><img alt=""><figcaption></figcaption></figure><button class="next" aria-label="Next">›</button></div>
 
   <button id="sideToggle" aria-label="Toggle panel">☰</button>
 

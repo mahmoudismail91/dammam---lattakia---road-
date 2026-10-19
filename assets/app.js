@@ -13,7 +13,9 @@
     camel:    { label: "Camel areas",    icon: "🐪", color: "#b8860b" },
     landmark: { label: "Landmarks",      icon: "🏛️", color: "#34495e" },
     people:   { label: "People / NPCs",  icon: "🧍", color: "#e84393" },
+    photo:    { label: "Road photos",    icon: "📷", color: "#455a64" },
   };
+  const SRC = { commons: "Wikimedia Commons", mapillary: "Mapillary", kartaview: "KartaView", panoramax: "Panoramax", curated: "Reference", live: "Wikimedia Commons" };
   const FLAGS = { SA: "🇸🇦", JO: "🇯🇴", SY: "🇸🇾", "SA/JO": "🇸🇦🇯🇴", "JO/SY": "🇯🇴🇸🇾" };
   const $ = (s) => document.querySelector(s);
   const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
@@ -41,6 +43,14 @@
 
   const curatedLayer = L.layerGroup().addTo(map);
   const osmLayer = L.markerClusterGroup({ maxClusterRadius: 45, showCoverageOnHover: false, disableClusteringAtZoom: 16 }).addTo(map);
+  const photoLayer = L.markerClusterGroup({
+    maxClusterRadius: 50, showCoverageOnHover: false, disableClusteringAtZoom: 15,
+    iconCreateFunction: (cl) => {
+      const first = cl.getAllChildMarkers()[0].options.photo;
+      return L.divIcon({ className: "pm-wrap", iconSize: [44, 44],
+        html: `<div class="pm photo-cluster" style="width:44px;height:44px"><img src="${esc(first.thumb)}" alt=""><span class="cnt">${cl.getChildCount()}</span></div>` });
+    },
+  }).addTo(map);
 
   /* ---------- data ---------- */
   const v = "?v=" + today.toISOString().slice(0, 10);
@@ -52,7 +62,8 @@
     getJSON("data/osm_pois.json", { items: [] }),
     getJSON("data/route.geojson", null),
     getJSON("data/updates.json", { log: [] }),
-  ]).then(([wp, cur, osm, route, upd]) => {
+    getJSON("data/photos.json", { items: [] }),
+  ]).then(([wp, cur, osm, route, upd, photos]) => {
     state.waypoints = wp.waypoints;
     state.route = route ? route.features[0].geometry.coordinates.map(([x, y]) => [y, x]) : wp.waypoints.map((w) => [w.lat, w.lon]);
     state.routeKm = route?.features[0].properties.km;
@@ -62,6 +73,9 @@
     osm.items.forEach((p) => { p.isNew = daysAgo(p.first_seen) <= 2; });
     state.all = [...cur.items, ...osm.items];
     state.all.forEach((p) => { p.km = kmAlong(p.lat, p.lon); state.byId.set(p.id, p); });
+    state.photos = photos.items.filter((ph) => ph.thumb);
+    state.photos.forEach((ph) => { ph.km = kmAlong(ph.lat, ph.lon); ph.isNew = daysAgo(ph.first_seen) <= 2; state.byId.set(ph.id, ph); });
+    state.photos.sort((a, b) => a.km - b.km);
     state.updates = upd.log;
     state.osmUpdated = osm.updated;
 
@@ -70,6 +84,7 @@
     renderStops();
     renderLayers();
     renderUpdates();
+    renderDrive();
     redraw();
     loadWikiThumbs(cur.items);
 
@@ -130,6 +145,16 @@
       }
     }
     osmLayer.addLayers(osmMarkers);
+
+    photoLayer.clearLayers();
+    if (!state.cats.has("photo")) return;
+    const list = state.photos.filter((ph) => !state.onlyNew || ph.isNew);
+    photoLayer.addLayers(list.map((ph, i) => L.marker([ph.lat, ph.lon], {
+      photo: ph,
+      icon: L.divIcon({ className: "pm-wrap", iconSize: [34, 34], iconAnchor: [17, 17],
+        html: `<div class="pm ${ph.isNew ? "new-ring" : ""}" style="--c:#455a64;width:34px;height:34px"><img src="${esc(ph.thumb)}" alt="" loading="lazy"></div>` }),
+    }).bindTooltip(`${esc(SRC[ph.src] || ph.src)} · km ${ph.km}`, { direction: "top", offset: [0, -17] })
+      .on("click", () => lightbox(list, i))));
   }
 
   /* ---------- photos (Wikipedia + Commons, loaded live) ---------- */
@@ -190,13 +215,16 @@
         ${tagLine ? `<p class="tags">${tagLine}</p>` : ""}
         <div class="links">
           <a href="https://www.google.com/maps/search/?api=1&query=${p.lat},${p.lon}" target="_blank" rel="noopener">Google Maps</a>
-          <a href="https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=${p.lat},${p.lon}" target="_blank" rel="noopener">Street View</a>
           <a href="${osmLink}" target="_blank" rel="noopener">OSM</a>
           ${t.website ? `<a href="${esc(t.website)}" target="_blank" rel="noopener">Website</a>` : ""}
           ${p.wiki ? `<a href="https://en.wikipedia.org/wiki/${encodeURIComponent(p.wiki.replace(/ /g, "_"))}" target="_blank" rel="noopener">Wikipedia</a>` : ""}
         </div>
+        <h3>Look around <span class="muted">(street-level / dashcam)</span></h3>
+        <div class="links">${lookAround(p.lat, p.lon)}</div>
+        <h3>Search pictures elsewhere</h3>
+        <div class="links">${searchLinks(p)}</div>
         ${p.refs?.length ? `<h3>References</h3><ol class="refs">${p.refs.map((r) => `<li><a href="${esc(r.u)}" target="_blank" rel="noopener">${esc(r.t)}</a></li>`).join("")}</ol>` : ""}
-        <h3>Photos nearby <span class="muted">(Wikimedia Commons)</span></h3>
+        <h3>Photos here &amp; on the road nearby</h3>
         <div id="gallery" class="gallery"><span class="muted">Loading…</span></div>
         <p class="muted">${esc(p.lat)}, ${esc(p.lon)}${p.first_seen ? ` · first seen ${esc(p.first_seen)}` : ""}${p.added ? ` · added ${esc(p.added)}` : ""}</p>
       </div>`;
@@ -209,37 +237,85 @@
       if (s?.thumbnail) setHero(s.thumbnail.source, s.originalimage?.source, `Wikipedia – ${s.title}`, s.content_urls?.desktop?.page);
     } else if (heroSrc) setHero(heroSrc, heroSrc, "", "");
 
-    const pics = await commons(p.lat, p.lon, p.cat === "city" ? 8000 : 3000);
+    // own reference images -> road photos within 5 km -> live Commons search
+    const own = (p.images || []).map((im) => ({ thumb: im.thumb || im.u, full: im.u, page: im.page || im.u, title: im.t || p.name, credit: im.credit || "", src: "curated" }));
+    const road = state.photos.map((ph) => [ph, map.distance([p.lat, p.lon], [ph.lat, ph.lon])])
+      .filter(([, d]) => d < 5000).sort((a, b) => a[1] - b[1]).slice(0, 12).map(([ph]) => ph);
+    const live = (await commons(p.lat, p.lon, p.cat === "city" ? 8000 : 3000)).map((ph) => ({ ...ph, src: "live" }));
+    const seen = new Set();
+    const pics = [...own, ...road, ...live].filter((ph) => !seen.has(ph.page) && seen.add(ph.page));
     const g = $("#gallery"); if (!g) return;
-    g.innerHTML = pics.length ? "" : `<span class="muted">No geotagged photos found nearby yet.</span>`;
+    g.innerHTML = pics.length ? "" : `<span class="muted">No photos found yet – try the "Look around" and "Search pictures" links above.</span>`;
     pics.forEach((ph, i) => {
       const img = document.createElement("img");
-      img.src = ph.thumb; img.loading = "lazy"; img.alt = ph.title; img.title = ph.title;
-      img.onclick = () => lightbox(ph.full, `${ph.title} — ${ph.credit}`, ph.page);
+      img.src = ph.thumb; img.loading = "lazy"; img.alt = ph.title || ""; img.title = `${ph.title || ""} · ${SRC[ph.src] || ""}`;
+      img.onclick = () => lightbox(pics, i);
       g.appendChild(img);
-      if (i === 0 && !p.wiki && !heroSrc) setHero(ph.thumb, ph.full, `${ph.title} — ${ph.credit}`, ph.page);
     });
+    if (!p.wiki && !heroSrc && pics[0]) setHero(pics[0].thumb, pics[0].full, `${pics[0].title} — ${pics[0].credit}`, pics[0].page);
+  }
+  function lookAround(lat, lon) {
+    return [
+      ["Mapillary", `https://www.mapillary.com/app/?lat=${lat}&lng=${lon}&z=16`],
+      ["KartaView", `https://kartaview.org/map/@${lat},${lon},16z`],
+      ["Panoramax", `https://api.panoramax.xyz/#focus=map&map=16/${lat}/${lon}`],
+      ["Yandex panoramas", `https://yandex.com/maps/?ll=${lon},${lat}&z=16&l=stv,sta`],
+      ["Google Street View", `https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=${lat},${lon}`],
+      ["Satellite", `https://www.google.com/maps/@${lat},${lon},800m/data=!3m1!1e3`],
+    ].map(([t, u]) => `<a href="${u}" target="_blank" rel="noopener">${t}</a>`).join("");
+  }
+  function searchLinks(p) {
+    const town = state.waypoints.reduce((b, w) => (map.distance([w.lat, w.lon], [p.lat, p.lon]) < map.distance([b.lat, b.lon], [p.lat, p.lon]) ? w : b), state.waypoints[0]);
+    const en = encodeURIComponent(`${p.name || CATS[p.cat]?.label} ${p.cat === "city" ? "" : town.name}`.trim());
+    const ar = encodeURIComponent(`${p.name_ar || p.name || ""} ${p.cat === "city" ? "" : town.name_ar}`.trim());
+    return [
+      ["Google Images", `https://www.google.com/search?tbm=isch&q=${en}`],
+      ["صور (Arabic)", `https://www.google.com/search?tbm=isch&q=${ar}`],
+      ["Bing Images", `https://www.bing.com/images/search?q=${en}`],
+      ["Flickr", `https://www.flickr.com/search/?text=${en}`],
+      ["YouTube", `https://www.youtube.com/results?search_query=${encodeURIComponent(decodeURIComponent(ar) + " " + decodeURIComponent(en))}`],
+      ["Instagram", `https://www.instagram.com/explore/search/keyword/?q=${en}`],
+    ].map(([t, u]) => `<a href="${u}" target="_blank" rel="noopener">${t}</a>`).join("");
   }
   function setHero(src, full, cap, page) {
     const box = $("#heroBox"); if (!box) return;
     box.innerHTML = `<img class="hero" src="${esc(src)}" alt="">`;
-    box.firstChild.onclick = () => lightbox(full || src, cap, page);
+    box.firstChild.onclick = () => lightbox([{ full: full || src, thumb: src, title: cap, credit: "", page }], 0);
   }
-  function lightbox(src, cap, page) {
-    const lb = $("#lightbox");
-    lb.querySelector("img").src = src;
-    lb.querySelector("figcaption").innerHTML = `${esc(cap)}${page ? ` · <a href="${esc(page)}" target="_blank" rel="noopener">source</a>` : ""}`;
-    lb.hidden = false;
+  // lightbox over a list of photos; arrow keys / buttons step through them (road order for the Drive tab)
+  const lb = { list: [], i: 0 };
+  function lightbox(list, i) {
+    lb.list = list; lb.i = i;
+    const ph = list[i], box = $("#lightbox");
+    box.querySelector("img").src = ph.full || ph.thumb;
+    const meta = [ph.title, ph.credit, ph.date, ph.km != null ? `km ${ph.km}` : ""].filter(Boolean).map(esc).join(" · ");
+    box.querySelector("figcaption").innerHTML = `${meta}${ph.page ? ` · <a href="${esc(ph.page)}" target="_blank" rel="noopener">source</a>` : ""}`
+      + (ph.lat ? ` · <a href="#" data-map="${i}">show on map</a>` : "") + (list.length > 1 ? ` · ${i + 1}/${list.length}` : "");
+    box.querySelector(".prev").hidden = box.querySelector(".next").hidden = list.length < 2;
+    box.hidden = false;
   }
-  $("#lightbox").onclick = (e) => { if (e.target.tagName !== "A") $("#lightbox").hidden = true; };
+  const step = (d) => lightbox(lb.list, (lb.i + d + lb.list.length) % lb.list.length);
+  $("#lightbox .prev").onclick = (e) => { e.stopPropagation(); step(-1); };
+  $("#lightbox .next").onclick = (e) => { e.stopPropagation(); step(1); };
+  $("#lightbox").onclick = (e) => {
+    if (e.target.dataset.map) {
+      e.preventDefault(); const ph = lb.list[+e.target.dataset.map];
+      $("#lightbox").hidden = true; map.setView([ph.lat, ph.lon], 16);
+      L.popup().setLatLng([ph.lat, ph.lon]).setContent(`<img src="${esc(ph.thumb)}" style="width:200px;border-radius:6px">`).openOn(map);
+      return;
+    }
+    if (e.target.tagName !== "A") $("#lightbox").hidden = true;
+  };
   $("#detail .close").onclick = () => { $("#detail").hidden = true; history.replaceState(null, "", location.pathname); };
-  document.addEventListener("keydown", (e) => { if (e.key === "Escape") { $("#lightbox").hidden ? $("#detail .close").click() : ($("#lightbox").hidden = true); } });
+  document.addEventListener("keydown", (e) => {
+    if (!$("#lightbox").hidden && (e.key === "ArrowRight" || e.key === "ArrowLeft")) return step(e.key === "ArrowRight" ? 1 : -1);
+    if (e.key === "Escape") { $("#lightbox").hidden ? $("#detail .close").click() : ($("#lightbox").hidden = true); } });
 
   /* ---------- sidebar ---------- */
   function renderStats() {
     const osmN = state.all.filter((p) => !p.curated).length;
     const curN = state.all.length - osmN;
-    $("#stats").innerHTML = `<div><b>${state.totalKm}</b> km</div><div><b>3</b> countries</div><div><b>${curN}</b> curated</div><div><b>${osmN}</b> OSM places</div>`
+    $("#stats").innerHTML = `<div><b>${state.totalKm}</b> km</div><div><b>3</b> countries</div><div><b>${curN}</b> curated</div><div><b>${osmN}</b> OSM places</div><div><b>${state.photos.length}</b> road photos</div>`
       + (state.osmUpdated ? `<div>updated <b>${esc(state.osmUpdated)}</b></div>` : "");
   }
   function renderStops() {
@@ -253,6 +329,7 @@
   function renderLayers() {
     const counts = {};
     state.all.forEach((p) => (counts[p.cat] = (counts[p.cat] || 0) + 1));
+    counts.photo = state.photos.length;
     $("#layers").innerHTML = Object.entries(CATS).map(([k, c]) =>
       `<label class="${state.cats.has(k) ? "" : "off"}"><input type="checkbox" value="${k}" ${state.cats.has(k) ? "checked" : ""}>
        <span class="dot" style="background:${c.color};width:22px;height:22px;font-size:12px">${c.icon}</span>${c.label}<span class="n">${counts[k] || 0}</span></label>`).join("");
@@ -269,6 +346,11 @@
     $("#updates").innerHTML = state.updates.slice(0, 30).map((u) => {
       const items = (u.added || []).map((id) => state.byId.get(id)).filter(Boolean);
       const shown = items.filter((p) => p.name).slice(0, 25);
+      if (u.kind === "photos") {
+        const phs = (u.added || []).map((id) => state.byId.get(id)).filter(Boolean);
+        return `<div class="day"><h4>${esc(u.date)} · road photos</h4><p>${esc(u.note || "")}</p>
+          <div class="gallery mini">${phs.slice(0, 12).map((ph) => `<img src="${esc(ph.thumb)}" data-photo="${esc(ph.id)}" loading="lazy" alt="">`).join("")}</div></div>`;
+      }
       const summary = u.kind === "osm"
         ? `${u.added_count} new OpenStreetMap places (scanned route chunks ${u.chunks.join(", ")})`
         : esc(u.note || "");
@@ -276,7 +358,25 @@
         ${shown.length ? `<ul>${shown.map((p) => `<li data-id="${esc(p.id)}">${CATS[p.cat]?.icon || ""} ${esc(p.name)} <span class="muted">km ${p.km}</span></li>`).join("")}</ul>` : ""}</div>`;
     }).join("") || `<p class="muted">No updates yet – the first daily scan will appear here.</p>`;
   }
+  function renderDrive() {
+    const box = $("#drive");
+    if (!state.photos.length) {
+      box.innerHTML = `<p class="muted">Road photos appear here after the first daily scan (Actions → Daily road update). They come from Wikimedia Commons, Mapillary, KartaView and Panoramax, ordered from Dammam to Latakia.</p>`;
+      return;
+    }
+    const stops = state.waypoints.map((w) => ({ ...w, km: kmAlong(w.lat, w.lon) })).sort((a, b) => a.km - b.km);
+    let html = `<p class="muted">${state.photos.length} photos in road order. Click one, then use ← → to drive.</p>`, cur = -1;
+    state.photos.forEach((ph, i) => {
+      let s = 0; while (s + 1 < stops.length && stops[s + 1].km <= ph.km) s++;
+      if (s !== cur) { html += `${cur >= 0 ? "</div>" : ""}<h4 class="leg">${esc(stops[s].name)} <span class="muted">km ${stops[s].km}+</span></h4><div class="gallery">`; cur = s; }
+      html += `<img src="${esc(ph.thumb)}" data-drive="${i}" loading="lazy" alt="" title="km ${ph.km} · ${esc(SRC[ph.src] || ph.src)}">`;
+    });
+    box.innerHTML = html + "</div>";
+  }
+
   document.addEventListener("click", (e) => {
+    if (e.target.dataset.drive) return lightbox(state.photos, +e.target.dataset.drive);
+    if (e.target.dataset.photo) { const i = state.photos.findIndex((ph) => ph.id === e.target.dataset.photo); if (i >= 0) return lightbox(state.photos, i); }
     const li = e.target.closest("li[data-id]");
     if (li && state.byId.has(li.dataset.id)) open(state.byId.get(li.dataset.id));
   });

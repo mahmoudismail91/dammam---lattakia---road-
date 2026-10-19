@@ -11,7 +11,8 @@ Reference research for the Unity project **Arar_Station**.
 | Cities, borders, Tapline pump stations, landmarks, camel areas, NPC archetypes, game ideas | `data/curated.json` (hand-curated, with references) |
 | Hotels, mosques, fuel, rest stops, food, shops, markets, border posts, camel-named places | `data/osm_pois.json` – OpenStreetMap, auto-updated daily |
 | Road line | `data/route.geojson` – built from OSRM through `data/waypoints.json` |
-| Photos | Loaded live from Wikipedia + geotagged Wikimedia Commons photos near each point |
+| Road photos | `data/photos.json` – photos taken along the road from Wikimedia Commons, Panoramax, KartaView and Mapillary (needs a free `MAPILLARY_TOKEN` repo secret), collected daily by `scripts/photos.py` |
+| Place photos | Curated `images` + nearby road photos + live Wikipedia/Commons; each place also links to Mapillary, KartaView, Panoramax, Yandex, Street View and image searches (Google, Bing, Flickr, YouTube, Instagram) |
 
 Click any marker → photo, description, game idea, references, nearby photos (click to enlarge), Google Maps / Street View / OSM links.
 
@@ -27,6 +28,10 @@ Run manually: *Actions → Daily road update → Run workflow* (tick **full** fo
 1. *Settings → Pages → Source: **Deploy from a branch** → branch `claude/dammam-latakia-road-map-dl0y0g`, folder `/ (root)`*.
 2. *Actions → Daily road update → Run workflow* with **full** + **route** ticked.
 3. Site: `https://mahmoudismail91.github.io/dammam---lattakia---road-/`
+
+## Optional: Mapillary dashcam photos
+
+Mapillary has the most dashcam coverage on highways. Create a free account → https://www.mapillary.com/dashboard/developers → *Register application* → copy the **Client Token** (`MLY|...`). In GitHub: *Settings → Secrets and variables → Actions → New repository secret* named `MAPILLARY_TOKEN`.
 
 ## Local preview
 

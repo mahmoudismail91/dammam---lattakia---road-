@@ -35,6 +35,11 @@ jobs:
           if [ "${{ inputs.full }}" = "true" ]; then ARGS="$ARGS --full"; fi
           if [ "${{ inputs.route }}" = "true" ]; then ARGS="$ARGS --route"; fi
           python scripts/update.py $ARGS
+      - name: Collect road photos (Commons, Panoramax, KartaView, Mapillary)
+        continue-on-error: true
+        env:
+          MAPILLARY_TOKEN: ${{ secrets.MAPILLARY_TOKEN }}
+        run: python scripts/photos.py
       - name: Commit data
         run: |
           git config user.name "road-map-bot"
