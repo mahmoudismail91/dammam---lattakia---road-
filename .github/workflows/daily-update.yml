@@ -2,7 +2,7 @@ name: Daily road update
 
 on:
   schedule:
-    - cron: "17 3 * * *"   # every day 03:17 UTC
+    - cron: "17 3 * * *"   # every day 03:17 UTC; GitHub Pages (deploy from branch) republishes after the commit
   workflow_dispatch:
     inputs:
       full:
@@ -13,13 +13,9 @@ on:
         description: "Rebuild the road line from OSRM"
         type: boolean
         default: false
-  push:
-    branches: [main, master, "claude/dammam-latakia-road-map-dl0y0g"]
 
 permissions:
   contents: write
-  pages: write
-  id-token: write
 
 concurrency:
   group: road-update
@@ -27,7 +23,6 @@ concurrency:
 
 jobs:
   update:
-    if: github.event_name != 'push' || !contains(github.event.head_commit.message, '[skip-scan]')
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -50,20 +45,3 @@ jobs:
           git pull --rebase origin "${GITHUB_REF_NAME}"
           git push origin "HEAD:${GITHUB_REF_NAME}"
 
-  deploy:
-    needs: update
-    if: always() && needs.update.result != 'failure'
-    runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    steps:
-      - uses: actions/checkout@v4
-        with:
-          ref: ${{ github.ref_name }}
-      - uses: actions/configure-pages@v5
-      - uses: actions/upload-pages-artifact@v3
-        with:
-          path: .
-      - id: deployment
-        uses: actions/deploy-pages@v4

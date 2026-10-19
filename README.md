@@ -17,14 +17,14 @@ Click any marker → photo, description, game idea, references, nearby photos (c
 
 ## Daily updates
 
-- **GitHub Action** `.github/workflows/daily-update.yml` runs every day: scans a few chunks of the road on OpenStreetMap (whole road every 4 days), commits new places, redeploys the site. New places pulse on the map and appear in the **New** tab.
+- **GitHub Action** `.github/workflows/daily-update.yml` runs every day: scans a few chunks of the road on OpenStreetMap (whole road every 4 days), commits new places; GitHub Pages republishes automatically. New places pulse on the map and appear in the **New** tab.
 - **Claude research task** (scheduled from Claude Code) adds curated references following `docs/DAILY_TASK.md`.
 
 Run manually: *Actions → Daily road update → Run workflow* (tick **full** for a full scan).
 
 ## One-time setup
 
-1. *Settings → Pages → Build and deployment → Source: **GitHub Actions***.
+1. *Settings → Pages → Source: **Deploy from a branch** → branch `claude/dammam-latakia-road-map-dl0y0g`, folder `/ (root)`*.
 2. *Actions → Daily road update → Run workflow* with **full** + **route** ticked.
 3. Site: `https://mahmoudismail91.github.io/dammam---lattakia---road-/`
 

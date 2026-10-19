@@ -21,4 +21,4 @@ Rules
 - Use a `wiki` field (English Wikipedia title) when an article exists – the site shows its photo automatically.
 - Add `"added": "<today YYYY-MM-DD>"` so the site highlights it as new.
 - Append one entry at the top of `data/updates.json` `log`: `{"date": "...", "kind": "curated", "note": "...", "added": [ids]}`.
-- Validate JSON (`python3 -m json.tool data/curated.json`), commit with a message containing `[skip-scan]`, push to the default branch.
+- Validate JSON (`python3 -m json.tool data/curated.json`), commit and push to the branch GitHub Pages publishes from.
