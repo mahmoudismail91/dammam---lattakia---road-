@@ -160,3 +160,17 @@ footer { padding: 8px 16px 12px; font-size: 11px; color: var(--muted); border-to
 .game ul { margin: 6px 0 0; padding-left: 18px; }
 .game li { margin: 3px 0; }
 .tabs button { padding: 7px 4px; font-size: 13px; }
+
+/* traveller stops */
+.stop-pin { position: relative; font-size: 16px; }
+.stop-pin .svc { position: absolute; left: 50%; top: 100%; transform: translateX(-50%); margin-top: 2px; white-space: nowrap; font-size: 10px; background: var(--panel); border-radius: 8px; padding: 0 3px; box-shadow: 0 1px 3px rgba(0,0,0,.3); }
+.stops li.stop-row { padding: 3px 4px 3px 6px; font-size: 12.5px; }
+.stops .dot.small { width: 18px; height: 18px; font-size: 9px; margin-left: 5px; }
+.stops .svc { font-size: 12px; letter-spacing: 1px; }
+.stops li.gap { color: #c0392b; font-size: 12px; padding: 2px 0 2px 34px; cursor: default; }
+.svc-row { display: flex; flex-wrap: wrap; gap: 5px; margin: 6px 0; }
+.svc-row span { font-size: 12px; padding: 3px 8px; border-radius: 10px; border: 1px solid var(--line); }
+.svc-row .on { background: var(--bg); font-weight: 600; }
+.svc-row .off { opacity: .35; }
+.members { padding-left: 4px; list-style: none; margin: 0; }
+.members li { padding: 3px 0; cursor: pointer; font-size: 13px; }

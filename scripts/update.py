@@ -138,7 +138,8 @@ QUERY = """
   nwr["amenity"="fuel"]{A};
   nwr["highway"~"^(rest_area|services|toll_gantry)$"]{A};
   nwr["barrier"~"^(toll_booth|checkpoint)$"]{A};
-  nwr["amenity"~"^(police|drinking_water|car_wash|toilets)$"]{A};
+  nwr["amenity"~"^(police|drinking_water|car_wash|toilets|shelter|bench)$"]{A};
+  nwr["name"~"مسجد|مصلى|جامع|استراحة|محطة|استراحه|مطعم|فندق|موتيل|شقق مفروشة|نقطة تفتيش"]{A};
   nwr["shop"~"^(car_repair|tyres|car_parts|convenience|kiosk|supermarket)$"]{A};
   nwr["craft"]{A};
   nwr["man_made"~"^(water_tower|pumping_station)$"]{A};
@@ -161,25 +162,27 @@ def classify(t):
         return "camel"
     if t.get("barrier") == "border_control":
         return "border"
-    if t.get("barrier") in ("toll_booth", "checkpoint") or t.get("amenity") == "police":
-        return "rest"
+    if t.get("barrier") in ("toll_booth", "checkpoint") or t.get("amenity") == "police" or "نقطة تفتيش" in name:
+        return "check"
+    if t.get("amenity") == "toilets":
+        return "wc"
     if t.get("man_made") in ("water_tower", "pumping_station"):
         return "station"
     if t.get("tourism") in ("camp_site", "caravan_site", "viewpoint"):
         return "rest"
-    if "tourism" in t:
+    if "tourism" in t or any(k in name for k in ("فندق", "موتيل", "شقق مفروشة", "motel", "hotel")):
         return "hotel"
-    if t.get("amenity") == "place_of_worship" or t.get("building") == "mosque":
+    if t.get("amenity") == "place_of_worship" or t.get("building") == "mosque" or any(k in name for k in ("مسجد", "مصلى", "جامع")):
         return "mosque"
-    if t.get("amenity") == "fuel":
+    if t.get("amenity") == "fuel" or "محطة" in name:
         return "fuel"
     if t.get("highway") in ("rest_area", "services"):
         return "rest"
-    if t.get("amenity") in ("restaurant", "cafe", "fast_food"):
+    if t.get("amenity") in ("restaurant", "cafe", "fast_food") or "مطعم" in name:
         return "food"
     if t.get("amenity") == "marketplace" or "shop" in t or "craft" in t:
         return "shop"
-    if t.get("amenity") in ("drinking_water", "car_wash", "toilets"):
+    if t.get("amenity") in ("drinking_water", "car_wash", "shelter", "bench") or any(k in name for k in ("استراحة", "استراحه")):
         return "rest"
     if t.get("railway") == "station":
         return "station"
@@ -222,6 +225,8 @@ def main():
     # keep only roadside places outside the towns (also cleans data from older, wider scans)
     by_id = {p["id"]: p for p in pois["items"]
              if not in_town(p["lat"], p["lon"], wps) and p.get("tags", {}).get("man_made") != "tower" and dist_to_line_km(road, p["lat"], p["lon"]) <= CORRIDOR_M / 1000 + 0.2}
+    for p in by_id.values():
+        p["cat"] = classify({**p.get("tags", {}), "name": (p.get("name") or "") + " " + (p.get("name_ar") or "")}) or p["cat"]
     full = args.full or not by_id
 
     line = densify(route_line())  # ~4 km steps

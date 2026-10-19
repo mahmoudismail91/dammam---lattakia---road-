@@ -2,10 +2,20 @@
   "note": "Reference boards for characters (NPCs), clothing, shops, streets and vehicles along the Dammam -> Latakia road, set in the 2000s. 'commons' = Wikimedia Commons search queries loaded live on the site (filterable to photos taken 2000-2009). 'search' = keywords for outside searches (Flickr/Google/YouTube), 'ar' = Arabic keywords. 'notes' = era notes for the game; general observations to check against the photos, not rules.",
   "boards": [
     {
-      "id": "saudi-men", "group": "People & clothing", "icon": "🧔", "region": "Saudi Arabia",
-      "title": "Saudi men – thobe, ghutra, shemagh", "title_ar": "لباس الرجال في السعودية – ثوب وشماغ وغترة",
-      "commons": ["thobe Saudi", "shemagh Saudi men", "Saudi Arabia men street", "bisht Saudi"],
-      "search": "Saudi men thobe shemagh 2000s", "ar": "ثوب شماغ عقال السعودية",
+      "id": "saudi-men",
+      "group": "People & clothing",
+      "icon": "🧔",
+      "region": "Saudi Arabia",
+      "title": "Saudi men – thobe, ghutra, shemagh",
+      "title_ar": "لباس الرجال في السعودية – ثوب وشماغ وغترة",
+      "commons": [
+        "thobe Saudi",
+        "shemagh Saudi men",
+        "Saudi Arabia men street",
+        "bisht Saudi"
+      ],
+      "search": "Saudi men thobe shemagh 2000s",
+      "ar": "ثوب شماغ عقال السعودية",
       "notes": [
         "White thobe in summer; heavier, darker thobes (grey, brown, navy) in the cold northern winter (Arar, Turaif).",
         "Red-and-white shemagh most common in the north; plain white ghutra also worn. Black igal on top; younger men often without igal.",
@@ -15,10 +25,20 @@
       "added": "2026-10-19"
     },
     {
-      "id": "saudi-women", "group": "People & clothing", "icon": "🧕", "region": "Saudi Arabia",
-      "title": "Saudi women – abaya, niqab", "title_ar": "لباس النساء في السعودية – عباية ونقاب",
-      "commons": ["abaya Saudi women", "niqab Saudi Arabia", "Saudi women market", "Saudi family"],
-      "search": "Saudi women abaya 2000s", "ar": "عباية على الرأس نساء السعودية",
+      "id": "saudi-women",
+      "group": "People & clothing",
+      "icon": "🧕",
+      "region": "Saudi Arabia",
+      "title": "Saudi women – abaya, niqab",
+      "title_ar": "لباس النساء في السعودية – عباية ونقاب",
+      "commons": [
+        "abaya Saudi women",
+        "niqab Saudi Arabia",
+        "Saudi women market",
+        "Saudi family"
+      ],
+      "search": "Saudi women abaya 2000s",
+      "ar": "عباية على الرأس نساء السعودية",
       "notes": [
         "In the 2000s women in public almost always wore a black abaya; in the conservative north often the 'abaya over the head' style with face covered (niqab or full veil).",
         "Women did not drive in Saudi Arabia then: female NPCs travel as passengers with family, usually in the back seat of a GMC / Land Cruiser / Suburban.",
@@ -27,10 +47,21 @@
       "added": "2026-10-19"
     },
     {
-      "id": "bedouin", "group": "People & clothing", "icon": "🏕️", "region": "Northern Saudi Arabia / Jordan Badia",
-      "title": "Bedouin herders & desert families", "title_ar": "البدو ورعاة الإبل",
-      "commons": ["Bedouin Saudi Arabia", "Bedouin Jordan", "Bedouin tent", "camel herder", "Bedouin woman"],
-      "search": "Bedouin camel herder northern Saudi Arabia", "ar": "بدو رعاة إبل الشمال بيت شعر",
+      "id": "bedouin",
+      "group": "People & clothing",
+      "icon": "🏕️",
+      "region": "Northern Saudi Arabia / Jordan Badia",
+      "title": "Bedouin herders & desert families",
+      "title_ar": "البدو ورعاة الإبل",
+      "commons": [
+        "Bedouin Saudi Arabia",
+        "Bedouin Jordan",
+        "Bedouin tent",
+        "camel herder",
+        "Bedouin woman"
+      ],
+      "search": "Bedouin camel herder northern Saudi Arabia",
+      "ar": "بدو رعاة إبل الشمال بيت شعر",
       "notes": [
         "Black goat-hair tent (bayt al-sha'r) or, by the 2000s, often a white canvas tent + pickup truck + water tanker.",
         "Herders drive Toyota Hilux / Land Cruiser pickups; camels moved in trucks.",
@@ -39,10 +70,20 @@
       "added": "2026-10-19"
     },
     {
-      "id": "jordan-people", "group": "People & clothing", "icon": "🧑", "region": "Jordan",
-      "title": "Jordanians – street & rural clothing", "title_ar": "لباس الأردنيين",
-      "commons": ["Jordan people street", "keffiyeh Jordan", "Mafraq", "Azraq Jordan people"],
-      "search": "Jordan people street 2005", "ar": "شماغ أحمر الأردن الأزرق المفرق",
+      "id": "jordan-people",
+      "group": "People & clothing",
+      "icon": "🧑",
+      "region": "Jordan",
+      "title": "Jordanians – street & rural clothing",
+      "title_ar": "لباس الأردنيين",
+      "commons": [
+        "Jordan people street",
+        "keffiyeh Jordan",
+        "Mafraq",
+        "Azraq Jordan people"
+      ],
+      "search": "Jordan people street 2005",
+      "ar": "شماغ أحمر الأردن الأزرق المفرق",
       "notes": [
         "Red-and-white shemagh (Jordanian) very common, often with Western clothes (trousers, jacket).",
         "Women: mix of hijab with long coat (jilbab/manto), some uncovered in towns; Bedouin dress in the Badia.",
@@ -51,10 +92,21 @@
       "added": "2026-10-19"
     },
     {
-      "id": "syria-people", "group": "People & clothing", "icon": "👨‍👩‍👧", "region": "Syria",
-      "title": "Syrians – city, village and coast", "title_ar": "لباس السوريين",
-      "commons": ["Damascus people street", "Syria people 2000s", "Homs people", "Latakia people", "Syrian women"],
-      "search": "Syria street life 2008", "ar": "سوريا الحياة اليومية ٢٠٠٨ شوارع دمشق",
+      "id": "syria-people",
+      "group": "People & clothing",
+      "icon": "👨‍👩‍👧",
+      "region": "Syria",
+      "title": "Syrians – city, village and coast",
+      "title_ar": "لباس السوريين",
+      "commons": [
+        "Damascus people street",
+        "Syria people 2000s",
+        "Homs people",
+        "Latakia people",
+        "Syrian women"
+      ],
+      "search": "Syria street life 2008",
+      "ar": "سوريا الحياة اليومية ٢٠٠٨ شوارع دمشق",
       "notes": [
         "Very mixed styles in the 2000s: Western clothes in cities; women with hijab + long manto coat, some with no headscarf, especially on the coast (Latakia, Tartus).",
         "Older village women: white or dark headscarves, long dresses. Older men: keffiyeh, sometimes sirwal trousers.",
@@ -63,10 +115,20 @@
       "added": "2026-10-19"
     },
     {
-      "id": "travellers", "group": "Travellers", "icon": "🧳", "region": "Whole route",
-      "title": "Travellers – families, students, workers on the road", "title_ar": "المسافرون – عائلات وعمال وطلاب",
-      "commons": ["bus station Damascus", "travelers border Jordan", "family car roof luggage", "Jordan Syria border"],
-      "search": "Syrian families travel Gulf summer car roof luggage", "ar": "مسافرين من الخليج إلى سوريا صيفاً عفش على السيارة",
+      "id": "travellers",
+      "group": "Travellers",
+      "icon": "🧳",
+      "region": "Whole route",
+      "title": "Travellers – families, students, workers on the road",
+      "title_ar": "المسافرون – عائلات وعمال وطلاب",
+      "commons": [
+        "bus station Damascus",
+        "travelers border Jordan",
+        "family car roof luggage",
+        "Jordan Syria border"
+      ],
+      "search": "Syrian families travel Gulf summer car roof luggage",
+      "ar": "مسافرين من الخليج إلى سوريا صيفاً عفش على السيارة",
       "notes": [
         "Classic summer image: a family car (GMC, Caprice, Land Cruiser) with luggage tied high on the roof rack, heading from the Gulf to Syria/Jordan.",
         "Syrian & Jordanian workers in Saudi Arabia going home for holidays; long lines at Al-Haditha and Nassib in summer.",
@@ -76,10 +138,20 @@
       "added": "2026-10-19"
     },
     {
-      "id": "truckers", "group": "Travellers", "icon": "🚛", "region": "Tapline Road / borders",
-      "title": "Truck drivers & truck stops", "title_ar": "سائقو الشاحنات واستراحات الطريق",
-      "commons": ["truck Saudi Arabia highway", "truck stop Jordan", "trucks border crossing Jordan", "Mercedes truck Middle East"],
-      "search": "truck drivers Saudi Jordan border queue", "ar": "سائقين شاحنات طريق التابلاين استراحة",
+      "id": "truckers",
+      "group": "Travellers",
+      "icon": "🚛",
+      "region": "Tapline Road / borders",
+      "title": "Truck drivers & truck stops",
+      "title_ar": "سائقو الشاحنات واستراحات الطريق",
+      "commons": [
+        "truck Saudi Arabia highway",
+        "truck stop Jordan",
+        "trucks border crossing Jordan",
+        "Mercedes truck Middle East"
+      ],
+      "search": "truck drivers Saudi Jordan border queue",
+      "ar": "سائقين شاحنات طريق التابلاين استراحة",
       "notes": [
         "Many drivers from Syria, Jordan, Egypt, Pakistan, India; sleeping in the cab or on a mat beside the truck.",
         "Trucks: Mercedes-Benz (Actros and older), Volvo, MAN, Scania; decorated cabs with curtains, stickers, fringe.",
@@ -88,10 +160,46 @@
       "added": "2026-10-19"
     },
     {
-      "id": "fuel-stations", "group": "Shops & street", "icon": "⛽", "region": "Saudi Arabia",
-      "title": "Fuel stations & roadside complexes", "title_ar": "محطات الوقود على الطرق",
-      "commons": ["petrol station Saudi Arabia", "gas station desert road", "SASCO station", "fuel station Jordan highway"],
-      "search": "Saudi highway gas station 2000s", "ar": "محطة بنزين طريق سريع السعودية قديمة",
+      "id": "roadside-stops",
+      "group": "Shops & street",
+      "icon": "🛑",
+      "region": "Whole route",
+      "title": "Traveller stops – pray, sleep, eat, restrooms",
+      "title_ar": "محطات الطريق – صلاة ونوم وأكل ودورات مياه",
+      "commons": [
+        "roadside mosque Saudi Arabia highway",
+        "musalla petrol station",
+        "truck stop restaurant Saudi",
+        "rest area desert highway",
+        "motel Saudi Arabia highway",
+        "trucks parked night desert"
+      ],
+      "search": "Saudi highway rest stop mosque restaurant trucks",
+      "ar": "استراحة طريق مسجد محطة مطعم شاحنات نوم",
+      "notes": [
+        "Prayer: almost every station has a small mosque or musalla with a minaret or loudspeaker and an ablution area (row of taps); travellers stop at prayer times, shops may close briefly.",
+        "Sleep: truck drivers sleep in the cab or on a mat next to the truck; families use simple roadside rooms ('furnished apartments' / motels) or push on to the next town; some rest on carpets in the open at rest areas.",
+        "Eat: cheap restaurants with rice & chicken, kabsa, ful, bread, tea in small glasses and Arabic coffee; plastic chairs, fluorescent tubes, a TV on the wall.",
+        "Restrooms: basic, often behind the mosque or station building, separate for men and women.",
+        "Checkpoints: police/army checkpoints on the highways and before borders – slow down, show ID (iqama/passport), car papers checked."
+      ],
+      "added": "2026-10-19"
+    },
+    {
+      "id": "fuel-stations",
+      "group": "Shops & street",
+      "icon": "⛽",
+      "region": "Saudi Arabia",
+      "title": "Fuel stations & roadside complexes",
+      "title_ar": "محطات الوقود على الطرق",
+      "commons": [
+        "petrol station Saudi Arabia",
+        "gas station desert road",
+        "SASCO station",
+        "fuel station Jordan highway"
+      ],
+      "search": "Saudi highway gas station 2000s",
+      "ar": "محطة بنزين طريق سريع السعودية قديمة",
       "notes": [
         "2000s Saudi road stations: often basic – pumps under a canopy, a small grocery (bakala), a cheap restaurant, a musalla and toilets; tyre repair shop next door.",
         "Station names painted on walls; Arabic-only signs common outside big cities.",
@@ -100,10 +208,21 @@
       "added": "2026-10-19"
     },
     {
-      "id": "small-shops", "group": "Shops & street", "icon": "🏪", "region": "Saudi Arabia / Jordan",
-      "title": "Small shops – bakala, tea, shawarma, tyre repair", "title_ar": "بقالة، شاي، شاورما، بنشر",
-      "commons": ["grocery shop Saudi Arabia", "shawarma shop", "tea shop Arabia", "tire repair shop", "shop front Arabic sign"],
-      "search": "bakala grocery shop Saudi Arabia", "ar": "بقالة بنشر مطعم شعبي شاورما",
+      "id": "small-shops",
+      "group": "Shops & street",
+      "icon": "🏪",
+      "region": "Saudi Arabia / Jordan",
+      "title": "Small shops – bakala, tea, shawarma, tyre repair",
+      "title_ar": "بقالة، شاي، شاورما، بنشر",
+      "commons": [
+        "grocery shop Saudi Arabia",
+        "shawarma shop",
+        "tea shop Arabia",
+        "tire repair shop",
+        "shop front Arabic sign"
+      ],
+      "search": "bakala grocery shop Saudi Arabia",
+      "ar": "بقالة بنشر مطعم شعبي شاورما",
       "notes": [
         "Bakala: shelves of Pepsi/Mirinda cans, chips, phone cards (Sawa cards), cigarettes, water bottles; fridges with glass doors.",
         "'Bneshar' (tyre repair) shops with stacks of tyres outside.",
@@ -112,10 +231,21 @@
       "added": "2026-10-19"
     },
     {
-      "id": "souqs-syria", "group": "Shops & street", "icon": "🧺", "region": "Syria",
-      "title": "Syrian souqs & street vendors", "title_ar": "أسواق سوريا والباعة",
-      "commons": ["Souq al-Hamidiyah", "Damascus souq", "Homs souq", "street vendor Syria", "juice seller Damascus"],
-      "search": "Damascus souq 2007", "ar": "سوق الحميدية بائع عرق سوس دمشق",
+      "id": "souqs-syria",
+      "group": "Shops & street",
+      "icon": "🧺",
+      "region": "Syria",
+      "title": "Syrian souqs & street vendors",
+      "title_ar": "أسواق سوريا والباعة",
+      "commons": [
+        "Souq al-Hamidiyah",
+        "Damascus souq",
+        "Homs souq",
+        "street vendor Syria",
+        "juice seller Damascus"
+      ],
+      "search": "Damascus souq 2007",
+      "ar": "سوق الحميدية بائع عرق سوس دمشق",
       "notes": [
         "Street vendors: juice (erk sous / licorice) sellers with brass jugs, ka'ak bread sellers, vegetable carts.",
         "Shop signs hand-painted or plastic; portraits and flags common on walls in the 2000s.",
@@ -124,10 +254,23 @@
       "added": "2026-10-19"
     },
     {
-      "id": "street-scenes", "group": "Shops & street", "icon": "🛣️", "region": "Whole route",
-      "title": "Street & road scenes", "title_ar": "مشاهد الشوارع والطرق",
-      "commons": ["Arar street", "Rafha", "Turaif", "Hafar Al-Batin street", "Azraq town", "Daraa street", "Jableh street"],
-      "search": "Arar Saudi Arabia street 2000s", "ar": "شوارع عرعر رفحاء طريف قديم",
+      "id": "street-scenes",
+      "group": "Shops & street",
+      "icon": "🛣️",
+      "region": "Whole route",
+      "title": "Street & road scenes",
+      "title_ar": "مشاهد الشوارع والطرق",
+      "commons": [
+        "Arar street",
+        "Rafha",
+        "Turaif",
+        "Hafar Al-Batin street",
+        "Azraq town",
+        "Daraa street",
+        "Jableh street"
+      ],
+      "search": "Arar Saudi Arabia street 2000s",
+      "ar": "شوارع عرعر رفحاء طريف قديم",
       "notes": [
         "Wide streets, sodium street lights, low concrete buildings painted beige/white, shop rows under arcades.",
         "Road signs bilingual on highways (blue/green); camel-warning signs on the Tapline Road.",
@@ -136,10 +279,22 @@
       "added": "2026-10-19"
     },
     {
-      "id": "vehicles", "group": "Vehicles", "icon": "🚙", "region": "Whole route",
-      "title": "2000s cars, pickups & buses", "title_ar": "سيارات الألفينات",
-      "commons": ["Toyota Land Cruiser 100", "GMC Suburban", "Toyota Hilux Middle East", "Chevrolet Caprice", "Hyundai Accent Syria", "bus Damascus"],
-      "search": "Saudi cars 2000s GMC Land Cruiser Caprice", "ar": "سيارات السعودية ٢٠٠٥ جمس شاص لاندكروزر كابرس",
+      "id": "vehicles",
+      "group": "Vehicles",
+      "icon": "🚙",
+      "region": "Whole route",
+      "title": "2000s cars, pickups & buses",
+      "title_ar": "سيارات الألفينات",
+      "commons": [
+        "Toyota Land Cruiser 100",
+        "GMC Suburban",
+        "Toyota Hilux Middle East",
+        "Chevrolet Caprice",
+        "Hyundai Accent Syria",
+        "bus Damascus"
+      ],
+      "search": "Saudi cars 2000s GMC Land Cruiser Caprice",
+      "ar": "سيارات السعودية ٢٠٠٥ جمس شاص لاندكروزر كابرس",
       "notes": [
         "Saudi road: Land Cruiser (80/100 series), GMC Suburban/Yukon, Chevrolet Caprice, Toyota Camry, Hilux pickups ('shas' / 'hilux' for herders), Datsun pickups.",
         "Jordan: many older Mercedes taxis, Hyundai/Kia, yellow taxis.",
@@ -148,10 +303,21 @@
       "added": "2026-10-19"
     },
     {
-      "id": "tapline-era", "group": "Roadside & stations", "icon": "🏭", "region": "Tapline Road",
-      "title": "Tapline stations & company towns", "title_ar": "محطات التابلاين",
-      "commons": ["Trans-Arabian Pipeline", "Tapline", "Turaif pump station", "Badanah", "Rafha pump station"],
-      "search": "Tapline pump station Badanah Rafha Turaif", "ar": "خط التابلاين محطة بدنة رفحاء طريف",
+      "id": "tapline-era",
+      "group": "Roadside & stations",
+      "icon": "🏭",
+      "region": "Tapline Road",
+      "title": "Tapline stations & company towns",
+      "title_ar": "محطات التابلاين",
+      "commons": [
+        "Trans-Arabian Pipeline",
+        "Tapline",
+        "Turaif pump station",
+        "Badanah",
+        "Rafha pump station"
+      ],
+      "search": "Tapline pump station Badanah Rafha Turaif",
+      "ar": "خط التابلاين محطة بدنة رفحاء طريف",
       "notes": [
         "By the 2000s the pipeline had stopped pumping (Saudi part shut down in the 1980s–1990), so station compounds were partly abandoned or reused – good mood for Arar_Station.",
         "Fenced compounds, staff houses, water towers, rusting pipe segments along the road."
@@ -159,10 +325,20 @@
       "added": "2026-10-19"
     },
     {
-      "id": "borders-era", "group": "Roadside & stations", "icon": "🛂", "region": "Al-Haditha / Al-Omari, Jaber / Nassib",
-      "title": "Border posts & queues", "title_ar": "المنافذ الحدودية والطوابير",
-      "commons": ["Al-Omari border", "Jordan Saudi border", "Nasib border crossing", "Jaber border crossing"],
-      "search": "Haditha border crossing queue Jordan Saudi", "ar": "منفذ الحديثة طابور العمري جابر نصيب",
+      "id": "borders-era",
+      "group": "Roadside & stations",
+      "icon": "🛂",
+      "region": "Al-Haditha / Al-Omari, Jaber / Nassib",
+      "title": "Border posts & queues",
+      "title_ar": "المنافذ الحدودية والطوابير",
+      "commons": [
+        "Al-Omari border",
+        "Jordan Saudi border",
+        "Nasib border crossing",
+        "Jaber border crossing"
+      ],
+      "search": "Haditha border crossing queue Jordan Saudi",
+      "ar": "منفذ الحديثة طابور العمري جابر نصيب",
       "notes": [
         "Long queues of family cars and trucks, especially in summer; officers in uniform, customs inspection of luggage.",
         "Money changers, insurance kiosks, duty-free shops, tea sellers walking between cars."

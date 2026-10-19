@@ -14,7 +14,16 @@
     landmark: { label: "Landmarks",      icon: "🏛️", color: "#34495e" },
     people:   { label: "People / NPCs",  icon: "🧍", color: "#e84393" },
     photo:    { label: "Road photos",    icon: "📷", color: "#455a64" },
+    stop:     { label: "Traveller stops", icon: "🛑", color: "#b71c1c" },
+    check:    { label: "Checkpoints",    icon: "🛃", color: "#5d4037" },
+    wc:       { label: "Restrooms",      icon: "🚻", color: "#0277bd" },
   };
+  // what a traveller can do at a stop, and which categories provide it
+  const SERVICES = [
+    ["fuel", "⛽", "Fuel", ["fuel"]], ["pray", "🕌", "Pray", ["mosque"]], ["eat", "🍽️", "Eat & tea", ["food"]],
+    ["sleep", "🛏️", "Sleep", ["hotel"]], ["rest", "🅿️", "Rest", ["rest"]], ["wc", "🚻", "Restrooms", ["wc"]],
+    ["shop", "🛒", "Shop / repair", ["shop"]], ["check", "🛃", "Checkpoint", ["check", "border"]],
+  ];
   const SRC = { commons: "Wikimedia Commons", mapillary: "Mapillary", kartaview: "KartaView", panoramax: "Panoramax", curated: "Reference", live: "Wikimedia Commons" };
   const FLAGS = { SA: "🇸🇦", JO: "🇯🇴", SY: "🇸🇾", "SA/JO": "🇸🇦🇯🇴", "JO/SY": "🇯🇴🇸🇾" };
   const $ = (s) => document.querySelector(s);
@@ -75,6 +84,7 @@
     osm.items.forEach((p) => { p.isNew = daysAgo(p.first_seen) <= 2; });
     state.all = [...cur.items, ...osm.items];
     state.all.forEach((p) => { p.km = kmAlong(p.lat, p.lon); p.inTown = inTown(p); state.byId.set(p.id, p); });
+    buildStops();
     state.photos = photos.items.filter((ph) => ph.thumb && !inTown(ph));
     state.photos.forEach((ph) => { ph.km = kmAlong(ph.lat, ph.lon); ph.year = yearOf(ph.date); ph.isNew = daysAgo(ph.first_seen) <= 2; state.byId.set(ph.id, ph); });
     state.photos.sort((a, b) => a.km - b.km);
@@ -103,19 +113,50 @@
     return state.waypoints.some((w) => w.urban_km && map.distance([w.lat, w.lon], [p.lat, p.lon]) < w.urban_km * 1000);
   }
   const ALWAYS = new Set(["city", "border", "station", "people", "camel"]);
+  // group roadside places within ~600 m of each other into one "traveller stop" (fuel + mosque + food ... complexes)
+  function buildStops() {
+    const kinds = new Set(SERVICES.flatMap((s) => s[3]));
+    const pool = state.all.filter((p) => kinds.has(p.cat) && !p.inTown && p.cat !== "stop").sort((a, b) => a.km - b.km);
+    const groups = [];
+    for (const p of pool) {
+      const g = groups.find((g) => Math.abs(g.km - p.km) < 3 && g.members.some((m) => map.distance([m.lat, m.lon], [p.lat, p.lon]) < 600));
+      g ? g.members.push(p) : groups.push({ km: p.km, members: [p] });
+    }
+    state.stops = groups.map((g, i) => {
+      const services = SERVICES.filter((s) => g.members.some((m) => s[3].includes(m.cat))).map((s) => s[0]);
+      const named = g.members.find((m) => m.cat === "fuel" && m.name) || g.members.find((m) => m.name);
+      const lat = g.members.reduce((a, m) => a + m.lat, 0) / g.members.length;
+      const lon = g.members.reduce((a, m) => a + m.lon, 0) / g.members.length;
+      return { id: `stop:${i}`, cat: "stop", lat, lon, km: kmAlong(lat, lon), members: g.members, services,
+        name: named?.name ? `Stop: ${named.name}` : `Stop at km ${g.km}`, name_ar: named?.name_ar || "",
+        country: g.members.find((m) => m.country)?.country };
+    }).filter((st) => st.services.length >= 2 || st.services.some((x) => ["fuel", "sleep", "rest", "check"].includes(x)));
+    // distance to the next stop that offers each service (to show long gaps)
+    state.stops.forEach((st, i) => {
+      const next = state.stops.slice(i + 1).find((o) => o.services.includes("fuel"));
+      st.nextFuelKm = next ? next.km - st.km : null;
+    });
+    state.stops.forEach((st) => { state.all.push(st); state.byId.set(st.id, st); });
+  }
+  const serviceIcons = (st) => SERVICES.filter((s) => st.services.includes(s[0])).map((s) => `<span title="${s[2]}">${s[1]}</span>`).join("");
+
   function buildCum() {
     const r = state.route; state.cum = [0];
     for (let i = 1; i < r.length; i++) state.cum.push(state.cum[i - 1] + map.distance(r[i - 1], r[i]) / 1000);
     state.totalKm = state.routeKm || Math.round(state.cum[state.cum.length - 1]);
   }
+  // distance along the road: project the point onto the nearest road segment
   function kmAlong(lat, lon) {
-    let best = Infinity, bi = 0;
+    let best = Infinity, km = 0;
     const r = state.route, c = Math.cos((lat * Math.PI) / 180);
-    for (let i = 0; i < r.length; i++) {
-      const d = (r[i][0] - lat) ** 2 + ((r[i][1] - lon) * c) ** 2;
-      if (d < best) { best = d; bi = i; }
+    for (let i = 0; i < r.length - 1; i++) {
+      const ax = r[i][1] * c, ay = r[i][0], bx = r[i + 1][1] * c, by = r[i + 1][0], px = lon * c, py = lat;
+      const dx = bx - ax, dy = by - ay, len2 = dx * dx + dy * dy || 1e-12;
+      const t = Math.max(0, Math.min(1, ((px - ax) * dx + (py - ay) * dy) / len2));
+      const d = (ax + t * dx - px) ** 2 + (ay + t * dy - py) ** 2;
+      if (d < best) { best = d; km = state.cum[i] + t * (state.cum[i + 1] - state.cum[i]); }
     }
-    return Math.round(state.cum[bi]);
+    return Math.round(km);
   }
 
   function drawRoute(real) {
@@ -143,6 +184,13 @@
     const osmMarkers = [];
     for (const p of state.all) {
       if (!visible(p)) continue;
+      if (p.cat === "stop") {
+        p.marker = L.marker([p.lat, p.lon], { zIndexOffset: 400, icon: L.divIcon({ className: "pm-wrap", iconSize: [34, 34], iconAnchor: [17, 17],
+          html: `<div class="pm stop-pin" style="--c:#b71c1c;width:34px;height:34px">🛑<span class="svc">${serviceIcons(p)}</span></div>` }) })
+          .bindTooltip(`${esc(p.name)} · km ${p.km}<br>${serviceIcons(p)}`, { direction: "top", offset: [0, -17] })
+          .on("click", () => open(p)).addTo(curatedLayer);
+        continue;
+      }
       if (p.curated) {
         const size = p.cat === "city" ? 46 : p.thumb ? 40 : 30;
         p.marker = L.marker([p.lat, p.lon], { icon: iconFor(p, size), zIndexOffset: p.cat === "city" ? 500 : 300 })
@@ -247,6 +295,11 @@
           ${p.isNew ? `<span class="chip warn">new</span>` : ""}
         </div>
         ${p.desc ? `<p>${esc(p.desc)}</p>` : ""}
+        ${p.cat === "stop" ? `<div class="svc-row">${SERVICES.map((sv) => `<span class="${p.services.includes(sv[0]) ? "on" : "off"}">${sv[1]} ${sv[2]}</span>`).join("")}</div>
+          ${p.nextFuelKm != null ? `<p class="muted">Next fuel after this stop: <b>${p.nextFuelKm} km</b>${p.nextFuelKm > 150 ? " – long empty stretch" : ""}</p>` : ""}
+          <h3>At this stop</h3><ul class="members">${p.members.map((m) => `<li data-id="${esc(m.id)}">${CATS[m.cat]?.icon || ""} ${esc(m.name || m.name_ar || CATS[m.cat]?.label)} <span class="muted">${esc(CATS[m.cat]?.label || "")}</span></li>`).join("")}</ul>
+          <div class="game"><b>2000s stop for the game:</b> gravel lot with trucks parked for the night; pumps under a canopy with an attendant;
+          a small musalla (prayer room) with washing taps; a cheap restaurant (rice & chicken, tea in small glasses); a bakala; basic restrooms behind the building; tyre-repair shop next door.</div>` : ""}
         <div id="wikiExtract"></div>
         ${p.game ? `<div class="game"><b>Game idea:</b> ${esc(p.game)}</div>` : ""}
         ${tagLine ? `<p class="tags">${tagLine}</p>` : ""}
@@ -357,9 +410,21 @@
       + (state.osmUpdated ? `<div>updated <b>${esc(state.osmUpdated)}</b></div>` : "");
   }
   function renderStops() {
-    const stops = state.all.filter((p) => p.curated && (p.cat === "city" || p.cat === "border")).sort((a, b) => a.km - b.km);
+    const showStops = ls.get("routeStops") !== "0";
+    const stops = state.all.filter((p) => (p.curated && (p.cat === "city" || p.cat === "border")) || (showStops && p.cat === "stop")).sort((a, b) => a.km - b.km);
+    $("#stopsToggle").checked = showStops;
+    let lastFuel = 0;
+    const townKm = state.waypoints.filter((w) => w.urban_km).map((w) => kmAlong(w.lat, w.lon));
     $("#stops").innerHTML = stops.map((p) => {
       const c = CATS[p.cat];
+      if (p.cat === "stop") {
+        lastFuel = Math.max(lastFuel, ...townKm.filter((k) => k <= p.km));  // towns always have fuel
+        const gap = p.services.includes("fuel") ? p.km - lastFuel : 0;
+        if (p.services.includes("fuel")) lastFuel = p.km;
+        return `${gap > 150 ? `<li class="gap">⚠️ ${gap} km with no fuel stop on the map</li>` : ""}<li data-id="${esc(p.id)}" class="stop-row"><span class="dot small" style="background:${c.color}">🛑</span>
+          <span>${esc(p.name.replace(/^Stop: /, ""))}<br><span class="svc">${serviceIcons(p)}</span></span><span class="km">${p.km} km</span></li>`;
+      }
+      if (p.cat === "city") lastFuel = p.km;
       return `<li data-id="${esc(p.id)}" class="${p.cat === "border" ? "border-row" : ""}"><span class="dot" style="background:${c.color}">${c.icon}</span>
         <span><b>${esc(p.name)}</b><br><span class="flag">${FLAGS[p.country] || ""} <span class="ar">${esc(p.name_ar)}</span></span></span><span class="km">${p.km} km</span></li>`;
     }).join("");
@@ -485,6 +550,7 @@
     $("#q").value = ""; $("#results").hidden = true;
   }));
   $("#showOsm").onchange = (e) => { state.showOsm = e.target.checked; redraw(); };
+  $("#stopsToggle").onchange = (e) => { ls.set("routeStops", e.target.checked ? "1" : "0"); renderStops(); };
   $("#onlyNew").onchange = (e) => { state.onlyNew = e.target.checked; redraw(); };
   $("#showTown").checked = state.showTown;
   $("#showTown").onchange = (e) => { state.showTown = e.target.checked; ls.set("showTown", e.target.checked ? "1" : "0"); renderLayers(); redraw(); };

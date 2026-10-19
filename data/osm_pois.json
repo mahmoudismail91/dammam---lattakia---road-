@@ -304,7 +304,7 @@
   },
   {
    "id": "osm:node/1236745379",
-   "cat": "rest",
+   "cat": "check",
    "name": "Markaz al Khawr",
    "name_ar": "مركز الخور",
    "lat": 31.596389,
@@ -383,7 +383,7 @@
   },
   {
    "id": "osm:node/13647497868",
-   "cat": "rest",
+   "cat": "wc",
    "name": "",
    "name_ar": "",
    "lat": 32.104326,
@@ -409,7 +409,7 @@
   },
   {
    "id": "osm:node/13647667549",
-   "cat": "shop",
+   "cat": "mosque",
    "name": "دار الكتب الجامعية",
    "name_ar": "",
    "lat": 32.102599,
@@ -704,7 +704,7 @@
   },
   {
    "id": "osm:node/1824837171",
-   "cat": "fuel",
+   "cat": "mosque",
    "name": "قريبة على الجامعة الاوربية",
    "name_ar": "",
    "lat": 33.159826,
@@ -1562,7 +1562,7 @@
   },
   {
    "id": "osm:node/5514040822",
-   "cat": "food",
+   "cat": "hotel",
    "name": "Elpatio Hotel",
    "name_ar": "فندق ومطعم إلباتيو",
    "lat": 34.08728,
@@ -2320,7 +2320,7 @@
   },
   {
    "id": "osm:node/8754588317",
-   "cat": "rest",
+   "cat": "check",
    "name": "منفذ العمري",
    "name_ar": "",
    "lat": 31.534237,
@@ -2476,7 +2476,7 @@
   },
   {
    "id": "osm:way/1489566522",
-   "cat": "rest",
+   "cat": "wc",
    "name": "",
    "name_ar": "",
    "lat": 32.105543,
@@ -2502,7 +2502,7 @@
   },
   {
    "id": "osm:way/1499597861",
-   "cat": "rest",
+   "cat": "check",
    "name": "أمن الغربي",
    "name_ar": "",
    "lat": 32.104959,
@@ -2608,7 +2608,7 @@
   },
   {
    "id": "osm:way/271264355",
-   "cat": "rest",
+   "cat": "check",
    "name": "Police BASE - SARD",
    "name_ar": "",
    "lat": 31.911088,
@@ -2648,7 +2648,7 @@
   },
   {
    "id": "osm:way/278017204",
-   "cat": "rest",
+   "cat": "check",
    "name": "Police",
    "name_ar": "",
    "lat": 31.916474,
