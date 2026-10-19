@@ -193,6 +193,18 @@ def main():
         if p["id"] not in old:
             added.append(p["id"])
         old[p["id"]] = p
+    # dashcam uploads come as long near-identical series: keep one per uploader per 2 km, none within 150 m
+    def author(p):
+        return p.get("credit", "").split(" · ")[0]
+    thinned = []
+    for p in sorted(old.values(), key=lambda p: (p.get("first_seen", today), p["id"])):
+        if any(haversine([k["lon"], k["lat"]], [p["lon"], p["lat"]]) < 0.15 or
+               (author(k) == author(p) and haversine([k["lon"], k["lat"]], [p["lon"], p["lat"]]) < 2) for k in thinned):
+            continue
+        thinned.append(p)
+    old = {p["id"]: p for p in thinned}
+    added = [i for i in added if i in old]
+
     # only the road between towns, not photos inside the cities
     wps = load("waypoints.json", {})["waypoints"]
     items = sorted((p for p in old.values() if not in_town(p["lat"], p["lon"], wps)), key=lambda p: p["id"])

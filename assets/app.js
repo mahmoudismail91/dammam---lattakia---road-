@@ -184,7 +184,7 @@
   function commons(lat, lon, radius = 3000) {
     const u = "https://commons.wikimedia.org/w/api.php?" + new URLSearchParams({
       action: "query", generator: "geosearch", ggscoord: `${lat}|${lon}`, ggsradius: radius, ggsnamespace: 6, ggslimit: 50,
-      prop: "imageinfo", iiprop: "url|extmetadata", iiurlwidth: 400, format: "json", origin: "*",
+      prop: "imageinfo|coordinates", iiprop: "url|extmetadata", iiurlwidth: 400, format: "json", origin: "*",
     });
     return fetch(u).then((r) => r.json()).then((j) => Object.values(j.query?.pages || {})
       .filter((pg) => /\.(jpe?g|png|webp)$/i.test(pg.title))
@@ -192,13 +192,24 @@
         const m = pg.imageinfo?.[0]?.extmetadata || {};
         return !NOT_GROUND.test([pg.title, m.Categories?.value, m.Artist?.value, m.ImageDescription?.value, m.Credit?.value].join(" | "));
       })
-      .slice(0, 15)
       .map((pg) => {
         const ii = pg.imageinfo[0], m = ii.extmetadata || {};
         const strip = (h) => (h || "").replace(/<[^>]+>/g, "").trim();
+        const c = pg.coordinates?.[0] || {};
         return { thumb: ii.thumburl, full: ii.url, page: ii.descriptionurl, title: pg.title.replace(/^File:/, ""),
-          credit: `${strip(m.Artist?.value) || "Unknown"} · ${strip(m.LicenseShortName?.value)}` };
+          lat: c.lat, lon: c.lon, credit: `${strip(m.Artist?.value) || "Unknown"} · ${strip(m.LicenseShortName?.value)}` };
       })).catch(() => []);
+  }
+  // one photo per uploader per 2 km, and nothing within 150 m of a kept one (dashcam series are near-identical)
+  function thin(list) {
+    const kept = [];
+    for (const ph of list) {
+      const who = (ph.credit || "").split(" · ")[0];
+      const near = (k, m) => ph.lat != null && k.lat != null && map.distance([ph.lat, ph.lon], [k.lat, k.lon]) < m;
+      if (kept.some((k) => near(k, 150) || ((k.credit || "").split(" · ")[0] === who && (near(k, 2000) || ph.lat == null)))) continue;
+      kept.push(ph);
+    }
+    return kept;
   }
 
   /* ---------- detail panel ---------- */
@@ -256,7 +267,7 @@
       .filter(([, d]) => d < 5000).sort((a, b) => a[1] - b[1]).slice(0, 12).map(([ph]) => ph);
     const live = (await commons(p.lat, p.lon, p.cat === "city" ? 8000 : 3000)).map((ph) => ({ ...ph, src: "live" }));
     const seen = new Set();
-    const pics = [...own, ...road, ...live].filter((ph) => !seen.has(ph.page) && seen.add(ph.page));
+    const pics = [...own, ...thin([...road, ...live].filter((ph) => !seen.has(ph.page) && seen.add(ph.page)))].slice(0, 15);
     const g = $("#gallery"); if (!g) return;
     g.innerHTML = pics.length ? "" : `<span class="muted">No photos found yet – try the "Look around" and "Search pictures" links above.</span>`;
     pics.forEach((ph, i) => {
