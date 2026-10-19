@@ -1,6 +1,7 @@
 {
  "source": "© OpenStreetMap contributors (ODbL)",
  "updated": "2026-10-19",
+ "next_chunk": 24,
  "items": [
   {
    "id": "osm:node/10059535552",
@@ -48,19 +49,6 @@
    "name_ar": "",
    "lat": 32.00546,
    "lon": 36.460073,
-   "tags": {
-    "amenity": "place_of_worship"
-   },
-   "first_seen": "2026-10-19",
-   "last_seen": "2026-10-19"
-  },
-  {
-   "id": "osm:node/10062266236",
-   "cat": "mosque",
-   "name": "",
-   "name_ar": "",
-   "lat": 32.002669,
-   "lon": 36.467949,
    "tags": {
     "amenity": "place_of_worship"
    },
@@ -232,6 +220,19 @@
    "lon": 37.080165,
    "tags": {
     "barrier": "border_control"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/12360566897",
+   "cat": "fuel",
+   "name": "KPS 59",
+   "name_ar": "",
+   "lat": 27.006008,
+   "lon": 49.452626,
+   "tags": {
+    "amenity": "fuel"
    },
    "first_seen": "2026-10-19",
    "last_seen": "2026-10-19"
@@ -1268,19 +1269,6 @@
    "name_ar": "",
    "lat": 34.413435,
    "lon": 36.759075,
-   "tags": {
-    "amenity": "place_of_worship"
-   },
-   "first_seen": "2026-10-19",
-   "last_seen": "2026-10-19"
-  },
-  {
-   "id": "osm:node/3749282429",
-   "cat": "mosque",
-   "name": "",
-   "name_ar": "",
-   "lat": 34.41074,
-   "lon": 36.76158,
    "tags": {
     "amenity": "place_of_worship"
    },
