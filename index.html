@@ -21,6 +21,7 @@
     <nav class="tabs">
       <button data-tab="stops" class="on">Route</button>
       <button data-tab="drive">Drive</button>
+      <button data-tab="refs">People</button>
       <button data-tab="layers">Layers</button>
       <button data-tab="new">New <b id="newCount"></b></button>
     </nav>
@@ -28,11 +29,13 @@
     <div class="search"><input id="q" type="search" placeholder="Search places… (e.g. Arar, hotel, mosque)"></div>
 
     <section id="tab-stops" class="tab on"><ol id="stops" class="stops"></ol></section>
-    <section id="tab-drive" class="tab"><div id="drive"></div></section>
+    <section id="tab-drive" class="tab"><label class="toggle"><input type="checkbox" class="eraToggle"> Only photos taken 2000–2009</label><div id="drive"></div></section>
+    <section id="tab-refs" class="tab"><div id="refs"></div></section>
     <section id="tab-layers" class="tab"><div id="layers" class="layers"></div>
       <label class="toggle"><input type="checkbox" id="showOsm" checked> Show OpenStreetMap places (auto-updated)</label>
       <label class="toggle"><input type="checkbox" id="onlyNew"> Only places added in the last 7 days</label>
       <label class="toggle"><input type="checkbox" id="showTown"> Also show places inside towns &amp; cities</label>
+      <label class="toggle"><input type="checkbox" class="eraToggle"> Only photos taken 2000–2009 (the game's era)</label>
       <p class="muted">By default the map shows only what is on the road between towns (within ~600 m of the highway).</p>
     </section>
     <section id="tab-new" class="tab"><div id="updates"></div></section>

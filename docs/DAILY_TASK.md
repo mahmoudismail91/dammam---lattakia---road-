@@ -11,7 +11,7 @@ Rotate the focus by weekday:
 | Wed | Fuel & rest stations, truck stops, tea stands, small shops (bakala, tyre repair) |
 | Thu | Camel areas, camel markets, herding regions, camel-crossing zones |
 | Fri | Borders: Al-Haditha/Al-Omari, Jaber/Nassib – current status, procedures, photos |
-| Sat | People & NPC references: drivers, herders, Tapline history, oral histories, documentaries |
+| Sat | People & NPC references for the 2000s: clothing (men, women, Bedouin), travellers, drivers, shop keepers – update `data/references.json` |
 | Sun | Jordan & Syria legs: the highway between Al-Omari, Azraq, Mafraq, Jaber, the M5 and the Homs–Tartus–Latakia road |
 
 Rules
@@ -24,3 +24,11 @@ Rules
 - Add `"added": "<today YYYY-MM-DD>"` so the site highlights it as new.
 - Append one entry at the top of `data/updates.json` `log`: `{"date": "...", "kind": "curated", "note": "...", "added": [ids]}`.
 - Validate JSON (`python3 -m json.tool data/curated.json`), commit and push to the branch GitHub Pages publishes from.
+
+## People / 2000s reference boards (`data/references.json`)
+
+The game is set in the **2000s**. Every day (not only Saturday) also improve at least one board in `data/references.json`:
+- add better Commons search queries (`commons`) that return real photos of people, clothing, shops, street scenes or vehicles of that region;
+- add `"images": [{"u", "thumb", "page", "t", "credit", "year"}]` with photos **taken 2000–2009** where possible (Flickr with taken-date filter, old news photos, blogs, archived forums, YouTube stills/timestamps);
+- add short, factual `notes` useful for modelling NPCs (what people wore, carried, drove; what shops sold) – no stereotypes, no private individuals' names or faces from personal accounts;
+- new boards are welcome (e.g. children, police/army uniforms, prayer at roadside mosques, food).

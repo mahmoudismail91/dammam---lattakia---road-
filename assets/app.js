@@ -25,7 +25,7 @@
 
   const state = {
     cats: new Set(JSON.parse(ls.get("cats") || "null") || Object.keys(CATS)),
-    showOsm: true, onlyNew: false, showTown: ls.get("showTown") === "1",
+    showOsm: true, onlyNew: false, showTown: ls.get("showTown") === "1", era: ls.get("era") === "1",
     all: [], byId: new Map(), route: [], cum: [],
   };
 
@@ -63,7 +63,9 @@
     getJSON("data/route.geojson", null),
     getJSON("data/updates.json", { log: [] }),
     getJSON("data/photos.json", { items: [] }),
-  ]).then(([wp, cur, osm, route, upd, photos]) => {
+    getJSON("data/references.json", { boards: [] }),
+  ]).then(([wp, cur, osm, route, upd, photos, refs]) => {
+    state.boards = refs.boards;
     state.waypoints = wp.waypoints;
     state.route = route ? route.features[0].geometry.coordinates.map(([x, y]) => [y, x]) : wp.waypoints.map((w) => [w.lat, w.lon]);
     state.routeKm = route?.features[0].properties.km;
@@ -74,7 +76,7 @@
     state.all = [...cur.items, ...osm.items];
     state.all.forEach((p) => { p.km = kmAlong(p.lat, p.lon); p.inTown = inTown(p); state.byId.set(p.id, p); });
     state.photos = photos.items.filter((ph) => ph.thumb && !inTown(ph));
-    state.photos.forEach((ph) => { ph.km = kmAlong(ph.lat, ph.lon); ph.isNew = daysAgo(ph.first_seen) <= 2; state.byId.set(ph.id, ph); });
+    state.photos.forEach((ph) => { ph.km = kmAlong(ph.lat, ph.lon); ph.year = yearOf(ph.date); ph.isNew = daysAgo(ph.first_seen) <= 2; state.byId.set(ph.id, ph); });
     state.photos.sort((a, b) => a.km - b.km);
     state.updates = upd.log;
     state.osmUpdated = osm.updated;
@@ -85,11 +87,14 @@
     renderLayers();
     renderUpdates();
     renderDrive();
+    renderRefs();
+    document.querySelectorAll(".eraToggle").forEach((c) => (c.checked = state.era));
     redraw();
     loadWikiThumbs(cur.items);
 
     const h = decodeURIComponent(location.hash.slice(1));
-    if (h && state.byId.has(h)) open(state.byId.get(h));
+    if (h.startsWith("ref:")) { openBoard(state.boards.find((b) => b.id === h.slice(4))); map.fitBounds(L.latLngBounds(state.route).pad(0.05)); }
+    else if (h && state.byId.has(h)) open(state.byId.get(h));
     else map.fitBounds(L.latLngBounds(state.route).pad(0.05));
   });
 
@@ -154,7 +159,7 @@
 
     photoLayer.clearLayers();
     if (!state.cats.has("photo")) return;
-    const list = state.photos.filter((ph) => !state.onlyNew || ph.isNew);
+    const list = state.photos.filter((ph) => (!state.onlyNew || ph.isNew) && (!state.era || is2000s(ph)));
     photoLayer.addLayers(list.map((ph, i) => L.marker([ph.lat, ph.lon], {
       photo: ph,
       icon: L.divIcon({ className: "pm-wrap", iconSize: [34, 34], iconAnchor: [17, 17],
@@ -182,9 +187,16 @@
   // skip satellite / space-station / aerial shots – only ground-level pictures are useful
   const NOT_GROUND = /\b(iss\s?-?\d{2,3}|iss\d|international space station|space station|expedition\s?\d+|from space|from orbit|in orbit|satellite|landsat|sentinel[- ]?\d|modis|copernicus|earth observ\w*|earth from|nasa|esa|jaxa|roscosmos|astronaut\w*|cosmonaut\w*|aerial|bird'?s[- ]eye|planet labs|worldview|google earth|airliner|from (an |the )?(aircraft|airplane|plane)|window seat)\b/i;
   function commons(lat, lon, radius = 3000) {
+    return commonsQuery({ generator: "geosearch", ggscoord: `${lat}|${lon}`, ggsradius: radius, ggsnamespace: 6, ggslimit: 50 });
+  }
+  function commonsSearch(q, limit = 40) {
+    return commonsQuery({ generator: "search", gsrsearch: `${q} filetype:bitmap`, gsrnamespace: 6, gsrlimit: limit });
+  }
+  const yearOf = (d) => +((String(d || "").match(/\b(19[5-9]\d|20[0-2]\d)\b/) || [])[1] || 0);
+  const is2000s = (ph) => ph.year >= 2000 && ph.year <= 2009;
+  function commonsQuery(gen) {
     const u = "https://commons.wikimedia.org/w/api.php?" + new URLSearchParams({
-      action: "query", generator: "geosearch", ggscoord: `${lat}|${lon}`, ggsradius: radius, ggsnamespace: 6, ggslimit: 50,
-      prop: "imageinfo|coordinates", iiprop: "url|extmetadata", iiurlwidth: 400, format: "json", origin: "*",
+      action: "query", ...gen, prop: "imageinfo|coordinates", iiprop: "url|extmetadata", iiurlwidth: 400, format: "json", origin: "*",
     });
     return fetch(u).then((r) => r.json()).then((j) => Object.values(j.query?.pages || {})
       .filter((pg) => /\.(jpe?g|png|webp)$/i.test(pg.title))
@@ -197,7 +209,8 @@
         const strip = (h) => (h || "").replace(/<[^>]+>/g, "").trim();
         const c = pg.coordinates?.[0] || {};
         return { thumb: ii.thumburl, full: ii.url, page: ii.descriptionurl, title: pg.title.replace(/^File:/, ""),
-          lat: c.lat, lon: c.lon, credit: `${strip(m.Artist?.value) || "Unknown"} · ${strip(m.LicenseShortName?.value)}` };
+          lat: c.lat, lon: c.lon, credit: `${strip(m.Artist?.value) || "Unknown"} · ${strip(m.LicenseShortName?.value)}`,
+          date: strip(m.DateTimeOriginal?.value).slice(0, 10), year: yearOf(strip(m.DateTimeOriginal?.value)) };
       })).catch(() => []);
   }
   // one photo per uploader per 2 km, and nothing within 150 m of a kept one (dashcam series are near-identical)
@@ -267,7 +280,8 @@
       .filter(([, d]) => d < 5000).sort((a, b) => a[1] - b[1]).slice(0, 12).map(([ph]) => ph);
     const live = (await commons(p.lat, p.lon, p.cat === "city" ? 8000 : 3000)).map((ph) => ({ ...ph, src: "live" }));
     const seen = new Set();
-    const pics = [...own, ...thin([...road, ...live].filter((ph) => !seen.has(ph.page) && seen.add(ph.page)))].slice(0, 15);
+    const pics = [...own, ...thin([...road, ...live].filter((ph) => !seen.has(ph.page) && seen.add(ph.page))
+      .filter((ph) => !state.era || is2000s(ph)))].slice(0, 15);
     const g = $("#gallery"); if (!g) return;
     g.innerHTML = pics.length ? "" : `<span class="muted">No photos found yet – try the "Look around" and "Search pictures" links above.</span>`;
     pics.forEach((ph, i) => {
@@ -382,6 +396,64 @@
         ${shown.length ? `<ul>${shown.map((p) => `<li data-id="${esc(p.id)}">${CATS[p.cat]?.icon || ""} ${esc(p.name)} <span class="muted">km ${p.km}</span></li>`).join("")}</ul>` : ""}</div>`;
     }).join("") || `<p class="muted">No updates yet – the first daily scan will appear here.</p>`;
   }
+  /* ---------- People / 2000s reference boards ---------- */
+  function renderRefs() {
+    const groups = {};
+    state.boards.forEach((b) => (groups[b.group] = groups[b.group] || []).push(b));
+    $("#refs").innerHTML = `<p class="muted">Reference photos for NPCs, clothing, shops and streets – set in the 2000s. Photos load live from Wikimedia Commons; use the search buttons for more.</p>`
+      + Object.entries(groups).map(([g, bs]) => `<h4 class="leg">${esc(g)}</h4><ul class="results boards">${bs.map((b) =>
+        `<li data-board="${esc(b.id)}"><span class="dot" style="background:#e84393" data-board="${esc(b.id)}">${b.icon}</span>
+         <span data-board="${esc(b.id)}"><b data-board="${esc(b.id)}">${esc(b.title)}</b><br><span class="muted" data-board="${esc(b.id)}">${esc(b.region)}</span></span></li>`).join("")}</ul>`).join("");
+  }
+  async function openBoard(b) {
+    if (!b) return;
+    const flickr = (t) => `https://www.flickr.com/search/?text=${encodeURIComponent(t)}&min_taken_date=946684800&max_taken_date=1262303999`;
+    const google = (t) => `https://www.google.com/search?tbm=isch&q=${encodeURIComponent(t)}`;
+    $("#detailBody").innerHTML = `
+      <div class="hero-ph" style="background:#e84393">${b.icon}</div>
+      <div class="dbody">
+        <h2>${esc(b.title)}</h2>
+        <div class="ar">${esc(b.title_ar || "")}</div>
+        <div class="chips"><span class="chip">${esc(b.group)}</span><span class="chip">${esc(b.region)}</span><span class="chip warn">2000s</span></div>
+        ${b.notes?.length ? `<div class="game"><b>Era notes for the game</b><ul>${b.notes.map((n) => `<li>${esc(n)}</li>`).join("")}</ul></div>` : ""}
+        <h3>Search more pictures</h3>
+        <div class="links">
+          <a href="${flickr(b.search)}" target="_blank" rel="noopener">Flickr (taken 2000–2009)</a>
+          <a href="${google(b.search)}" target="_blank" rel="noopener">Google Images</a>
+          <a href="${google(b.ar)}" target="_blank" rel="noopener">صور (Arabic)</a>
+          <a href="https://www.youtube.com/results?search_query=${encodeURIComponent(b.ar + " قديم")}" target="_blank" rel="noopener">YouTube (old videos)</a>
+          <a href="https://commons.wikimedia.org/w/index.php?search=${encodeURIComponent(b.commons[0])}&title=Special:MediaSearch&type=image" target="_blank" rel="noopener">Wikimedia Commons</a>
+        </div>
+        <h3>Photos <span class="muted" id="boardCount"></span></h3>
+        <label class="toggle"><input type="checkbox" class="eraToggle" ${state.era ? "checked" : ""}> Only photos taken 2000–2009</label>
+        <div id="gallery" class="gallery"><span class="muted">Loading…</span></div>
+      </div>`;
+    $("#detail").hidden = false;
+    history.replaceState(null, "", "#ref:" + encodeURIComponent(b.id));
+    if (!b._pics) {
+      const seen = new Set();
+      b._pics = (await Promise.all(b.commons.map((q) => commonsSearch(q)))).flat().filter((ph) => !seen.has(ph.page) && seen.add(ph.page));
+    }
+    const pics = b._pics.filter((ph) => !state.era || is2000s(ph));
+    const g = $("#gallery"); if (!g) return;
+    $("#boardCount").textContent = `(${pics.length}${state.era ? " from 2000–2009" : ""})`;
+    g.innerHTML = pics.length ? "" : `<span class="muted">${state.era ? "No dated 2000s photos on Commons for this – untick the filter or use the search buttons (Flickr is filtered to 2000–2009)." : "No photos found – try the search buttons."}</span>`;
+    pics.forEach((ph, i) => {
+      const img = document.createElement("img");
+      img.src = ph.thumb; img.loading = "lazy"; img.alt = ""; img.title = `${ph.title}${ph.year ? " · " + ph.year : ""}`;
+      img.onclick = () => lightbox(pics, i);
+      g.appendChild(img);
+    });
+    state.openBoard = b;
+  }
+  function setEra(on) {
+    state.era = on; ls.set("era", on ? "1" : "0");
+    document.querySelectorAll(".eraToggle").forEach((c) => (c.checked = on));
+    renderDrive(); redraw();
+    if (state.openBoard && !$("#detail").hidden && location.hash.startsWith("#ref:")) openBoard(state.openBoard);
+  }
+  document.addEventListener("change", (e) => { if (e.target.classList.contains("eraToggle")) setEra(e.target.checked); });
+
   function renderDrive() {
     const box = $("#drive");
     if (!state.photos.length) {
@@ -389,8 +461,9 @@
       return;
     }
     const stops = state.waypoints.map((w) => ({ ...w, km: kmAlong(w.lat, w.lon) })).sort((a, b) => a.km - b.km);
-    let html = `<p class="muted">${state.photos.length} photos in road order. Click one, then use ← → to drive.</p>`, cur = -1;
-    state.photos.forEach((ph, i) => {
+    state.driveList = state.photos.filter((ph) => !state.era || is2000s(ph));
+    let html = `<p class="muted">${state.driveList.length} photos in road order${state.era ? " (taken 2000–2009)" : ""}. Click one, then use ← → to drive.</p>`, cur = -1;
+    state.driveList.forEach((ph, i) => {
       let s = 0; while (s + 1 < stops.length && stops[s + 1].km <= ph.km) s++;
       if (s !== cur) { html += `${cur >= 0 ? "</div>" : ""}<h4 class="leg">${esc(stops[s].name)} <span class="muted">km ${stops[s].km}+</span></h4><div class="gallery">`; cur = s; }
       html += `<img src="${esc(ph.thumb)}" data-drive="${i}" loading="lazy" alt="" title="km ${ph.km} · ${esc(SRC[ph.src] || ph.src)}">`;
@@ -399,7 +472,8 @@
   }
 
   document.addEventListener("click", (e) => {
-    if (e.target.dataset.drive) return lightbox(state.photos, +e.target.dataset.drive);
+    if (e.target.dataset.drive) return lightbox(state.driveList, +e.target.dataset.drive);
+    if (e.target.dataset.board) return openBoard(state.boards.find((b) => b.id === e.target.closest("[data-board]").dataset.board));
     if (e.target.dataset.photo) { const i = state.photos.findIndex((ph) => ph.id === e.target.dataset.photo); if (i >= 0) return lightbox(state.photos, i); }
     const li = e.target.closest("li[data-id]");
     if (li && state.byId.has(li.dataset.id)) open(state.byId.get(li.dataset.id));
