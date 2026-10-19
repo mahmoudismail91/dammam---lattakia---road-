@@ -17,6 +17,7 @@
     stop:     { label: "Traveller stops", icon: "🛑", color: "#b71c1c" },
     check:    { label: "Checkpoints",    icon: "🛃", color: "#5d4037" },
     wc:       { label: "Restrooms",      icon: "🚻", color: "#0277bd" },
+    level:    { label: "Game levels",    icon: "🎮", color: "#263238" },
   };
   // what a traveller can do at a stop, and which categories provide it
   const SERVICES = [
@@ -60,6 +61,9 @@
         html: `<div class="pm photo-cluster" style="width:44px;height:44px"><img src="${esc(first.thumb)}" alt=""><span class="cnt">${cl.getChildCount()}</span></div>` });
     },
   }).addTo(map);
+
+  let markReady;
+  window.RoadMap = { map, esc, $, state, base, ready: new Promise((r) => (markReady = r)) };
 
   /* ---------- data ---------- */
   const v = "?v=" + today.toISOString().slice(0, 10);
@@ -105,14 +109,16 @@
     const h = decodeURIComponent(location.hash.slice(1));
     if (h.startsWith("ref:")) { openBoard(state.boards.find((b) => b.id === h.slice(4))); map.fitBounds(L.latLngBounds(state.route).pad(0.05)); }
     else if (h && state.byId.has(h)) open(state.byId.get(h));
-    else map.fitBounds(L.latLngBounds(state.route).pad(0.05));
+    else if (!h.startsWith("level:")) map.fitBounds(L.latLngBounds(state.route).pad(0.05));
+    Object.assign(window.RoadMap, { commons, thin, lightbox, lookAround, kmAlong });
+    markReady();
   });
 
   // inside a town's urban radius (waypoints.json urban_km) -> not "on the road"
   function inTown(p) {
     return state.waypoints.some((w) => w.urban_km && map.distance([w.lat, w.lon], [p.lat, p.lon]) < w.urban_km * 1000);
   }
-  const ALWAYS = new Set(["city", "border", "station", "people", "camel"]);
+  const ALWAYS = new Set(["city", "border", "station", "people", "camel", "level"]);
   // group roadside places within ~600 m of each other into one "traveller stop" (fuel + mosque + food ... complexes)
   function buildStops() {
     const kinds = new Set(SERVICES.flatMap((s) => s[3]));
@@ -294,6 +300,7 @@
           ${p.approx ? `<span class="chip warn">approx. location</span>` : ""}
           ${p.isNew ? `<span class="chip warn">new</span>` : ""}
         </div>
+        ${p.cat === "level" ? `<p><a href="#" class="lvl-btn" data-level="${p.lat},${p.lon}" data-title="${esc(p.name)}">🎮 Open level research (layout, sizes, imagery, photos, export)</a></p>` : ""}
         ${p.desc ? `<p>${esc(p.desc)}</p>` : ""}
         ${p.cat === "stop" ? `<div class="svc-row">${SERVICES.map((sv) => `<span class="${p.services.includes(sv[0]) ? "on" : "off"}">${sv[1]} ${sv[2]}</span>`).join("")}</div>
           ${p.nextFuelKm != null ? `<p class="muted">Next fuel after this stop: <b>${p.nextFuelKm} km</b>${p.nextFuelKm > 150 ? " – long empty stretch" : ""}</p>` : ""}
@@ -306,6 +313,7 @@
         <div class="links">
           <a href="https://www.google.com/maps/search/?api=1&query=${p.lat},${p.lon}" target="_blank" rel="noopener">Google Maps</a>
           <a href="${osmLink}" target="_blank" rel="noopener">OSM</a>
+          <a href="#" data-level="${p.lat},${p.lon}" data-title="${esc(p.name || "")}">🎮 Research as game level</a>
           ${t.website ? `<a href="${esc(t.website)}" target="_blank" rel="noopener">Website</a>` : ""}
           ${p.wiki ? `<a href="https://en.wikipedia.org/wiki/${encodeURIComponent(p.wiki.replace(/ /g, "_"))}" target="_blank" rel="noopener">Wikipedia</a>` : ""}
         </div>
