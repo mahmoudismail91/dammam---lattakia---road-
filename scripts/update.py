@@ -27,8 +27,8 @@ UA = "dammam-latakia-road-map/1.0 (github.com/mahmoudismail91/dammam---lattakia-
 OSRM = "https://router.project-osrm.org/route/v1/driving/"
 OVERPASS = ["https://overpass-api.de/api/interpreter", "https://overpass.kumi.systems/api/interpreter"]
 
-CHUNKS = 16           # route split into this many pieces
-CHUNKS_PER_RUN = 4    # pieces scanned per daily run -> full pass every 4 days
+CHUNK_KM = 25         # road is scanned in ~25 km pieces (small Overpass queries answer fast)
+TIME_BUDGET_S = 25 * 60   # stop after this long; the next run continues where this one stopped
 CORRIDOR_M = 600      # only things right beside the road
 MAX_PER_CAT_CHUNK = 80
 
@@ -130,7 +130,7 @@ def densify(line, step_km=4.0):
 
 
 QUERY = """
-[out:json][timeout:180];
+[out:json][timeout:90];
 (
   nwr["tourism"~"^(hotel|motel|guest_house|hostel|apartment|chalet)$"]{A};
   nwr["amenity"="place_of_worship"]["religion"="muslim"]{A};
@@ -193,14 +193,13 @@ def overpass(points):
     q = QUERY.replace("{A}", around)
     body = urllib.parse.urlencode({"data": q}).encode()
     last = None
-    for attempt in range(4):
-        url = OVERPASS[attempt % len(OVERPASS)]
+    for url in OVERPASS:  # one try per server, then give up on this piece until the next run
         try:
-            return http(url, data=body)["elements"]
-        except Exception as e:  # rate limit / timeout -> back off and retry
+            return http(url, data=body, timeout=120)["elements"]
+        except Exception as e:
             last = e
-            print(f"  overpass error ({url}): {e}; retrying", file=sys.stderr)
-            time.sleep(20 * (attempt + 1))
+            print(f"  overpass error ({url}): {e}", file=sys.stderr)
+            time.sleep(10)
     raise last
 
 
@@ -225,24 +224,32 @@ def main():
              if not in_town(p["lat"], p["lon"], wps) and dist_to_line_km(road, p["lat"], p["lon"]) <= CORRIDOR_M / 1000 + 0.2}
     full = args.full or not by_id
 
-    line = densify(route_line())
-    size = math.ceil(len(line) / CHUNKS)
-    chunks = [line[i:i + size + 1] for i in range(0, len(line), size)]
-    if full:
-        todo = list(range(len(chunks)))
-    else:
-        start = (dt.date.today().toordinal() * CHUNKS_PER_RUN) % len(chunks)
-        todo = [(start + i) % len(chunks) for i in range(CHUNKS_PER_RUN)]
+    line = densify(route_line())  # ~4 km steps
+    size = max(2, round(CHUNK_KM / 4))
+    chunks = [line[i:i + size + 1] for i in range(0, len(line) - 1, size)]
+    # pieces that lie completely inside a town are never scanned
+    todo_all = [i for i, c in enumerate(chunks) if not all(in_town(p[1], p[0], wps) for p in c)]
+    start = 0 if full else pois.get("next_chunk", 0) % len(chunks)
+    todo = [c for c in todo_all if c >= start] + [c for c in todo_all if c < start]
+    print(f"{len(todo_all)} road pieces to scan, starting at piece {start + 1}")
 
-    added, seen = [], 0
+    def save_pois(next_chunk):
+        save("osm_pois.json", {"source": "© OpenStreetMap contributors (ODbL)", "updated": today,
+                               "next_chunk": next_chunk, "items": sorted(by_id.values(), key=lambda p: p["id"])})
+
+    added, seen, done, began = [], 0, [], time.time()
     for ci in todo:
-        pts = chunks[ci][::2] + [chunks[ci][-1]]
-        print(f"chunk {ci + 1}/{len(chunks)} ({len(pts)} pts)")
+        if time.time() - began > TIME_BUDGET_S:
+            print("time budget used up; the next run continues from here")
+            break
+        pts = chunks[ci]
+        print(f"piece {ci + 1}/{len(chunks)} ({len(pts)} pts)")
         try:
             elements = overpass(pts)
         except Exception as e:
-            print(f"  skipped chunk {ci}: {e}", file=sys.stderr)
+            print(f"  skipped piece {ci + 1}: {e}", file=sys.stderr)
             continue
+        done.append(ci)
         per_cat = {}
         # named places first so the per-category cap keeps the interesting ones
         elements.sort(key=lambda e: 0 if e.get("tags", {}).get("name") else 1)
@@ -266,7 +273,7 @@ def main():
                 "name_ar": t.get("name:ar") or (t.get("name") if t.get("name:en") else ""),
                 "lat": round(lat, 6), "lon": round(lon, 6),
                 "tags": {k: v for k, v in t.items() if k in ("man_made", "craft", "tourism",
-                    "tourism", "amenity", "shop", "highway", "brand", "operator", "opening_hours",
+                    "amenity", "shop", "highway", "brand", "operator", "opening_hours",
                     "phone", "website", "wikipedia", "wikidata", "image", "stars", "cuisine", "historic", "barrier")},
             }
             if pid in by_id:
@@ -276,17 +283,18 @@ def main():
                 added.append(pid)
             item["last_seen"] = today
             by_id[pid] = item
-        time.sleep(5)
+        save_pois(ci + 1)  # progress is kept even if the job is stopped
+        time.sleep(3)
 
     items = sorted(by_id.values(), key=lambda p: p["id"])
-    save("osm_pois.json", {"source": "© OpenStreetMap contributors (ODbL)", "updated": today, "items": items})
+    save_pois((done[-1] + 1) if done else start)
 
     updates = load("updates.json", {"log": []})
     counts = {}
     for p in items:
         counts[p["cat"]] = counts.get(p["cat"], 0) + 1
     updates["log"] = [u for u in updates["log"] if u.get("date") != today or u.get("kind") != "osm"]
-    updates["log"].insert(0, {"date": today, "kind": "osm", "chunks": [c + 1 for c in todo],
+    updates["log"].insert(0, {"date": today, "kind": "osm", "chunks": [c + 1 for c in done],
                               "seen": seen, "added": added[:400], "added_count": len(added),
                               "totals": counts})
     updates["log"] = updates["log"][:120]
