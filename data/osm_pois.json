@@ -1,7 +1,7 @@
 {
  "source": "© OpenStreetMap contributors (ODbL)",
  "updated": "2026-10-19",
- "next_chunk": 24,
+ "next_chunk": 46,
  "items": [
   {
    "id": "osm:node/10059535552",
@@ -2722,6 +2722,20 @@
    "lon": 36.183057,
    "tags": {
     "amenity": "place_of_worship"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:way/656798558",
+   "cat": "mosque",
+   "name": "جامعة الحدود الشمالية",
+   "name_ar": "",
+   "lat": 30.851477,
+   "lon": 41.191966,
+   "tags": {
+    "amenity": "university",
+    "barrier": "wall"
    },
    "first_seen": "2026-10-19",
    "last_seen": "2026-10-19"

@@ -2,6 +2,34 @@
  "updated": "2026-10-19",
  "items": [
   {
+   "id": "commons:35652618",
+   "src": "commons",
+   "lat": 34.709444,
+   "lon": 36.215744,
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bb/Krak.jpg/960px-Krak.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "full": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bb/Krak.jpg/960px-Krak.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "page": "https://commons.wikimedia.org/wiki/File:Krak.jpg",
+   "title": "Krak",
+   "credit": "paslotte · CC BY-SA 2.0 · Wikimedia Commons",
+   "date": "2010-10-02 11:56:50",
+   "year": 2010,
+   "first_seen": "2026-10-19"
+  },
+  {
+   "id": "commons:47499009",
+   "src": "commons",
+   "lat": 31.907265,
+   "lon": 36.60305,
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/34/Desmond_Swayne_briefed_water_pumping_Azraq_Refugee_Camp_Jordan.jpg/960px-Desmond_Swayne_briefed_water_pumping_Azraq_Refugee_Camp_Jordan.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "full": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/34/Desmond_Swayne_briefed_water_pumping_Azraq_Refugee_Camp_Jordan.jpg/960px-Desmond_Swayne_briefed_water_pumping_Azraq_Refugee_Camp_Jordan.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "page": "https://commons.wikimedia.org/wiki/File:Desmond_Swayne_briefed_water_pumping_Azraq_Refugee_Camp_Jordan.jpg",
+   "title": "Desmond Swayne briefed water pumping Azraq Refugee Camp Jordan",
+   "credit": "Ewan Stoves/DFID · CC BY 2.0 · Wikimedia Commons",
+   "date": "2015-07-26",
+   "year": 2015,
+   "first_seen": "2026-10-19"
+  },
+  {
    "id": "commons:55227005",
    "src": "commons",
    "lat": 26.966333,
@@ -11,7 +39,8 @@
    "page": "https://commons.wikimedia.org/wiki/File:Deserts_of_Saudi_Arabia_-_panoramio.jpg",
    "title": "Deserts of Saudi Arabia - panoramio",
    "credit": "Suresh Babunair · CC BY 3.0 · Wikimedia Commons",
-   "date": "Taken on 7",
+   "date": "Taken on 7 November 2012",
+   "year": 2012,
    "first_seen": "2026-10-19"
   },
   {
@@ -24,7 +53,8 @@
    "page": "https://commons.wikimedia.org/wiki/File:Deserts_of_saudi_arabia_-_panoramio.jpg",
    "title": "Deserts of saudi arabia - panoramio",
    "credit": "Suresh Babunair · CC BY 3.0 · Wikimedia Commons",
-   "date": "Taken on 3",
+   "date": "Taken on 31 October 2012",
+   "year": 2012,
    "first_seen": "2026-10-19"
   },
   {
@@ -37,7 +67,8 @@
    "page": "https://commons.wikimedia.org/wiki/File:Desrts_of_saudi_arabia_-_panoramio.jpg",
    "title": "Desrts of saudi arabia - panoramio",
    "credit": "Suresh Babunair · CC BY 3.0 · Wikimedia Commons",
-   "date": "Taken on 3",
+   "date": "Taken on 31 October 2012",
+   "year": 2012,
    "first_seen": "2026-10-19"
   },
   {
@@ -50,7 +81,8 @@
    "page": "https://commons.wikimedia.org/wiki/File:Deserts_of_saudi_arabia_-_panoramio_(5).jpg",
    "title": "Deserts of saudi arabia - panoramio (5)",
    "credit": "Suresh Babunair · CC BY 3.0 · Wikimedia Commons",
-   "date": "Taken on 3",
+   "date": "Taken on 31 October 2012",
+   "year": 2012,
    "first_seen": "2026-10-19"
   },
   {
@@ -63,7 +95,8 @@
    "page": "https://commons.wikimedia.org/wiki/File:Deserts_of_saudi_arabia_-_panoramio_(10).jpg",
    "title": "Deserts of saudi arabia - panoramio (10)",
    "credit": "Suresh Babunair · CC BY 3.0 · Wikimedia Commons",
-   "date": "Taken on 3",
+   "date": "Taken on 31 October 2012",
+   "year": 2012,
    "first_seen": "2026-10-19"
   },
   {
@@ -76,7 +109,8 @@
    "page": "https://commons.wikimedia.org/wiki/File:Deserts_of_saudi_arabia_-_panoramio_(16).jpg",
    "title": "Deserts of saudi arabia - panoramio (16)",
    "credit": "Suresh Babunair · CC BY 3.0 · Wikimedia Commons",
-   "date": "Taken on 1",
+   "date": "Taken on 11 November 2012",
+   "year": 2012,
    "first_seen": "2026-10-19"
   },
   {
@@ -89,7 +123,8 @@
    "page": "https://commons.wikimedia.org/wiki/File:Deserts_of_saudi_Arabia,A_travel_Board_on_Road_100,_Al-Jubail_-_panoramio.jpg",
    "title": "Deserts of saudi Arabia,A travel Board on Road 100, Al-Jubail - panoramio",
    "credit": "Suresh Babunair · CC BY 3.0 · Wikimedia Commons",
-   "date": "Taken on 1",
+   "date": "Taken on 14 November 2012",
+   "year": 2012,
    "first_seen": "2026-10-19"
   },
   {
@@ -102,7 +137,134 @@
    "page": "https://commons.wikimedia.org/wiki/File:2014-02-23_-_panoramio.jpg",
    "title": "2014-02-23 - panoramio",
    "credit": "AAlsaiad · CC BY 3.0 · Wikimedia Commons",
-   "date": "Taken on 2",
+   "date": "Taken on 23 February 2014",
+   "year": 2014,
+   "first_seen": "2026-10-19"
+  },
+  {
+   "id": "commons:59127566",
+   "src": "commons",
+   "lat": 32.517968,
+   "lon": 36.191099,
+   "thumb": "https://upload.wikimedia.org/wikipedia/commons/7/79/Sama_Serhan_District%2C_Jordan_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "full": "https://upload.wikimedia.org/wikipedia/commons/7/79/Sama_Serhan_District%2C_Jordan_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "page": "https://commons.wikimedia.org/wiki/File:Sama_Serhan_District,_Jordan_-_panoramio.jpg",
+   "title": "Sama Serhan District, Jordan - panoramio",
+   "credit": "akram-2004 · CC BY-SA 3.0 · Wikimedia Commons",
+   "date": "6 July 2015 (original upload date)",
+   "year": 2015,
+   "first_seen": "2026-10-19"
+  },
+  {
+   "id": "commons:62135179",
+   "src": "commons",
+   "lat": 31.86576,
+   "lon": 36.763536,
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6a/Azraq_Camp_-_36616006656.jpg/960px-Azraq_Camp_-_36616006656.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "full": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6a/Azraq_Camp_-_36616006656.jpg/960px-Azraq_Camp_-_36616006656.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "page": "https://commons.wikimedia.org/wiki/File:Azraq_Camp_-_36616006656.jpg",
+   "title": "Azraq Camp - 36616006656",
+   "credit": "D-Stanley · CC BY 2.0 · Wikimedia Commons",
+   "date": "2017-03-31 11:46:37",
+   "year": 2017,
+   "first_seen": "2026-10-19"
+  },
+  {
+   "id": "commons:69519044",
+   "src": "commons",
+   "lat": 31.914633,
+   "lon": 36.582135,
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/df/Camp_d%27Azraq.jpg/960px-Camp_d%27Azraq.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "full": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/df/Camp_d%27Azraq.jpg/960px-Camp_d%27Azraq.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "page": "https://commons.wikimedia.org/wiki/File:Camp_d%27Azraq.jpg",
+   "title": "Camp d'Azraq",
+   "credit": "Philweb · CC BY-SA 3.0 · Wikimedia Commons",
+   "date": "2018-05-18 11:06:57",
+   "year": 2018,
+   "first_seen": "2026-10-19"
+  },
+  {
+   "id": "commons:73156376",
+   "src": "commons",
+   "lat": 32.1032,
+   "lon": 36.184,
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/af/%D8%A7%D9%84%D8%A7%D8%AD%D8%AA%D9%81%D8%A7%D9%84%D9%8A%D8%A9_%D8%A7%D9%84%D8%B1%D8%A7%D8%A8%D8%B9%D8%A9_%D9%84%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC_%D8%A7%D9%84%D8%AA%D8%B9%D9%84%D9%8A%D9%85_%D9%81%D9%8A_%D8%A7%D9%84%D8%AC%D8%A7%D9%85%D8%B9%D8%A9_%D8%A7%D9%84%D9%87%D8%A7%D8%B4%D9%85%D9%8A%D8%A9_%28%D9%A0%D9%A7%29.jpg/960px-%D8%A7%D9%84%D8%A7%D8%AD%D8%AA%D9%81%D8%A7%D9%84%D9%8A%D8%A9_%D8%A7%D9%84%D8%B1%D8%A7%D8%A8%D8%B9%D8%A9_%D9%84%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC_%D8%A7%D9%84%D8%AA%D8%B9%D9%84%D9%8A%D9%85_%D9%81%D9%8A_%D8%A7%D9%84%D8%AC%D8%A7%D9%85%D8%B9%D8%A9_%D8%A7%D9%84%D9%87%D8%A7%D8%B4%D9%85%D9%8A%D8%A9_%28%D9%A0%D9%A7%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "full": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/af/%D8%A7%D9%84%D8%A7%D8%AD%D8%AA%D9%81%D8%A7%D9%84%D9%8A%D8%A9_%D8%A7%D9%84%D8%B1%D8%A7%D8%A8%D8%B9%D8%A9_%D9%84%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC_%D8%A7%D9%84%D8%AA%D8%B9%D9%84%D9%8A%D9%85_%D9%81%D9%8A_%D8%A7%D9%84%D8%AC%D8%A7%D9%85%D8%B9%D8%A9_%D8%A7%D9%84%D9%87%D8%A7%D8%B4%D9%85%D9%8A%D8%A9_%28%D9%A0%D9%A7%29.jpg/960px-%D8%A7%D9%84%D8%A7%D8%AD%D8%AA%D9%81%D8%A7%D9%84%D9%8A%D8%A9_%D8%A7%D9%84%D8%B1%D8%A7%D8%A8%D8%B9%D8%A9_%D9%84%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC_%D8%A7%D9%84%D8%AA%D8%B9%D9%84%D9%8A%D9%85_%D9%81%D9%8A_%D8%A7%D9%84%D8%AC%D8%A7%D9%85%D8%B9%D8%A9_%D8%A7%D9%84%D9%87%D8%A7%D8%B4%D9%85%D9%8A%D8%A9_%28%D9%A0%D9%A7%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "page": "https://commons.wikimedia.org/wiki/File:%D8%A7%D9%84%D8%A7%D8%AD%D8%AA%D9%81%D8%A7%D9%84%D9%8A%D8%A9_%D8%A7%D9%84%D8%B1%D8%A7%D8%A8%D8%B9%D8%A9_%D9%84%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC_%D8%A7%D9%84%D8%AA%D8%B9%D9%84%D9%8A%D9%85_%D9%81%D9%8A_%D8%A7%D9%84%D8%AC%D8%A7%D9%85%D8%B9%D8%A9_%D8%A7%D9%84%D9%87%D8%A7%D8%B4%D9%85%D9%8A%D8%A9_(%D9%A0%D9%A7).jpg",
+   "title": "الاحتفالية الرابعة لبرنامج التعليم في الجامعة الهاشمية (٠٧)",
+   "credit": "محمد العمري · CC BY-SA 3.0 · Wikimedia Commons",
+   "date": "2018-09-27",
+   "year": 2018,
+   "first_seen": "2026-10-19"
+  },
+  {
+   "id": "commons:97494489",
+   "src": "commons",
+   "lat": 33.796651,
+   "lon": 36.585106,
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bc/Jabal_Sumajkat_P1013138mod.jpg/960px-Jabal_Sumajkat_P1013138mod.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "full": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bc/Jabal_Sumajkat_P1013138mod.jpg/960px-Jabal_Sumajkat_P1013138mod.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "page": "https://commons.wikimedia.org/wiki/File:Jabal_Sumajkat_P1013138mod.jpg",
+   "title": "Jabal Sumajkat P1013138mod",
+   "credit": "JYB Devot · CC BY-SA 4.0 · Wikimedia Commons",
+   "date": "2010-10-15",
+   "year": 2010,
+   "first_seen": "2026-10-19"
+  },
+  {
+   "id": "commons:97495785",
+   "src": "commons",
+   "lat": 33.921747,
+   "lon": 36.699475,
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/Al-Qastal_P1013150mod.jpg/960px-Al-Qastal_P1013150mod.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "full": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/Al-Qastal_P1013150mod.jpg/960px-Al-Qastal_P1013150mod.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "page": "https://commons.wikimedia.org/wiki/File:Al-Qastal_P1013150mod.jpg",
+   "title": "Al-Qastal P1013150mod",
+   "credit": "JYB Devot · CC BY-SA 4.0 · Wikimedia Commons",
+   "date": "2010-10-15",
+   "year": 2010,
+   "first_seen": "2026-10-19"
+  },
+  {
+   "id": "commons:97496140",
+   "src": "commons",
+   "lat": 34.21709,
+   "lon": 36.765275,
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f9/Al_Burayj_P1013157mod.jpg/960px-Al_Burayj_P1013157mod.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "full": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f9/Al_Burayj_P1013157mod.jpg/960px-Al_Burayj_P1013157mod.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "page": "https://commons.wikimedia.org/wiki/File:Al_Burayj_P1013157mod.jpg",
+   "title": "Al Burayj P1013157mod",
+   "credit": "JYB Devot · CC BY-SA 4.0 · Wikimedia Commons",
+   "date": "2010-10-15",
+   "year": 2010,
+   "first_seen": "2026-10-19"
+  },
+  {
+   "id": "commons:97496799",
+   "src": "commons",
+   "lat": 34.448485,
+   "lon": 36.752508,
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9e/Hassia_P1013162mod.jpg/960px-Hassia_P1013162mod.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "full": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9e/Hassia_P1013162mod.jpg/960px-Hassia_P1013162mod.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "page": "https://commons.wikimedia.org/wiki/File:Hassia_P1013162mod.jpg",
+   "title": "Hassia P1013162mod",
+   "credit": "JYB Devot · CC BY-SA 4.0 · Wikimedia Commons",
+   "date": "2010-10-15",
+   "year": 2010,
+   "first_seen": "2026-10-19"
+  },
+  {
+   "id": "commons:97497800",
+   "src": "commons",
+   "lat": 33.78366,
+   "lon": 36.568272,
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d0/Khan_al-Arous_P1014295mod.jpg/960px-Khan_al-Arous_P1014295mod.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "full": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d0/Khan_al-Arous_P1014295mod.jpg/960px-Khan_al-Arous_P1014295mod.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "page": "https://commons.wikimedia.org/wiki/File:Khan_al-Arous_P1014295mod.jpg",
+   "title": "Khan al-Arous P1014295mod",
+   "credit": "JYB Devot · CC BY-SA 4.0 · Wikimedia Commons",
+   "date": "2010-10-15",
+   "year": 2010,
    "first_seen": "2026-10-19"
   },
   {
