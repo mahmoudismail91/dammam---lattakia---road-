@@ -1,1 +1,5017 @@
-{"source": "© OpenStreetMap contributors (ODbL)", "updated": null, "items": []}
+{
+ "source": "© OpenStreetMap contributors (ODbL)",
+ "updated": "2026-10-19",
+ "items": [
+  {
+   "id": "osm:node/10059535552",
+   "cat": "fuel",
+   "name": "",
+   "name_ar": "",
+   "lat": 32.083391,
+   "lon": 36.229366,
+   "tags": {
+    "amenity": "fuel"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/10059535553",
+   "cat": "fuel",
+   "name": "",
+   "name_ar": "",
+   "lat": 32.08651,
+   "lon": 36.204615,
+   "tags": {
+    "amenity": "fuel"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/10059734400",
+   "cat": "mosque",
+   "name": "",
+   "name_ar": "",
+   "lat": 32.086366,
+   "lon": 36.181369,
+   "tags": {
+    "amenity": "place_of_worship"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/10062266115",
+   "cat": "station",
+   "name": "",
+   "name_ar": "",
+   "lat": 31.995234,
+   "lon": 36.466239,
+   "tags": {
+    "man_made": "tower"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/10062266116",
+   "cat": "station",
+   "name": "",
+   "name_ar": "",
+   "lat": 31.996228,
+   "lon": 36.468183,
+   "tags": {
+    "man_made": "tower"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/10062266126",
+   "cat": "station",
+   "name": "",
+   "name_ar": "",
+   "lat": 31.997534,
+   "lon": 36.461133,
+   "tags": {
+    "man_made": "tower"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/10062266139",
+   "cat": "station",
+   "name": "",
+   "name_ar": "",
+   "lat": 31.999165,
+   "lon": 36.464152,
+   "tags": {
+    "man_made": "tower"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/10062266149",
+   "cat": "station",
+   "name": "",
+   "name_ar": "",
+   "lat": 31.9937,
+   "lon": 36.463386,
+   "tags": {
+    "man_made": "tower"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/10062266150",
+   "cat": "station",
+   "name": "",
+   "name_ar": "",
+   "lat": 31.995236,
+   "lon": 36.462284,
+   "tags": {
+    "man_made": "tower"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/10062266151",
+   "cat": "station",
+   "name": "",
+   "name_ar": "",
+   "lat": 31.997308,
+   "lon": 36.460803,
+   "tags": {
+    "man_made": "tower"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/10062266152",
+   "cat": "station",
+   "name": "",
+   "name_ar": "",
+   "lat": 31.998963,
+   "lon": 36.468862,
+   "tags": {
+    "man_made": "tower"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/10062266172",
+   "cat": "station",
+   "name": "",
+   "name_ar": "",
+   "lat": 32.002225,
+   "lon": 36.459989,
+   "tags": {
+    "man_made": "tower"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/10062266204",
+   "cat": "station",
+   "name": "",
+   "name_ar": "",
+   "lat": 32.004198,
+   "lon": 36.465909,
+   "tags": {
+    "man_made": "tower"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/10062266205",
+   "cat": "station",
+   "name": "",
+   "name_ar": "",
+   "lat": 32.000823,
+   "lon": 36.469019,
+   "tags": {
+    "man_made": "tower"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/10062266235",
+   "cat": "mosque",
+   "name": "",
+   "name_ar": "",
+   "lat": 32.00546,
+   "lon": 36.460073,
+   "tags": {
+    "amenity": "place_of_worship"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/10062266236",
+   "cat": "mosque",
+   "name": "",
+   "name_ar": "",
+   "lat": 32.002669,
+   "lon": 36.467949,
+   "tags": {
+    "amenity": "place_of_worship"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/10062266237",
+   "cat": "mosque",
+   "name": "",
+   "name_ar": "",
+   "lat": 32.000797,
+   "lon": 36.461213,
+   "tags": {
+    "amenity": "place_of_worship"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/10062266238",
+   "cat": "mosque",
+   "name": "",
+   "name_ar": "",
+   "lat": 31.996018,
+   "lon": 36.463291,
+   "tags": {
+    "amenity": "place_of_worship"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/10062266239",
+   "cat": "mosque",
+   "name": "",
+   "name_ar": "",
+   "lat": 31.997608,
+   "lon": 36.466226,
+   "tags": {
+    "amenity": "place_of_worship"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/10062266261",
+   "cat": "station",
+   "name": "",
+   "name_ar": "",
+   "lat": 32.006428,
+   "lon": 36.457822,
+   "tags": {
+    "man_made": "tower"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/10062266262",
+   "cat": "station",
+   "name": "",
+   "name_ar": "",
+   "lat": 32.004745,
+   "lon": 36.459079,
+   "tags": {
+    "man_made": "tower"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/10062266669",
+   "cat": "station",
+   "name": "",
+   "name_ar": "",
+   "lat": 32.016786,
+   "lon": 36.420792,
+   "tags": {
+    "man_made": "tower"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/10062266670",
+   "cat": "station",
+   "name": "",
+   "name_ar": "",
+   "lat": 32.02125,
+   "lon": 36.412888,
+   "tags": {
+    "man_made": "tower"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/10158034219",
+   "cat": "shop",
+   "name": "الصداوي",
+   "name_ar": "",
+   "lat": 28.105348,
+   "lon": 46.719754,
+   "tags": {
+    "shop": "sports"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/10220132263",
+   "cat": "rest",
+   "name": "ماء",
+   "name_ar": "",
+   "lat": 30.86555,
+   "lon": 41.19717,
+   "tags": {
+    "amenity": "drinking_water"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/10244200438",
+   "cat": "station",
+   "name": "",
+   "name_ar": "",
+   "lat": 31.027863,
+   "lon": 40.902858,
+   "tags": {
+    "man_made": "tower"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/10272054709",
+   "cat": "fuel",
+   "name": "محطة عباس الحلاني",
+   "name_ar": "",
+   "lat": 34.355886,
+   "lon": 36.763409,
+   "tags": {
+    "amenity": "fuel"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/10272233709",
+   "cat": "fuel",
+   "name": "محطة الباز",
+   "name_ar": "",
+   "lat": 33.704219,
+   "lon": 36.562613,
+   "tags": {
+    "amenity": "fuel"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/1048743405",
+   "cat": "food",
+   "name": "مطعم بوابة حمص",
+   "name_ar": "",
+   "lat": 34.600715,
+   "lon": 36.719801,
+   "tags": {
+    "amenity": "restaurant"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/11019786607",
+   "cat": "food",
+   "name": "مطعم واستراحة ابو العز m&h",
+   "name_ar": "",
+   "lat": 34.139198,
+   "lon": 36.754532,
+   "tags": {
+    "amenity": "restaurant"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/1115711799",
+   "cat": "fuel",
+   "name": "",
+   "name_ar": "",
+   "lat": 29.570213,
+   "lon": 43.62931,
+   "tags": {
+    "amenity": "fuel"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/11530680205",
+   "cat": "station",
+   "name": "",
+   "name_ar": "",
+   "lat": 29.680057,
+   "lon": 43.416325,
+   "tags": {
+    "man_made": "tower"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/1154510025",
+   "cat": "border",
+   "name": "الحديثة",
+   "name_ar": "",
+   "lat": 31.533591,
+   "lon": 37.079526,
+   "tags": {
+    "barrier": "border_control"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/1154510043",
+   "cat": "border",
+   "name": "الحديثة",
+   "name_ar": "",
+   "lat": 31.531449,
+   "lon": 37.07723,
+   "tags": {
+    "barrier": "border_control"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/1154510105",
+   "cat": "border",
+   "name": "الحديثة",
+   "name_ar": "",
+   "lat": 31.534479,
+   "lon": 37.080165,
+   "tags": {
+    "barrier": "border_control"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/12046123370",
+   "cat": "station",
+   "name": "",
+   "name_ar": "",
+   "lat": 31.222144,
+   "lon": 40.308927,
+   "tags": {
+    "man_made": "tower"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/12046123371",
+   "cat": "station",
+   "name": "",
+   "name_ar": "",
+   "lat": 31.223379,
+   "lon": 40.310164,
+   "tags": {
+    "man_made": "tower"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/12046123572",
+   "cat": "station",
+   "name": "",
+   "name_ar": "",
+   "lat": 29.770828,
+   "lon": 43.263508,
+   "tags": {
+    "man_made": "tower"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/12046144757",
+   "cat": "station",
+   "name": "",
+   "name_ar": "",
+   "lat": 28.070194,
+   "lon": 46.823234,
+   "tags": {
+    "man_made": "tower"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/12046152072",
+   "cat": "station",
+   "name": "",
+   "name_ar": "",
+   "lat": 27.811145,
+   "lon": 47.538319,
+   "tags": {
+    "man_made": "tower"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/12360590897",
+   "cat": "fuel",
+   "name": "نفط",
+   "name_ar": "نفط",
+   "lat": 30.36593,
+   "lon": 42.21324,
+   "tags": {
+    "amenity": "fuel",
+    "brand": "نفط"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/12360590898",
+   "cat": "fuel",
+   "name": "",
+   "name_ar": "",
+   "lat": 31.280279,
+   "lon": 40.102198,
+   "tags": {
+    "amenity": "fuel"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/12360590899",
+   "cat": "fuel",
+   "name": "المدني",
+   "name_ar": "",
+   "lat": 31.010709,
+   "lon": 40.924847,
+   "tags": {
+    "amenity": "fuel"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/12360616766",
+   "cat": "fuel",
+   "name": "ارسو السعيرة",
+   "name_ar": "",
+   "lat": 27.831286,
+   "lon": 47.487077,
+   "tags": {
+    "amenity": "fuel"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/12360616777",
+   "cat": "fuel",
+   "name": "قلف",
+   "name_ar": "",
+   "lat": 28.111255,
+   "lon": 46.705247,
+   "tags": {
+    "amenity": "fuel"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/1236745379",
+   "cat": "rest",
+   "name": "Markaz al Khawr",
+   "name_ar": "مركز الخور",
+   "lat": 31.596389,
+   "lon": 38.968056,
+   "tags": {
+    "amenity": "police"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/12800306531",
+   "cat": "station",
+   "name": "",
+   "name_ar": "",
+   "lat": 31.866428,
+   "lon": 36.767899,
+   "tags": {
+    "man_made": "tower"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/12848744597",
+   "cat": "mosque",
+   "name": "",
+   "name_ar": "",
+   "lat": 29.6006,
+   "lon": 43.552117,
+   "tags": {
+    "amenity": "place_of_worship"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/13204683500",
+   "cat": "station",
+   "name": "برج",
+   "name_ar": "",
+   "lat": 28.247379,
+   "lon": 46.324807,
+   "tags": {
+    "man_made": "tower"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/13639491954",
+   "cat": "shop",
+   "name": "مكتبة الخطيب",
+   "name_ar": "",
+   "lat": 32.102465,
+   "lon": 36.185918,
+   "tags": {
+    "shop": "stationery"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/13645681793",
+   "cat": "shop",
+   "name": "مكتبة الغربي",
+   "name_ar": "",
+   "lat": 32.105193,
+   "lon": 36.186382,
+   "tags": {
+    "shop": "stationery"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/13645681794",
+   "cat": "shop",
+   "name": "مكتبة الطب",
+   "name_ar": "",
+   "lat": 32.10573,
+   "lon": 36.186047,
+   "tags": {
+    "shop": "stationery"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/13647497867",
+   "cat": "rest",
+   "name": "كولر ماء",
+   "name_ar": "",
+   "lat": 32.104555,
+   "lon": 36.185935,
+   "tags": {
+    "amenity": "drinking_water",
+    "man_made": "water_tap"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/13647497868",
+   "cat": "rest",
+   "name": "",
+   "name_ar": "",
+   "lat": 32.104326,
+   "lon": 36.185612,
+   "tags": {
+    "amenity": "toilets"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/13647667548",
+   "cat": "shop",
+   "name": "مكتبة",
+   "name_ar": "",
+   "lat": 32.102381,
+   "lon": 36.186004,
+   "tags": {
+    "shop": "stationery"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/13647667549",
+   "cat": "shop",
+   "name": "دار الكتب الجامعية",
+   "name_ar": "",
+   "lat": 32.102599,
+   "lon": 36.186082,
+   "tags": {
+    "shop": "books"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/13647667555",
+   "cat": "shop",
+   "name": "ماركت العمادة",
+   "name_ar": "",
+   "lat": 32.10224,
+   "lon": 36.186189,
+   "tags": {
+    "shop": "convenience"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/13652709650",
+   "cat": "food",
+   "name": "Uncle Osaka",
+   "name_ar": "",
+   "lat": 32.105438,
+   "lon": 36.186946,
+   "tags": {
+    "amenity": "cafe",
+    "cuisine": "japanese;bubble_tea;dessert;cake",
+    "website": "https://uncleosaka.com/"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/13652709651",
+   "cat": "food",
+   "name": "قهوة بلاك",
+   "name_ar": "",
+   "lat": 32.105486,
+   "lon": 36.186924,
+   "tags": {
+    "amenity": "cafe",
+    "cuisine": "coffee_shop",
+    "website": "https://blk.jo/"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/13652709652",
+   "cat": "food",
+   "name": "Crispy Corner",
+   "name_ar": "",
+   "lat": 32.10537,
+   "lon": 36.187141,
+   "tags": {
+    "amenity": "cafe",
+    "phone": "+962 776544443",
+    "website": "https://www.instagram.com/crispycornerjo"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/13652898401",
+   "cat": "rest",
+   "name": "كولر ماء",
+   "name_ar": "",
+   "lat": 32.104767,
+   "lon": 36.185592,
+   "tags": {
+    "amenity": "drinking_water",
+    "man_made": "water_tap"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/13732212208",
+   "cat": "food",
+   "name": "",
+   "name_ar": "",
+   "lat": 32.105465,
+   "lon": 36.187051,
+   "tags": {
+    "amenity": "cafe",
+    "website": "https://uncleosaka.com/"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/13732212223",
+   "cat": "food",
+   "name": "",
+   "name_ar": "",
+   "lat": 32.105892,
+   "lon": 36.185747,
+   "tags": {
+    "amenity": "cafe",
+    "cuisine": "coffee_shop"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/13737541890",
+   "cat": "station",
+   "name": "",
+   "name_ar": "",
+   "lat": 34.258372,
+   "lon": 36.772773,
+   "tags": {
+    "man_made": "tower"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/13737550402",
+   "cat": "station",
+   "name": "",
+   "name_ar": "",
+   "lat": 34.306666,
+   "lon": 36.760125,
+   "tags": {
+    "man_made": "tower"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/13747712513",
+   "cat": "station",
+   "name": "برج",
+   "name_ar": "",
+   "lat": 30.059672,
+   "lon": 42.719323,
+   "tags": {
+    "man_made": "tower"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/13747712517",
+   "cat": "station",
+   "name": "برج",
+   "name_ar": "",
+   "lat": 30.056431,
+   "lon": 42.726216,
+   "tags": {
+    "man_made": "tower"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/13761168877",
+   "cat": "mosque",
+   "name": "مسجد رياض الجنة",
+   "name_ar": "",
+   "lat": 32.134602,
+   "lon": 36.199647,
+   "tags": {
+    "amenity": "place_of_worship"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/13808848030",
+   "cat": "landmark",
+   "name": "خان العروس",
+   "name_ar": "",
+   "lat": 33.789393,
+   "lon": 36.571355,
+   "tags": {
+    "historic": "archaeological_site"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/13816373472",
+   "cat": "fuel",
+   "name": "",
+   "name_ar": "",
+   "lat": 33.751693,
+   "lon": 36.599393,
+   "tags": {
+    "amenity": "fuel"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/13923795656",
+   "cat": "fuel",
+   "name": "العباس",
+   "name_ar": "",
+   "lat": 33.968509,
+   "lon": 36.717731,
+   "tags": {
+    "amenity": "fuel"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/13943974391",
+   "cat": "station",
+   "name": "",
+   "name_ar": "",
+   "lat": 33.740993,
+   "lon": 36.589699,
+   "tags": {
+    "man_made": "water_tower"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/13944011826",
+   "cat": "station",
+   "name": "",
+   "name_ar": "",
+   "lat": 33.743973,
+   "lon": 36.591514,
+   "tags": {
+    "man_made": "water_tower"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/14076351299",
+   "cat": "mosque",
+   "name": "",
+   "name_ar": "",
+   "lat": 28.472871,
+   "lon": 45.700893,
+   "tags": {
+    "amenity": "place_of_worship"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/14137136601",
+   "cat": "rest",
+   "name": "أستراحة و مطعم حمزة",
+   "name_ar": "",
+   "lat": 33.736034,
+   "lon": 36.584852,
+   "tags": {
+    "highway": "rest_area"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/1426833314",
+   "cat": "fuel",
+   "name": "كازية الصياد",
+   "name_ar": "",
+   "lat": 33.324872,
+   "lon": 36.262918,
+   "tags": {
+    "amenity": "fuel"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/1426833315",
+   "cat": "food",
+   "name": "Al Sayad",
+   "name_ar": "",
+   "lat": 33.325105,
+   "lon": 36.262328,
+   "tags": {
+    "amenity": "restaurant"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/14279713623",
+   "cat": "mosque",
+   "name": "مسجد الفرقان",
+   "name_ar": "",
+   "lat": 34.151891,
+   "lon": 36.751254,
+   "tags": {
+    "amenity": "place_of_worship"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/14279713631",
+   "cat": "mosque",
+   "name": "جامع بلال",
+   "name_ar": "",
+   "lat": 34.157243,
+   "lon": 36.749598,
+   "tags": {
+    "amenity": "place_of_worship"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/14279713632",
+   "cat": "mosque",
+   "name": "مسجد الرجاء",
+   "name_ar": "",
+   "lat": 34.160824,
+   "lon": 36.75359,
+   "tags": {
+    "amenity": "place_of_worship"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/14279906851",
+   "cat": "landmark",
+   "name": "خان نور الدين",
+   "name_ar": "",
+   "lat": 34.15128,
+   "lon": 36.74766,
+   "tags": {
+    "historic": "caravanserai"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/1617818106",
+   "cat": "station",
+   "name": "",
+   "name_ar": "",
+   "lat": 31.285874,
+   "lon": 40.082189,
+   "tags": {
+    "man_made": "tower"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/1617818633",
+   "cat": "station",
+   "name": "",
+   "name_ar": "",
+   "lat": 31.299882,
+   "lon": 40.040351,
+   "tags": {
+    "man_made": "tower"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/1617820348",
+   "cat": "station",
+   "name": "",
+   "name_ar": "",
+   "lat": 31.280031,
+   "lon": 40.112346,
+   "tags": {
+    "man_made": "tower"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/1617837122",
+   "cat": "station",
+   "name": "",
+   "name_ar": "",
+   "lat": 29.775271,
+   "lon": 43.253991,
+   "tags": {
+    "man_made": "tower"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/1620537375",
+   "cat": "station",
+   "name": "",
+   "name_ar": "",
+   "lat": 31.158204,
+   "lon": 40.49087,
+   "tags": {
+    "man_made": "tower"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/1824837171",
+   "cat": "fuel",
+   "name": "قريبة على الجامعة الاوربية",
+   "name_ar": "",
+   "lat": 33.159826,
+   "lon": 36.308282,
+   "tags": {
+    "amenity": "fuel"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/1824852755",
+   "cat": "fuel",
+   "name": "جباب ( الاستراد)",
+   "name_ar": "",
+   "lat": 33.118878,
+   "lon": 36.296658,
+   "tags": {
+    "amenity": "fuel"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/1827418725",
+   "cat": "fuel",
+   "name": "",
+   "name_ar": "",
+   "lat": 33.947605,
+   "lon": 36.711716,
+   "tags": {
+    "amenity": "fuel"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/1827422566",
+   "cat": "food",
+   "name": "استراحة",
+   "name_ar": "",
+   "lat": 33.949678,
+   "lon": 36.710445,
+   "tags": {
+    "amenity": "restaurant"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/1827422953",
+   "cat": "food",
+   "name": "استراحة",
+   "name_ar": "",
+   "lat": 33.988831,
+   "lon": 36.724412,
+   "tags": {
+    "amenity": "restaurant"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/1828048476",
+   "cat": "fuel",
+   "name": "Al Manhal Station",
+   "name_ar": "محطة المنهل",
+   "lat": 34.141511,
+   "lon": 36.753357,
+   "tags": {
+    "amenity": "fuel"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/1828051194",
+   "cat": "food",
+   "name": "استراحة",
+   "name_ar": "",
+   "lat": 34.142098,
+   "lon": 36.753056,
+   "tags": {
+    "amenity": "restaurant"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/1828051196",
+   "cat": "fuel",
+   "name": "كازية دير عطية",
+   "name_ar": "",
+   "lat": 34.143314,
+   "lon": 36.754166,
+   "tags": {
+    "amenity": "fuel"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/1828056016",
+   "cat": "food",
+   "name": "استراحة أبو العز",
+   "name_ar": "",
+   "lat": 34.148398,
+   "lon": 36.752831,
+   "tags": {
+    "amenity": "restaurant"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/1829188258",
+   "cat": "fuel",
+   "name": "",
+   "name_ar": "",
+   "lat": 34.136232,
+   "lon": 36.756732,
+   "tags": {
+    "amenity": "fuel"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/1829190597",
+   "cat": "fuel",
+   "name": "",
+   "name_ar": "",
+   "lat": 34.157987,
+   "lon": 36.756313,
+   "tags": {
+    "amenity": "fuel"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/1829190842",
+   "cat": "food",
+   "name": "استراحة",
+   "name_ar": "",
+   "lat": 34.164352,
+   "lon": 36.757078,
+   "tags": {
+    "amenity": "restaurant"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/1829193269",
+   "cat": "fuel",
+   "name": "",
+   "name_ar": "",
+   "lat": 34.218318,
+   "lon": 36.763022,
+   "tags": {
+    "amenity": "fuel"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/1829226858",
+   "cat": "fuel",
+   "name": "",
+   "name_ar": "",
+   "lat": 34.538712,
+   "lon": 36.737842,
+   "tags": {
+    "amenity": "fuel"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/1829227368",
+   "cat": "food",
+   "name": "استراحة",
+   "name_ar": "",
+   "lat": 34.548954,
+   "lon": 36.738202,
+   "tags": {
+    "amenity": "restaurant"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/1829228980",
+   "cat": "food",
+   "name": "استراحة",
+   "name_ar": "",
+   "lat": 34.566811,
+   "lon": 36.732623,
+   "tags": {
+    "amenity": "restaurant"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/1829231389",
+   "cat": "fuel",
+   "name": "كازية الناطور",
+   "name_ar": "",
+   "lat": 34.577354,
+   "lon": 36.727795,
+   "tags": {
+    "amenity": "fuel"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/1829235097",
+   "cat": "food",
+   "name": "استراحة",
+   "name_ar": "",
+   "lat": 34.599879,
+   "lon": 36.717298,
+   "tags": {
+    "amenity": "restaurant"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/1829236768",
+   "cat": "food",
+   "name": "استراحة الناطور",
+   "name_ar": "",
+   "lat": 34.577425,
+   "lon": 36.727682,
+   "tags": {
+    "amenity": "restaurant"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/1829236884",
+   "cat": "food",
+   "name": "Auto Gran أوتو جراند",
+   "name_ar": "",
+   "lat": 34.595807,
+   "lon": 36.722016,
+   "tags": {
+    "amenity": "restaurant"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/1829237740",
+   "cat": "food",
+   "name": "استراحة",
+   "name_ar": "",
+   "lat": 34.596975,
+   "lon": 36.721617,
+   "tags": {
+    "amenity": "restaurant"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/1829242660",
+   "cat": "fuel",
+   "name": "",
+   "name_ar": "",
+   "lat": 34.61186,
+   "lon": 36.71293,
+   "tags": {
+    "amenity": "fuel"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/1990304089",
+   "cat": "fuel",
+   "name": "راف الشمال",
+   "name_ar": "",
+   "lat": 30.681203,
+   "lon": 41.562571,
+   "tags": {
+    "amenity": "fuel"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/1990304183",
+   "cat": "station",
+   "name": "",
+   "name_ar": "",
+   "lat": 30.734005,
+   "lon": 41.462551,
+   "tags": {
+    "man_made": "tower"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/1990304185",
+   "cat": "station",
+   "name": "",
+   "name_ar": "",
+   "lat": 30.734023,
+   "lon": 41.463069,
+   "tags": {
+    "man_made": "tower"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/1990304194",
+   "cat": "station",
+   "name": "",
+   "name_ar": "",
+   "lat": 30.782916,
+   "lon": 41.364336,
+   "tags": {
+    "man_made": "tower"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/1990304204",
+   "cat": "station",
+   "name": "",
+   "name_ar": "",
+   "lat": 30.823141,
+   "lon": 41.283729,
+   "tags": {
+    "man_made": "tower"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/1990304205",
+   "cat": "station",
+   "name": "",
+   "name_ar": "",
+   "lat": 30.824015,
+   "lon": 41.280153,
+   "tags": {
+    "man_made": "tower"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/1990304381",
+   "cat": "station",
+   "name": "",
+   "name_ar": "",
+   "lat": 30.897978,
+   "lon": 41.132015,
+   "tags": {
+    "man_made": "tower"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/1990304383",
+   "cat": "station",
+   "name": "",
+   "name_ar": "",
+   "lat": 30.8984,
+   "lon": 41.130319,
+   "tags": {
+    "man_made": "tower"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/1990304384",
+   "cat": "station",
+   "name": "",
+   "name_ar": "",
+   "lat": 30.898688,
+   "lon": 41.130996,
+   "tags": {
+    "man_made": "tower"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/1990329774",
+   "cat": "station",
+   "name": "",
+   "name_ar": "",
+   "lat": 30.019421,
+   "lon": 42.799739,
+   "tags": {
+    "man_made": "tower"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/1990329853",
+   "cat": "fuel",
+   "name": "",
+   "name_ar": "",
+   "lat": 30.462681,
+   "lon": 42.013377,
+   "tags": {
+    "amenity": "fuel"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/1990329944",
+   "cat": "station",
+   "name": "",
+   "name_ar": "",
+   "lat": 30.500381,
+   "lon": 41.936275,
+   "tags": {
+    "man_made": "tower"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/1990330029",
+   "cat": "mosque",
+   "name": "",
+   "name_ar": "",
+   "lat": 30.50205,
+   "lon": 41.937812,
+   "tags": {
+    "amenity": "place_of_worship"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/1990330055",
+   "cat": "station",
+   "name": "",
+   "name_ar": "",
+   "lat": 30.542116,
+   "lon": 41.84893,
+   "tags": {
+    "man_made": "tower"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/1990330057",
+   "cat": "station",
+   "name": "",
+   "name_ar": "",
+   "lat": 30.542645,
+   "lon": 41.84956,
+   "tags": {
+    "man_made": "tower"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/1990397913",
+   "cat": "mosque",
+   "name": "",
+   "name_ar": "",
+   "lat": 28.883018,
+   "lon": 44.740831,
+   "tags": {
+    "amenity": "place_of_worship"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/1990397923",
+   "cat": "station",
+   "name": "",
+   "name_ar": "",
+   "lat": 28.885824,
+   "lon": 44.734274,
+   "tags": {
+    "man_made": "tower"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/1990397958",
+   "cat": "station",
+   "name": "",
+   "name_ar": "",
+   "lat": 28.896276,
+   "lon": 44.727703,
+   "tags": {
+    "man_made": "tower"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/1990397975",
+   "cat": "station",
+   "name": "",
+   "name_ar": "",
+   "lat": 28.89725,
+   "lon": 44.724657,
+   "tags": {
+    "man_made": "tower"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/1990397992",
+   "cat": "station",
+   "name": "",
+   "name_ar": "",
+   "lat": 28.89854,
+   "lon": 44.72543,
+   "tags": {
+    "man_made": "tower"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/1990398037",
+   "cat": "station",
+   "name": "",
+   "name_ar": "",
+   "lat": 28.976613,
+   "lon": 44.590985,
+   "tags": {
+    "man_made": "tower"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/1990398050",
+   "cat": "mosque",
+   "name": "",
+   "name_ar": "",
+   "lat": 28.9964,
+   "lon": 44.559973,
+   "tags": {
+    "amenity": "place_of_worship"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/1990398062",
+   "cat": "fuel",
+   "name": "",
+   "name_ar": "",
+   "lat": 29.576647,
+   "lon": 43.617004,
+   "tags": {
+    "amenity": "fuel"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/1990398099",
+   "cat": "fuel",
+   "name": "",
+   "name_ar": "",
+   "lat": 29.598291,
+   "lon": 43.571367,
+   "tags": {
+    "amenity": "fuel"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/1990800619",
+   "cat": "station",
+   "name": "",
+   "name_ar": "",
+   "lat": 28.645786,
+   "lon": 45.283559,
+   "tags": {
+    "man_made": "tower"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/1990800720",
+   "cat": "station",
+   "name": "",
+   "name_ar": "",
+   "lat": 28.723409,
+   "lon": 45.108494,
+   "tags": {
+    "man_made": "tower"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/1990800748",
+   "cat": "station",
+   "name": "",
+   "name_ar": "",
+   "lat": 28.794754,
+   "lon": 44.950017,
+   "tags": {
+    "man_made": "tower"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/1990812628",
+   "cat": "station",
+   "name": "",
+   "name_ar": "",
+   "lat": 28.611463,
+   "lon": 45.348925,
+   "tags": {
+    "man_made": "tower"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/1990812629",
+   "cat": "fuel",
+   "name": "",
+   "name_ar": "",
+   "lat": 28.611615,
+   "lon": 45.354536,
+   "tags": {
+    "amenity": "fuel"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/1990829581",
+   "cat": "station",
+   "name": "",
+   "name_ar": "",
+   "lat": 28.602578,
+   "lon": 45.377406,
+   "tags": {
+    "man_made": "tower"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/1990969280",
+   "cat": "fuel",
+   "name": "محطة الشرق الاوسط",
+   "name_ar": "محطة الشرق الاوسط",
+   "lat": 28.412188,
+   "lon": 45.870101,
+   "tags": {
+    "amenity": "fuel"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/1990969281",
+   "cat": "mosque",
+   "name": "",
+   "name_ar": "",
+   "lat": 28.412208,
+   "lon": 45.870963,
+   "tags": {
+    "amenity": "place_of_worship"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/1990969282",
+   "cat": "station",
+   "name": "",
+   "name_ar": "",
+   "lat": 28.430606,
+   "lon": 45.812803,
+   "tags": {
+    "man_made": "tower"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/1990969283",
+   "cat": "station",
+   "name": "",
+   "name_ar": "",
+   "lat": 28.439548,
+   "lon": 45.786534,
+   "tags": {
+    "man_made": "tower"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/1990969289",
+   "cat": "station",
+   "name": "",
+   "name_ar": "",
+   "lat": 28.453303,
+   "lon": 45.748315,
+   "tags": {
+    "man_made": "tower"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/1990969292",
+   "cat": "station",
+   "name": "",
+   "name_ar": "",
+   "lat": 28.491218,
+   "lon": 45.642075,
+   "tags": {
+    "man_made": "tower"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/1990969294",
+   "cat": "station",
+   "name": "",
+   "name_ar": "",
+   "lat": 28.511056,
+   "lon": 45.582284,
+   "tags": {
+    "man_made": "tower"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/1991263049",
+   "cat": "mosque",
+   "name": "",
+   "name_ar": "",
+   "lat": 27.935972,
+   "lon": 47.196027,
+   "tags": {
+    "amenity": "place_of_worship"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/1991263064",
+   "cat": "fuel",
+   "name": "",
+   "name_ar": "",
+   "lat": 27.935991,
+   "lon": 47.195491,
+   "tags": {
+    "amenity": "fuel"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/1991400953",
+   "cat": "fuel",
+   "name": "",
+   "name_ar": "",
+   "lat": 27.708748,
+   "lon": 47.818871,
+   "tags": {
+    "amenity": "fuel"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/1991401016",
+   "cat": "station",
+   "name": "",
+   "name_ar": "",
+   "lat": 27.746244,
+   "lon": 47.718124,
+   "tags": {
+    "man_made": "tower"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/1991401020",
+   "cat": "station",
+   "name": "",
+   "name_ar": "",
+   "lat": 27.751546,
+   "lon": 47.70101,
+   "tags": {
+    "man_made": "tower"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/1991401022",
+   "cat": "station",
+   "name": "",
+   "name_ar": "",
+   "lat": 27.752305,
+   "lon": 47.700506,
+   "tags": {
+    "man_made": "tower"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/1991465523",
+   "cat": "station",
+   "name": "",
+   "name_ar": "",
+   "lat": 27.797366,
+   "lon": 47.58062,
+   "tags": {
+    "man_made": "tower"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/2324217110",
+   "cat": "station",
+   "name": "",
+   "name_ar": "",
+   "lat": 32.022308,
+   "lon": 36.410844,
+   "tags": {
+    "man_made": "tower"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/2324217119",
+   "cat": "station",
+   "name": "",
+   "name_ar": "",
+   "lat": 32.023487,
+   "lon": 36.408837,
+   "tags": {
+    "man_made": "tower"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/2324217127",
+   "cat": "station",
+   "name": "",
+   "name_ar": "",
+   "lat": 32.024894,
+   "lon": 36.406421,
+   "tags": {
+    "man_made": "tower"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/2324217132",
+   "cat": "station",
+   "name": "",
+   "name_ar": "",
+   "lat": 32.026144,
+   "lon": 36.404284,
+   "tags": {
+    "man_made": "tower"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/2324217135",
+   "cat": "station",
+   "name": "",
+   "name_ar": "",
+   "lat": 32.027339,
+   "lon": 36.402263,
+   "tags": {
+    "man_made": "tower"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/2324226674",
+   "cat": "station",
+   "name": "",
+   "name_ar": "",
+   "lat": 32.021833,
+   "lon": 36.409872,
+   "tags": {
+    "man_made": "water_tower"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/2866600066",
+   "cat": "fuel",
+   "name": "حرم الجلاميد",
+   "name_ar": "",
+   "lat": 31.278988,
+   "lon": 40.106485,
+   "tags": {
+    "amenity": "fuel"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/2866600067",
+   "cat": "mosque",
+   "name": "",
+   "name_ar": "",
+   "lat": 31.280182,
+   "lon": 40.104493,
+   "tags": {
+    "amenity": "place_of_worship"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/2874275549",
+   "cat": "station",
+   "name": "",
+   "name_ar": "",
+   "lat": 27.823708,
+   "lon": 47.520062,
+   "tags": {
+    "man_made": "water_tower"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/2874275575",
+   "cat": "station",
+   "name": "",
+   "name_ar": "",
+   "lat": 27.743527,
+   "lon": 47.727849,
+   "tags": {
+    "man_made": "tower"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/3124117963",
+   "cat": "fuel",
+   "name": "",
+   "name_ar": "",
+   "lat": 30.8276,
+   "lon": 41.274418,
+   "tags": {
+    "amenity": "fuel"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/3312004673",
+   "cat": "fuel",
+   "name": "محطة جابي - مغلقة",
+   "name_ar": "",
+   "lat": 31.434153,
+   "lon": 39.560292,
+   "tags": {
+    "amenity": "fuel"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/3715843088",
+   "cat": "station",
+   "name": "",
+   "name_ar": "",
+   "lat": 33.747838,
+   "lon": 36.594527,
+   "tags": {
+    "man_made": "water_tower"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/3749282412",
+   "cat": "mosque",
+   "name": "",
+   "name_ar": "",
+   "lat": 34.413997,
+   "lon": 36.755508,
+   "tags": {
+    "amenity": "place_of_worship"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/3749282418",
+   "cat": "mosque",
+   "name": "جامع الرحمن",
+   "name_ar": "",
+   "lat": 34.413435,
+   "lon": 36.759075,
+   "tags": {
+    "amenity": "place_of_worship"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/3749282429",
+   "cat": "mosque",
+   "name": "",
+   "name_ar": "",
+   "lat": 34.41074,
+   "lon": 36.76158,
+   "tags": {
+    "amenity": "place_of_worship"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/3804641564",
+   "cat": "rest",
+   "name": "",
+   "name_ar": "",
+   "lat": 31.91401,
+   "lon": 36.576441,
+   "tags": {
+    "amenity": "drinking_water"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/3804641565",
+   "cat": "rest",
+   "name": "",
+   "name_ar": "",
+   "lat": 31.91403,
+   "lon": 36.579862,
+   "tags": {
+    "amenity": "drinking_water"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/3804641566",
+   "cat": "rest",
+   "name": "",
+   "name_ar": "",
+   "lat": 31.914436,
+   "lon": 36.577712,
+   "tags": {
+    "amenity": "drinking_water"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/3804641567",
+   "cat": "rest",
+   "name": "",
+   "name_ar": "",
+   "lat": 31.914596,
+   "lon": 36.57632,
+   "tags": {
+    "amenity": "drinking_water"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/4597091289",
+   "cat": "fuel",
+   "name": "",
+   "name_ar": "",
+   "lat": 30.35736,
+   "lon": 42.229073,
+   "tags": {
+    "amenity": "fuel"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/4624080720",
+   "cat": "mosque",
+   "name": "",
+   "name_ar": "",
+   "lat": 29.762818,
+   "lon": 43.267038,
+   "tags": {
+    "amenity": "place_of_worship"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/4665827130",
+   "cat": "station",
+   "name": "",
+   "name_ar": "",
+   "lat": 31.002752,
+   "lon": 40.937301,
+   "tags": {
+    "man_made": "tower"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/4672739104",
+   "cat": "station",
+   "name": "",
+   "name_ar": "",
+   "lat": 31.355968,
+   "lon": 39.839864,
+   "tags": {
+    "man_made": "tower"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/4687907249",
+   "cat": "station",
+   "name": "",
+   "name_ar": "",
+   "lat": 28.49279,
+   "lon": 45.636235,
+   "tags": {
+    "man_made": "tower"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/4688007066",
+   "cat": "mosque",
+   "name": "",
+   "name_ar": "",
+   "lat": 28.89688,
+   "lon": 44.731467,
+   "tags": {
+    "amenity": "place_of_worship"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/4688007186",
+   "cat": "station",
+   "name": "",
+   "name_ar": "",
+   "lat": 28.887275,
+   "lon": 44.736587,
+   "tags": {
+    "man_made": "tower"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/4688047991",
+   "cat": "mosque",
+   "name": "",
+   "name_ar": "",
+   "lat": 29.152493,
+   "lon": 44.317464,
+   "tags": {
+    "amenity": "place_of_worship"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/4688047992",
+   "cat": "station",
+   "name": "",
+   "name_ar": "",
+   "lat": 29.15009,
+   "lon": 44.312061,
+   "tags": {
+    "man_made": "tower"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/4688047993",
+   "cat": "station",
+   "name": "",
+   "name_ar": "",
+   "lat": 29.092685,
+   "lon": 44.403593,
+   "tags": {
+    "man_made": "tower"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/4688047994",
+   "cat": "station",
+   "name": "",
+   "name_ar": "",
+   "lat": 29.089783,
+   "lon": 44.409152,
+   "tags": {
+    "man_made": "tower"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/4688048035",
+   "cat": "station",
+   "name": "",
+   "name_ar": "",
+   "lat": 29.063068,
+   "lon": 44.451658,
+   "tags": {
+    "man_made": "tower"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/4688048036",
+   "cat": "station",
+   "name": "",
+   "name_ar": "",
+   "lat": 29.015058,
+   "lon": 44.529902,
+   "tags": {
+    "man_made": "tower"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/4688048037",
+   "cat": "station",
+   "name": "",
+   "name_ar": "",
+   "lat": 29.007051,
+   "lon": 44.540825,
+   "tags": {
+    "man_made": "tower"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/4688073207",
+   "cat": "station",
+   "name": "",
+   "name_ar": "",
+   "lat": 29.518817,
+   "lon": 43.715694,
+   "tags": {
+    "man_made": "tower"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/4688073208",
+   "cat": "station",
+   "name": "",
+   "name_ar": "",
+   "lat": 29.487591,
+   "lon": 43.767045,
+   "tags": {
+    "man_made": "tower"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/4688073209",
+   "cat": "station",
+   "name": "",
+   "name_ar": "",
+   "lat": 29.486063,
+   "lon": 43.767257,
+   "tags": {
+    "man_made": "tower"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/4688073210",
+   "cat": "station",
+   "name": "",
+   "name_ar": "",
+   "lat": 29.469499,
+   "lon": 43.794766,
+   "tags": {
+    "man_made": "tower"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/4688073213",
+   "cat": "station",
+   "name": "",
+   "name_ar": "",
+   "lat": 29.419303,
+   "lon": 43.877363,
+   "tags": {
+    "man_made": "tower"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/4688073214",
+   "cat": "station",
+   "name": "",
+   "name_ar": "",
+   "lat": 29.372208,
+   "lon": 43.954687,
+   "tags": {
+    "man_made": "tower"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/4688073215",
+   "cat": "station",
+   "name": "",
+   "name_ar": "",
+   "lat": 29.369639,
+   "lon": 43.956661,
+   "tags": {
+    "man_made": "tower"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/4688073216",
+   "cat": "station",
+   "name": "",
+   "name_ar": "",
+   "lat": 29.326808,
+   "lon": 44.027419,
+   "tags": {
+    "man_made": "tower"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/4688098098",
+   "cat": "mosque",
+   "name": "",
+   "name_ar": "",
+   "lat": 29.683899,
+   "lon": 43.417111,
+   "tags": {
+    "amenity": "place_of_worship"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/4688111559",
+   "cat": "station",
+   "name": "",
+   "name_ar": "",
+   "lat": 29.962258,
+   "lon": 42.916415,
+   "tags": {
+    "man_made": "tower"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/4688111560",
+   "cat": "station",
+   "name": "",
+   "name_ar": "",
+   "lat": 29.742465,
+   "lon": 43.313577,
+   "tags": {
+    "man_made": "tower"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/4688141628",
+   "cat": "mosque",
+   "name": "",
+   "name_ar": "",
+   "lat": 30.131765,
+   "lon": 42.629523,
+   "tags": {
+    "amenity": "place_of_worship"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/4688141630",
+   "cat": "mosque",
+   "name": "",
+   "name_ar": "",
+   "lat": 30.133758,
+   "lon": 42.626933,
+   "tags": {
+    "amenity": "place_of_worship"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/4688171522",
+   "cat": "station",
+   "name": "",
+   "name_ar": "",
+   "lat": 30.221803,
+   "lon": 42.499869,
+   "tags": {
+    "man_made": "tower"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/4688180704",
+   "cat": "station",
+   "name": "",
+   "name_ar": "",
+   "lat": 30.227737,
+   "lon": 42.491845,
+   "tags": {
+    "man_made": "tower"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/4688913542",
+   "cat": "mosque",
+   "name": "جامع ادريس",
+   "name_ar": "",
+   "lat": 30.35566,
+   "lon": 42.235372,
+   "tags": {
+    "amenity": "place_of_worship"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/4688913543",
+   "cat": "mosque",
+   "name": "مسجد النمصان",
+   "name_ar": "",
+   "lat": 30.355163,
+   "lon": 42.239036,
+   "tags": {
+    "amenity": "place_of_worship"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/4688915081",
+   "cat": "mosque",
+   "name": "",
+   "name_ar": "",
+   "lat": 30.360493,
+   "lon": 42.231127,
+   "tags": {
+    "amenity": "place_of_worship"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/4689090086",
+   "cat": "mosque",
+   "name": "",
+   "name_ar": "",
+   "lat": 30.458207,
+   "lon": 42.010268,
+   "tags": {
+    "amenity": "place_of_worship"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/4689092189",
+   "cat": "station",
+   "name": "",
+   "name_ar": "",
+   "lat": 30.448793,
+   "lon": 42.040929,
+   "tags": {
+    "man_made": "tower"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/4689092190",
+   "cat": "station",
+   "name": "",
+   "name_ar": "",
+   "lat": 30.449176,
+   "lon": 42.041784,
+   "tags": {
+    "man_made": "tower"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/4689147613",
+   "cat": "station",
+   "name": "",
+   "name_ar": "",
+   "lat": 30.640879,
+   "lon": 41.644365,
+   "tags": {
+    "man_made": "tower"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/4689147614",
+   "cat": "station",
+   "name": "",
+   "name_ar": "",
+   "lat": 30.640174,
+   "lon": 41.64389,
+   "tags": {
+    "man_made": "tower"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/4689495197",
+   "cat": "station",
+   "name": "",
+   "name_ar": "",
+   "lat": 31.536569,
+   "lon": 37.073921,
+   "tags": {
+    "man_made": "tower"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/4689495198",
+   "cat": "station",
+   "name": "",
+   "name_ar": "",
+   "lat": 31.536075,
+   "lon": 37.073707,
+   "tags": {
+    "man_made": "tower"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/4689495199",
+   "cat": "station",
+   "name": "",
+   "name_ar": "",
+   "lat": 31.535603,
+   "lon": 37.073999,
+   "tags": {
+    "man_made": "tower"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/4689495200",
+   "cat": "station",
+   "name": "",
+   "name_ar": "",
+   "lat": 31.535876,
+   "lon": 37.074897,
+   "tags": {
+    "man_made": "tower"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/4689495205",
+   "cat": "station",
+   "name": "",
+   "name_ar": "",
+   "lat": 31.281701,
+   "lon": 40.108058,
+   "tags": {
+    "man_made": "water_tower"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/4689495206",
+   "cat": "station",
+   "name": "",
+   "name_ar": "",
+   "lat": 31.279556,
+   "lon": 40.104264,
+   "tags": {
+    "man_made": "tower"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/4689495213",
+   "cat": "station",
+   "name": "",
+   "name_ar": "",
+   "lat": 31.342002,
+   "lon": 39.884966,
+   "tags": {
+    "man_made": "tower"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/4689495214",
+   "cat": "station",
+   "name": "",
+   "name_ar": "",
+   "lat": 31.342818,
+   "lon": 39.88529,
+   "tags": {
+    "man_made": "tower"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/4710587259",
+   "cat": "mosque",
+   "name": "",
+   "name_ar": "",
+   "lat": 27.823333,
+   "lon": 47.517011,
+   "tags": {
+    "amenity": "place_of_worship"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/4710588089",
+   "cat": "mosque",
+   "name": "",
+   "name_ar": "",
+   "lat": 27.823386,
+   "lon": 47.51311,
+   "tags": {
+    "amenity": "place_of_worship"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/4710703481",
+   "cat": "station",
+   "name": "",
+   "name_ar": "",
+   "lat": 27.82614,
+   "lon": 47.512712,
+   "tags": {
+    "man_made": "tower"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/4710978393",
+   "cat": "station",
+   "name": "",
+   "name_ar": "",
+   "lat": 28.349752,
+   "lon": 46.04931,
+   "tags": {
+    "man_made": "tower"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/4711965004",
+   "cat": "station",
+   "name": "",
+   "name_ar": "",
+   "lat": 27.936683,
+   "lon": 47.192189,
+   "tags": {
+    "man_made": "tower"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/4711965005",
+   "cat": "station",
+   "name": "",
+   "name_ar": "",
+   "lat": 27.937109,
+   "lon": 47.193277,
+   "tags": {
+    "man_made": "tower"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/4711965007",
+   "cat": "station",
+   "name": "",
+   "name_ar": "",
+   "lat": 27.961102,
+   "lon": 47.127392,
+   "tags": {
+    "man_made": "tower"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/4711965021",
+   "cat": "station",
+   "name": "",
+   "name_ar": "",
+   "lat": 27.999429,
+   "lon": 47.019916,
+   "tags": {
+    "man_made": "tower"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/4711965022",
+   "cat": "station",
+   "name": "",
+   "name_ar": "",
+   "lat": 27.99862,
+   "lon": 47.019259,
+   "tags": {
+    "man_made": "tower"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/4712011027",
+   "cat": "station",
+   "name": "",
+   "name_ar": "",
+   "lat": 27.849977,
+   "lon": 47.434043,
+   "tags": {
+    "man_made": "tower"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/4712011030",
+   "cat": "station",
+   "name": "",
+   "name_ar": "",
+   "lat": 27.885416,
+   "lon": 47.338408,
+   "tags": {
+    "man_made": "tower"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/4712011031",
+   "cat": "station",
+   "name": "",
+   "name_ar": "",
+   "lat": 27.885413,
+   "lon": 47.338273,
+   "tags": {
+    "man_made": "tower"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/4712011032",
+   "cat": "station",
+   "name": "",
+   "name_ar": "",
+   "lat": 27.889947,
+   "lon": 47.322538,
+   "tags": {
+    "man_made": "tower"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/4712011033",
+   "cat": "station",
+   "name": "",
+   "name_ar": "",
+   "lat": 27.89491,
+   "lon": 47.308062,
+   "tags": {
+    "man_made": "tower"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/4712011043",
+   "cat": "station",
+   "name": "",
+   "name_ar": "",
+   "lat": 27.922546,
+   "lon": 47.231186,
+   "tags": {
+    "man_made": "tower"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/4725157721",
+   "cat": "mosque",
+   "name": "",
+   "name_ar": "",
+   "lat": 28.884759,
+   "lon": 44.736596,
+   "tags": {
+    "amenity": "place_of_worship"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/4725157793",
+   "cat": "station",
+   "name": "",
+   "name_ar": "",
+   "lat": 28.574316,
+   "lon": 45.435883,
+   "tags": {
+    "man_made": "tower"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/4725157794",
+   "cat": "station",
+   "name": "",
+   "name_ar": "",
+   "lat": 28.565149,
+   "lon": 45.457115,
+   "tags": {
+    "man_made": "tower"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/4731011226",
+   "cat": "station",
+   "name": "",
+   "name_ar": "",
+   "lat": 31.283754,
+   "lon": 40.093417,
+   "tags": {
+    "man_made": "tower"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/4731011236",
+   "cat": "station",
+   "name": "",
+   "name_ar": "",
+   "lat": 31.397794,
+   "lon": 39.690975,
+   "tags": {
+    "man_made": "tower"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/4731011237",
+   "cat": "station",
+   "name": "",
+   "name_ar": "",
+   "lat": 31.404141,
+   "lon": 39.665284,
+   "tags": {
+    "man_made": "tower"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/4731011238",
+   "cat": "station",
+   "name": "",
+   "name_ar": "",
+   "lat": 31.404835,
+   "lon": 39.665507,
+   "tags": {
+    "man_made": "tower"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/4731011239",
+   "cat": "station",
+   "name": "",
+   "name_ar": "",
+   "lat": 31.410374,
+   "lon": 39.64731,
+   "tags": {
+    "man_made": "tower"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/4731011240",
+   "cat": "station",
+   "name": "",
+   "name_ar": "",
+   "lat": 31.462816,
+   "lon": 39.457349,
+   "tags": {
+    "man_made": "tower"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/4731011241",
+   "cat": "station",
+   "name": "",
+   "name_ar": "",
+   "lat": 31.467474,
+   "lon": 39.44494,
+   "tags": {
+    "man_made": "tower"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/4731011242",
+   "cat": "station",
+   "name": "",
+   "name_ar": "",
+   "lat": 31.520527,
+   "lon": 39.256282,
+   "tags": {
+    "man_made": "tower"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/4733215774",
+   "cat": "station",
+   "name": "",
+   "name_ar": "",
+   "lat": 30.129771,
+   "lon": 42.630409,
+   "tags": {
+    "man_made": "tower"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/4733222969",
+   "cat": "station",
+   "name": "",
+   "name_ar": "",
+   "lat": 29.736403,
+   "lon": 43.325122,
+   "tags": {
+    "man_made": "tower"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/4734167051",
+   "cat": "station",
+   "name": "",
+   "name_ar": "",
+   "lat": 29.568985,
+   "lon": 43.632011,
+   "tags": {
+    "man_made": "tower"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/4734184174",
+   "cat": "mosque",
+   "name": "",
+   "name_ar": "",
+   "lat": 29.571551,
+   "lon": 43.631158,
+   "tags": {
+    "amenity": "place_of_worship"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/4735277258",
+   "cat": "station",
+   "name": "",
+   "name_ar": "",
+   "lat": 29.23267,
+   "lon": 44.179919,
+   "tags": {
+    "man_made": "tower"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/4735277259",
+   "cat": "station",
+   "name": "",
+   "name_ar": "",
+   "lat": 29.241446,
+   "lon": 44.1639,
+   "tags": {
+    "man_made": "tower"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/4735277260",
+   "cat": "station",
+   "name": "",
+   "name_ar": "",
+   "lat": 29.259908,
+   "lon": 44.136528,
+   "tags": {
+    "man_made": "tower"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/4735277261",
+   "cat": "station",
+   "name": "",
+   "name_ar": "",
+   "lat": 29.289382,
+   "lon": 44.087362,
+   "tags": {
+    "man_made": "tower"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/4735313222",
+   "cat": "station",
+   "name": "",
+   "name_ar": "",
+   "lat": 29.13248,
+   "lon": 44.343787,
+   "tags": {
+    "man_made": "tower"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/4735313223",
+   "cat": "station",
+   "name": "",
+   "name_ar": "",
+   "lat": 29.13691,
+   "lon": 44.334504,
+   "tags": {
+    "man_made": "tower"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/4735339674",
+   "cat": "station",
+   "name": "",
+   "name_ar": "",
+   "lat": 28.699635,
+   "lon": 45.158956,
+   "tags": {
+    "man_made": "tower"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/4735339675",
+   "cat": "station",
+   "name": "",
+   "name_ar": "",
+   "lat": 28.807854,
+   "lon": 44.925167,
+   "tags": {
+    "man_made": "tower"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/4735339676",
+   "cat": "station",
+   "name": "",
+   "name_ar": "",
+   "lat": 28.807044,
+   "lon": 44.924526,
+   "tags": {
+    "man_made": "tower"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/4858330778",
+   "cat": "station",
+   "name": "",
+   "name_ar": "",
+   "lat": 31.860803,
+   "lon": 36.772344,
+   "tags": {
+    "man_made": "tower"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/4858330827",
+   "cat": "station",
+   "name": "",
+   "name_ar": "",
+   "lat": 31.855583,
+   "lon": 36.779239,
+   "tags": {
+    "man_made": "tower"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/5371450525",
+   "cat": "fuel",
+   "name": "",
+   "name_ar": "",
+   "lat": 28.996707,
+   "lon": 44.559555,
+   "tags": {
+    "amenity": "fuel"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/5391062506",
+   "cat": "station",
+   "name": "",
+   "name_ar": "",
+   "lat": 28.114417,
+   "lon": 46.696321,
+   "tags": {
+    "man_made": "tower"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/5391062512",
+   "cat": "station",
+   "name": "",
+   "name_ar": "",
+   "lat": 28.125435,
+   "lon": 46.671856,
+   "tags": {
+    "man_made": "tower"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/5391062533",
+   "cat": "station",
+   "name": "",
+   "name_ar": "",
+   "lat": 28.138783,
+   "lon": 46.633396,
+   "tags": {
+    "man_made": "tower"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/5391062565",
+   "cat": "station",
+   "name": "",
+   "name_ar": "",
+   "lat": 28.146356,
+   "lon": 46.609952,
+   "tags": {
+    "man_made": "tower"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/5514040822",
+   "cat": "food",
+   "name": "Elpatio Hotel",
+   "name_ar": "فندق ومطعم إلباتيو",
+   "lat": 34.08728,
+   "lon": 36.756018,
+   "tags": {
+    "amenity": "cafe",
+    "cuisine": "burger;sandwich;ice_cream;grill;crepe;asian;coffee_shop;pasta;lebanese;pizza;fish_and_chips;brazilian;arab;chicken;diner;fish;breakfast;french;tea;seafood;friture;american;chinese",
+    "phone": "0991493010"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/5686078481",
+   "cat": "mosque",
+   "name": "",
+   "name_ar": "",
+   "lat": 27.824952,
+   "lon": 47.50919,
+   "tags": {
+    "amenity": "place_of_worship"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/6054163161",
+   "cat": "fuel",
+   "name": "",
+   "name_ar": "",
+   "lat": 32.164583,
+   "lon": 36.220658,
+   "tags": {
+    "amenity": "fuel",
+    "operator": "Jo Petrol"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/6125746959",
+   "cat": "shop",
+   "name": "شركة السكر الوطنية",
+   "name_ar": "",
+   "lat": 34.511804,
+   "lon": 36.744626,
+   "tags": {
+    "shop": "confectionery"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/6239753486",
+   "cat": "fuel",
+   "name": "مناحي ابن بكر",
+   "name_ar": "",
+   "lat": 31.124885,
+   "lon": 40.623704,
+   "tags": {
+    "amenity": "fuel"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/6267429886",
+   "cat": "fuel",
+   "name": "محطة السلام",
+   "name_ar": "",
+   "lat": 30.345944,
+   "lon": 42.2545,
+   "tags": {
+    "amenity": "fuel"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/6267430086",
+   "cat": "fuel",
+   "name": "محطة الكاسب",
+   "name_ar": "",
+   "lat": 30.353056,
+   "lon": 42.238417,
+   "tags": {
+    "amenity": "fuel"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/6267463185",
+   "cat": "fuel",
+   "name": "محطة التركي",
+   "name_ar": "",
+   "lat": 30.358167,
+   "lon": 42.228472,
+   "tags": {
+    "amenity": "fuel"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/6289890886",
+   "cat": "shop",
+   "name": "الوجعان",
+   "name_ar": "",
+   "lat": 28.668654,
+   "lon": 45.225957,
+   "tags": {
+    "shop": "car"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/6315668061",
+   "cat": "fuel",
+   "name": "محطة كريم",
+   "name_ar": "",
+   "lat": 28.806357,
+   "lon": 44.926916,
+   "tags": {
+    "amenity": "fuel",
+    "opening_hours": "Mo-Su 00:00-12:00"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/6336940985",
+   "cat": "station",
+   "name": "",
+   "name_ar": "",
+   "lat": 30.83243,
+   "lon": 41.273296,
+   "tags": {
+    "man_made": "water_tower"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/6423635687",
+   "cat": "shop",
+   "name": "",
+   "name_ar": "",
+   "lat": 29.438782,
+   "lon": 43.846497,
+   "tags": {
+    "shop": "supermarket"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/6542652967",
+   "cat": "station",
+   "name": "",
+   "name_ar": "",
+   "lat": 30.372348,
+   "lon": 42.200938,
+   "tags": {
+    "man_made": "tower"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/6859953576",
+   "cat": "fuel",
+   "name": "محطة الدبيه",
+   "name_ar": "",
+   "lat": 28.02324,
+   "lon": 46.949313,
+   "tags": {
+    "amenity": "fuel"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/7029343060",
+   "cat": "mosque",
+   "name": "",
+   "name_ar": "",
+   "lat": 29.155497,
+   "lon": 44.311407,
+   "tags": {
+    "amenity": "place_of_worship"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/7029343077",
+   "cat": "shop",
+   "name": "",
+   "name_ar": "",
+   "lat": 29.156528,
+   "lon": 44.305802,
+   "tags": {
+    "shop": "supermarket"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/7029343078",
+   "cat": "mosque",
+   "name": "",
+   "name_ar": "",
+   "lat": 29.157637,
+   "lon": 44.307483,
+   "tags": {
+    "amenity": "place_of_worship"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/7047148385",
+   "cat": "rest",
+   "name": "",
+   "name_ar": "",
+   "lat": 34.1484,
+   "lon": 36.752821,
+   "tags": {
+    "highway": "rest_area"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/7141473085",
+   "cat": "fuel",
+   "name": "Qara station",
+   "name_ar": "محطة قارة",
+   "lat": 34.144693,
+   "lon": 36.752877,
+   "tags": {
+    "amenity": "fuel"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/7141473185",
+   "cat": "fuel",
+   "name": "Qadish station",
+   "name_ar": "محطة قادش",
+   "lat": 34.548469,
+   "lon": 36.737971,
+   "tags": {
+    "amenity": "fuel"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/7141473285",
+   "cat": "fuel",
+   "name": "Alsalam station",
+   "name_ar": "محطة السلام",
+   "lat": 34.595575,
+   "lon": 36.720563,
+   "tags": {
+    "amenity": "fuel"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/7279542986",
+   "cat": "rest",
+   "name": "",
+   "name_ar": "",
+   "lat": 34.537914,
+   "lon": 36.737625,
+   "tags": {
+    "highway": "rest_area"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/7346425552",
+   "cat": "fuel",
+   "name": "محطة الهباس",
+   "name_ar": "",
+   "lat": 29.1459,
+   "lon": 44.3184,
+   "tags": {
+    "amenity": "fuel"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/7346429684",
+   "cat": "food",
+   "name": "مطعم",
+   "name_ar": "",
+   "lat": 29.1433,
+   "lon": 44.323,
+   "tags": {
+    "amenity": "restaurant"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/7346431550",
+   "cat": "fuel",
+   "name": "مجمع للخدمات البترولية",
+   "name_ar": "",
+   "lat": 29.143,
+   "lon": 44.3227,
+   "tags": {
+    "amenity": "fuel"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/7346431551",
+   "cat": "food",
+   "name": "مطعم للوجبات السريعة",
+   "name_ar": "",
+   "lat": 29.1512,
+   "lon": 44.3157,
+   "tags": {
+    "amenity": "fast_food"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/7346436162",
+   "cat": "hotel",
+   "name": "شقق مفروشة",
+   "name_ar": "",
+   "lat": 29.1487,
+   "lon": 44.3158,
+   "tags": {
+    "tourism": "apartment"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/7346480435",
+   "cat": "fuel",
+   "name": "هيف الشمال",
+   "name_ar": "",
+   "lat": 28.8843,
+   "lon": 44.7525,
+   "tags": {
+    "amenity": "fuel"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/7346494591",
+   "cat": "food",
+   "name": "مطعم",
+   "name_ar": "",
+   "lat": 28.8829,
+   "lon": 44.7491,
+   "tags": {
+    "amenity": "fast_food"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/7346500248",
+   "cat": "fuel",
+   "name": "محطة وقود",
+   "name_ar": "",
+   "lat": 28.8828,
+   "lon": 44.7495,
+   "tags": {
+    "amenity": "fuel"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/7346504061",
+   "cat": "shop",
+   "name": "ورشة سيارات",
+   "name_ar": "",
+   "lat": 28.8852,
+   "lon": 44.7506,
+   "tags": {
+    "shop": "car_repair"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/7346513892",
+   "cat": "shop",
+   "name": "محل بنشر",
+   "name_ar": "",
+   "lat": 28.6221,
+   "lon": 45.3351,
+   "tags": {
+    "shop": "tyres"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/7346516355",
+   "cat": "fuel",
+   "name": "الوجعان",
+   "name_ar": "",
+   "lat": 28.6697,
+   "lon": 45.224,
+   "tags": {
+    "amenity": "fuel"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/7346517400",
+   "cat": "fuel",
+   "name": "محطة وقود",
+   "name_ar": "",
+   "lat": 28.6225,
+   "lon": 45.3337,
+   "tags": {
+    "amenity": "fuel"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/7346550190",
+   "cat": "food",
+   "name": "مطعم بخاري",
+   "name_ar": "",
+   "lat": 28.4449,
+   "lon": 45.7771,
+   "tags": {
+    "amenity": "restaurant"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/7346550305",
+   "cat": "fuel",
+   "name": "محطة المرشد",
+   "name_ar": "",
+   "lat": 28.4445,
+   "lon": 45.7769,
+   "tags": {
+    "amenity": "fuel"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/7349986456",
+   "cat": "fuel",
+   "name": "محطة وقود",
+   "name_ar": "",
+   "lat": 29.4385,
+   "lon": 43.8467,
+   "tags": {
+    "amenity": "fuel"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/7350014417",
+   "cat": "fuel",
+   "name": "محطة ساسكو",
+   "name_ar": "",
+   "lat": 29.5803,
+   "lon": 43.609,
+   "tags": {
+    "amenity": "fuel"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/7350089704",
+   "cat": "fuel",
+   "name": "محطة صحارى",
+   "name_ar": "",
+   "lat": 29.7409,
+   "lon": 43.3153,
+   "tags": {
+    "amenity": "fuel"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/7350104210",
+   "cat": "fuel",
+   "name": "محطة وقود",
+   "name_ar": "",
+   "lat": 29.8465,
+   "lon": 43.1344,
+   "tags": {
+    "amenity": "fuel"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/7350114083",
+   "cat": "fuel",
+   "name": "محطة وقود",
+   "name_ar": "",
+   "lat": 29.8506,
+   "lon": 43.1282,
+   "tags": {
+    "amenity": "fuel"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/7350117895",
+   "cat": "fuel",
+   "name": "محطة العجرمية",
+   "name_ar": "",
+   "lat": 29.8745,
+   "lon": 43.0834,
+   "tags": {
+    "amenity": "fuel"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/7350127786",
+   "cat": "fuel",
+   "name": "محطة وقود",
+   "name_ar": "",
+   "lat": 29.852,
+   "lon": 43.1272,
+   "tags": {
+    "amenity": "fuel"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/7350127787",
+   "cat": "fuel",
+   "name": "محطة وقود",
+   "name_ar": "",
+   "lat": 30.0471,
+   "lon": 42.7441,
+   "tags": {
+    "amenity": "fuel"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/7350155029",
+   "cat": "fuel",
+   "name": "محطة وقود",
+   "name_ar": "",
+   "lat": 30.1341,
+   "lon": 42.6239,
+   "tags": {
+    "amenity": "fuel"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/7350177317",
+   "cat": "shop",
+   "name": "اسواق عبدالله العثيم",
+   "name_ar": "",
+   "lat": 30.3504,
+   "lon": 42.2441,
+   "tags": {
+    "shop": "supermarket"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/7350187893",
+   "cat": "hotel",
+   "name": "شقق مفروشة",
+   "name_ar": "",
+   "lat": 30.3569,
+   "lon": 42.2302,
+   "tags": {
+    "tourism": "apartment"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/7350191288",
+   "cat": "food",
+   "name": "مطعم بخاري",
+   "name_ar": "",
+   "lat": 30.3574,
+   "lon": 42.2295,
+   "tags": {
+    "amenity": "restaurant"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/7350194955",
+   "cat": "fuel",
+   "name": "السويلم",
+   "name_ar": "",
+   "lat": 30.864992,
+   "lon": 41.19853,
+   "tags": {
+    "amenity": "fuel"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/7350211784",
+   "cat": "fuel",
+   "name": "وقود الزوين",
+   "name_ar": "",
+   "lat": 30.4167,
+   "lon": 42.1092,
+   "tags": {
+    "amenity": "fuel"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/7350239685",
+   "cat": "fuel",
+   "name": "محطة وقود",
+   "name_ar": "",
+   "lat": 31.0647,
+   "lon": 40.7845,
+   "tags": {
+    "amenity": "fuel"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/7448436016",
+   "cat": "food",
+   "name": "مطعم بخاري",
+   "name_ar": "",
+   "lat": 31.2805,
+   "lon": 40.1008,
+   "tags": {
+    "amenity": "restaurant"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/7501337854",
+   "cat": "food",
+   "name": "مطعم",
+   "name_ar": "",
+   "lat": 29.1482,
+   "lon": 44.3137,
+   "tags": {
+    "amenity": "restaurant"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/7524559982",
+   "cat": "fuel",
+   "name": "محطة أمواج الخليج",
+   "name_ar": "",
+   "lat": 27.8186,
+   "lon": 47.5175,
+   "tags": {
+    "amenity": "fuel"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/7524571871",
+   "cat": "fuel",
+   "name": "محطة وقـود",
+   "name_ar": "",
+   "lat": 27.9981,
+   "lon": 47.021,
+   "tags": {
+    "amenity": "fuel"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/7524609218",
+   "cat": "fuel",
+   "name": "بترول الدبدبة",
+   "name_ar": "",
+   "lat": 28.104889,
+   "lon": 46.719809,
+   "tags": {
+    "amenity": "fuel"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/7525747574",
+   "cat": "fuel",
+   "name": "محطة وقود",
+   "name_ar": "",
+   "lat": 28.1081,
+   "lon": 46.7115,
+   "tags": {
+    "amenity": "fuel"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/7836874620",
+   "cat": "station",
+   "name": "",
+   "name_ar": "",
+   "lat": 30.82363,
+   "lon": 41.283338,
+   "tags": {
+    "man_made": "tower"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/7836874621",
+   "cat": "station",
+   "name": "",
+   "name_ar": "",
+   "lat": 30.542066,
+   "lon": 41.853479,
+   "tags": {
+    "man_made": "tower"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/7836874622",
+   "cat": "station",
+   "name": "",
+   "name_ar": "",
+   "lat": 30.542198,
+   "lon": 41.849579,
+   "tags": {
+    "man_made": "tower"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/7836874623",
+   "cat": "station",
+   "name": "",
+   "name_ar": "",
+   "lat": 30.306008,
+   "lon": 42.336486,
+   "tags": {
+    "man_made": "tower"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/7836874624",
+   "cat": "station",
+   "name": "",
+   "name_ar": "",
+   "lat": 30.305813,
+   "lon": 42.335713,
+   "tags": {
+    "man_made": "tower"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/7836874625",
+   "cat": "station",
+   "name": "",
+   "name_ar": "",
+   "lat": 30.243891,
+   "lon": 42.464379,
+   "tags": {
+    "man_made": "tower"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/7836874626",
+   "cat": "station",
+   "name": "",
+   "name_ar": "",
+   "lat": 30.182626,
+   "lon": 42.561974,
+   "tags": {
+    "man_made": "tower"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/7836874628",
+   "cat": "station",
+   "name": "",
+   "name_ar": "",
+   "lat": 28.610883,
+   "lon": 45.349524,
+   "tags": {
+    "man_made": "tower"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/7836874629",
+   "cat": "station",
+   "name": "",
+   "name_ar": "",
+   "lat": 28.430992,
+   "lon": 45.812339,
+   "tags": {
+    "man_made": "tower"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/8201637624",
+   "cat": "station",
+   "name": "",
+   "name_ar": "",
+   "lat": 29.319662,
+   "lon": 44.026489,
+   "tags": {
+    "man_made": "tower"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/8300134917",
+   "cat": "rest",
+   "name": "مفرق حسياء",
+   "name_ar": "",
+   "lat": 34.364616,
+   "lon": 36.759956,
+   "tags": {
+    "tourism": "viewpoint"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/8418721518",
+   "cat": "rest",
+   "name": "حاجز سونار",
+   "name_ar": "",
+   "lat": 33.632221,
+   "lon": 36.489926,
+   "tags": {
+    "tourism": "viewpoint"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/8754588317",
+   "cat": "rest",
+   "name": "منفذ العمري",
+   "name_ar": "",
+   "lat": 31.534237,
+   "lon": 37.074095,
+   "tags": {
+    "amenity": "police"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/9264530483",
+   "cat": "station",
+   "name": "",
+   "name_ar": "",
+   "lat": 31.979793,
+   "lon": 36.485395,
+   "tags": {
+    "man_made": "tower"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/9682307717",
+   "cat": "food",
+   "name": "مطعم واستراحة اشبيلية (m&h)",
+   "name_ar": "",
+   "lat": 34.597094,
+   "lon": 36.721389,
+   "tags": {
+    "amenity": "restaurant"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:way/1023663864",
+   "cat": "rest",
+   "name": "",
+   "name_ar": "",
+   "lat": 31.357273,
+   "lon": 39.827199,
+   "tags": {
+    "highway": "rest_area"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:way/1023663865",
+   "cat": "rest",
+   "name": "",
+   "name_ar": "",
+   "lat": 31.356931,
+   "lon": 39.827053,
+   "tags": {
+    "highway": "rest_area"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:way/119102718",
+   "cat": "shop",
+   "name": "Kalamoon mall",
+   "name_ar": "القلمون مول",
+   "lat": 34.065212,
+   "lon": 36.745552,
+   "tags": {
+    "shop": "mall"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:way/119472429",
+   "cat": "fuel",
+   "name": "Al Saiad restaurant",
+   "name_ar": null,
+   "lat": 33.325013,
+   "lon": 36.26276,
+   "tags": {
+    "amenity": "fuel"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:way/1225583144",
+   "cat": "station",
+   "name": "",
+   "name_ar": "",
+   "lat": 33.624029,
+   "lon": 36.472053,
+   "tags": {
+    "man_made": "water_tower"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:way/1241010840",
+   "cat": "station",
+   "name": "",
+   "name_ar": "",
+   "lat": 29.684304,
+   "lon": 43.41117,
+   "tags": {
+    "man_made": "tower"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:way/1241010844",
+   "cat": "station",
+   "name": "",
+   "name_ar": "",
+   "lat": 29.68453,
+   "lon": 43.410464,
+   "tags": {
+    "man_made": "tower"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:way/1241010845",
+   "cat": "mosque",
+   "name": "",
+   "name_ar": "",
+   "lat": 29.68456,
+   "lon": 43.410616,
+   "tags": {
+    "amenity": "place_of_worship"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:way/1300541641",
+   "cat": "station",
+   "name": "",
+   "name_ar": "",
+   "lat": 31.22214,
+   "lon": 40.30892,
+   "tags": {
+    "man_made": "tower"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:way/1300541642",
+   "cat": "station",
+   "name": "",
+   "name_ar": "",
+   "lat": 31.223369,
+   "lon": 40.310157,
+   "tags": {
+    "man_made": "tower"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:way/1300541644",
+   "cat": "station",
+   "name": "",
+   "name_ar": "",
+   "lat": 31.404158,
+   "lon": 39.665247,
+   "tags": {
+    "man_made": "tower"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:way/1300541645",
+   "cat": "station",
+   "name": "",
+   "name_ar": "",
+   "lat": 31.404842,
+   "lon": 39.665516,
+   "tags": {
+    "man_made": "tower"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:way/1300541658",
+   "cat": "station",
+   "name": "",
+   "name_ar": "",
+   "lat": 30.542127,
+   "lon": 41.848929,
+   "tags": {
+    "man_made": "tower"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:way/1300541659",
+   "cat": "station",
+   "name": "",
+   "name_ar": "",
+   "lat": 30.542632,
+   "lon": 41.849565,
+   "tags": {
+    "man_made": "tower"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:way/1300541662",
+   "cat": "station",
+   "name": "",
+   "name_ar": "",
+   "lat": 30.542091,
+   "lon": 41.853507,
+   "tags": {
+    "man_made": "tower"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:way/1300541664",
+   "cat": "station",
+   "name": "",
+   "name_ar": "",
+   "lat": 30.182592,
+   "lon": 42.562042,
+   "tags": {
+    "man_made": "tower"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:way/1300541666",
+   "cat": "station",
+   "name": "",
+   "name_ar": "",
+   "lat": 29.770832,
+   "lon": 43.263505,
+   "tags": {
+    "man_made": "tower"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:way/1300541667",
+   "cat": "station",
+   "name": "",
+   "name_ar": "",
+   "lat": 29.372168,
+   "lon": 43.954643,
+   "tags": {
+    "man_made": "tower"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:way/1300541668",
+   "cat": "station",
+   "name": "",
+   "name_ar": "",
+   "lat": 29.369632,
+   "lon": 43.956555,
+   "tags": {
+    "man_made": "tower"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:way/1300542160",
+   "cat": "station",
+   "name": "",
+   "name_ar": "",
+   "lat": 29.014995,
+   "lon": 44.529893,
+   "tags": {
+    "man_made": "tower"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:way/1300542162",
+   "cat": "station",
+   "name": "",
+   "name_ar": "",
+   "lat": 29.006991,
+   "lon": 44.540794,
+   "tags": {
+    "man_made": "tower"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:way/1300544733",
+   "cat": "station",
+   "name": "",
+   "name_ar": "",
+   "lat": 28.645832,
+   "lon": 45.283596,
+   "tags": {
+    "man_made": "tower"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:way/1300544735",
+   "cat": "station",
+   "name": "",
+   "name_ar": "",
+   "lat": 28.070193,
+   "lon": 46.823233,
+   "tags": {
+    "man_made": "tower"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:way/1300544739",
+   "cat": "station",
+   "name": "",
+   "name_ar": "",
+   "lat": 27.811163,
+   "lon": 47.538321,
+   "tags": {
+    "man_made": "tower"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:way/1487791880",
+   "cat": "shop",
+   "name": "كشك العمادة",
+   "name_ar": "",
+   "lat": 32.10312,
+   "lon": 36.186302,
+   "tags": {
+    "shop": "kiosk"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:way/1487791898",
+   "cat": "shop",
+   "name": "كشك المكتبة",
+   "name_ar": "",
+   "lat": 32.104101,
+   "lon": 36.186094,
+   "tags": {
+    "shop": "kiosk"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:way/1487791899",
+   "cat": "shop",
+   "name": "كشك الحارث",
+   "name_ar": "",
+   "lat": 32.105391,
+   "lon": 36.183792,
+   "tags": {
+    "shop": "kiosk"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:way/1488818643",
+   "cat": "shop",
+   "name": "كشك البوابة الشمالية",
+   "name_ar": "",
+   "lat": 32.106084,
+   "lon": 36.182785,
+   "tags": {
+    "shop": "kiosk"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:way/1489566522",
+   "cat": "rest",
+   "name": "",
+   "name_ar": "",
+   "lat": 32.105543,
+   "lon": 36.186841,
+   "tags": {
+    "amenity": "toilets"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:way/1499597859",
+   "cat": "food",
+   "name": "مطاعم الغربي",
+   "name_ar": "",
+   "lat": 32.10542,
+   "lon": 36.187034,
+   "tags": {
+    "amenity": "restaurant"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:way/1499597861",
+   "cat": "rest",
+   "name": "أمن الغربي",
+   "name_ar": "",
+   "lat": 32.104959,
+   "lon": 36.186602,
+   "tags": {
+    "amenity": "police"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:way/1499597867",
+   "cat": "food",
+   "name": "كفتيريا كلية الطب",
+   "name_ar": "",
+   "lat": 32.105797,
+   "lon": 36.185806,
+   "tags": {
+    "amenity": "cafe",
+    "cuisine": "burger;coffee_shop;sandwich;cake;fries;shawarma;dessert;pizza"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:way/1511783322",
+   "cat": "fuel",
+   "name": "",
+   "name_ar": "",
+   "lat": 33.751651,
+   "lon": 36.599394,
+   "tags": {
+    "amenity": "fuel"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:way/1524781284",
+   "cat": "fuel",
+   "name": "",
+   "name_ar": "",
+   "lat": 34.218241,
+   "lon": 36.762997,
+   "tags": {
+    "amenity": "fuel"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:way/1527933313",
+   "cat": "fuel",
+   "name": "",
+   "name_ar": "",
+   "lat": 33.968629,
+   "lon": 36.717225,
+   "tags": {
+    "amenity": "fuel"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:way/1529484793",
+   "cat": "fuel",
+   "name": "",
+   "name_ar": "",
+   "lat": 33.704202,
+   "lon": 36.562564,
+   "tags": {
+    "amenity": "fuel"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:way/171967542",
+   "cat": "shop",
+   "name": "Trans Mall",
+   "name_ar": "ترانس مول",
+   "lat": 34.607109,
+   "lon": 36.713525,
+   "tags": {
+    "opening_hours": "closed",
+    "shop": "mall"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:way/205957671",
+   "cat": "mosque",
+   "name": "",
+   "name_ar": "",
+   "lat": 34.603858,
+   "lon": 36.722296,
+   "tags": {
+    "amenity": "place_of_worship"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:way/271264355",
+   "cat": "rest",
+   "name": "Police BASE - SARD",
+   "name_ar": "",
+   "lat": 31.911088,
+   "lon": 36.601163,
+   "tags": {
+    "amenity": "police",
+    "operator": "Government"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:way/271264369",
+   "cat": "station",
+   "name": "Water tank J2",
+   "name_ar": "",
+   "lat": 31.915233,
+   "lon": 36.581343,
+   "tags": {
+    "man_made": "water_tower"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:way/271264370",
+   "cat": "station",
+   "name": "Water tank J3",
+   "name_ar": "",
+   "lat": 31.913244,
+   "lon": 36.589289,
+   "tags": {
+    "man_made": "water_tower"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:way/278017204",
+   "cat": "rest",
+   "name": "Police",
+   "name_ar": "",
+   "lat": 31.916474,
+   "lon": 36.584824,
+   "tags": {
+    "amenity": "police",
+    "operator": "Government of Jordan"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:way/369550995",
+   "cat": "rest",
+   "name": "",
+   "name_ar": "",
+   "lat": 31.489419,
+   "lon": 39.357597,
+   "tags": {
+    "highway": "rest_area"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:way/369550997",
+   "cat": "rest",
+   "name": "",
+   "name_ar": "",
+   "lat": 31.489785,
+   "lon": 39.357732,
+   "tags": {
+    "highway": "rest_area"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:way/453439223",
+   "cat": "mosque",
+   "name": "",
+   "name_ar": "",
+   "lat": 34.406987,
+   "lon": 36.758333,
+   "tags": {
+    "amenity": "place_of_worship"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:way/496750518",
+   "cat": "food",
+   "name": "",
+   "name_ar": "",
+   "lat": 34.164335,
+   "lon": 36.757126,
+   "tags": {
+    "amenity": "restaurant"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:way/597076543",
+   "cat": "rest",
+   "name": "",
+   "name_ar": "",
+   "lat": 27.831118,
+   "lon": 47.487014,
+   "tags": {
+    "highway": "services"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:way/628788822",
+   "cat": "mosque",
+   "name": "مسجد هاشم",
+   "name_ar": "",
+   "lat": 32.106586,
+   "lon": 36.183057,
+   "tags": {
+    "amenity": "place_of_worship"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:way/803414102",
+   "cat": "mosque",
+   "name": "جامع هجرة ابن بكر",
+   "name_ar": "",
+   "lat": 31.125172,
+   "lon": 40.621203,
+   "tags": {
+    "amenity": "place_of_worship"
+   },
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-19"
+  }
+ ]
+}
