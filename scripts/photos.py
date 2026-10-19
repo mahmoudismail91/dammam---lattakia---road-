@@ -41,6 +41,24 @@ def strip(h):
     return re.sub(r"<[^>]+>", "", h or "").strip()
 
 
+def year_of(text):
+    m = re.search(r"\b(19[5-9]\d|20[0-2]\d)\b", text or "")
+    return int(m.group(1)) if m else 0
+
+
+def commons_get(url):
+    """Wikimedia rate-limits bursts (HTTP 429): wait and retry instead of skipping."""
+    for wait in (0, 30, 90):
+        time.sleep(wait)
+        try:
+            return http(url, timeout=60)
+        except Exception as e:
+            if "429" not in str(e):
+                raise
+            print(f"  commons busy (429), waiting {wait or 30}s", file=sys.stderr)
+    raise RuntimeError("commons still rate-limited")
+
+
 def commons(line):
     """line: route densified to ~0.5 km. Query every COMMONS_STEP_KM, keep photos close to the road."""
     out = []
@@ -53,7 +71,7 @@ def commons(line):
             "ggsnamespace": 6, "ggslimit": 100, "prop": "imageinfo|coordinates",
             "iiprop": "url|extmetadata", "iiurlwidth": 640, "format": "json"})
         try:
-            pages = http("https://commons.wikimedia.org/w/api.php?" + q, timeout=60).get("query", {}).get("pages", {})
+            pages = commons_get("https://commons.wikimedia.org/w/api.php?" + q).get("query", {}).get("pages", {})
         except Exception as e:
             print(f"  commons {i}: {e}", file=sys.stderr)
             continue
@@ -72,12 +90,13 @@ def commons(line):
                 "thumb": ii.get("thumburl"), "full": ii.get("thumburl"), "page": ii.get("descriptionurl"),
                 "title": pg["title"][5:].rsplit(".", 1)[0],
                 "credit": f"{strip(m.get('Artist', {}).get('value')) or 'Unknown'} · {strip(m.get('LicenseShortName', {}).get('value'))} · Wikimedia Commons",
-                "date": strip(m.get("DateTimeOriginal", {}).get("value"))[:10],
+                "date": strip(m.get("DateTimeOriginal", {}).get("value"))[:40],
+                "year": year_of(strip(m.get("DateTimeOriginal", {}).get("value"))),
             })
             kept += 1
             if kept >= MAX_COMMONS_PER_SAMPLE:
                 break
-        time.sleep(0.5)
+        time.sleep(2)  # stay well under Wikimedia's rate limit
     return out
 
 

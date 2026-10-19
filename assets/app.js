@@ -86,7 +86,7 @@
     state.all.forEach((p) => { p.km = kmAlong(p.lat, p.lon); p.inTown = inTown(p); state.byId.set(p.id, p); });
     buildStops();
     state.photos = photos.items.filter((ph) => ph.thumb && !inTown(ph));
-    state.photos.forEach((ph) => { ph.km = kmAlong(ph.lat, ph.lon); ph.year = yearOf(ph.date); ph.isNew = daysAgo(ph.first_seen) <= 2; state.byId.set(ph.id, ph); });
+    state.photos.forEach((ph) => { ph.km = kmAlong(ph.lat, ph.lon); ph.year = ph.year || yearOf(ph.date); ph.isNew = daysAgo(ph.first_seen) <= 2; state.byId.set(ph.id, ph); });
     state.photos.sort((a, b) => a.km - b.km);
     state.updates = upd.log;
     state.osmUpdated = osm.updated;
