@@ -6,15 +6,16 @@ Rotate the focus by weekday:
 
 | Day | Focus |
 |-----|-------|
-| Mon | Hotels / furnished apartments / motels on the Tapline Road (Hafar Al-Batin, Rafha, Arar, Turaif, Qurayyat) |
-| Tue | Mosques (roadside & historic), prayer stops |
+| Mon | Highway motels / rest houses (استراحات) on the Tapline Road between towns |
+| Tue | Roadside mosques and prayer stops at fuel stations |
 | Wed | Fuel & rest stations, truck stops, tea stands, small shops (bakala, tyre repair) |
 | Thu | Camel areas, camel markets, herding regions, camel-crossing zones |
 | Fri | Borders: Al-Haditha/Al-Omari, Jaber/Nassib – current status, procedures, photos |
 | Sat | People & NPC references: drivers, herders, Tapline history, oral histories, documentaries |
-| Sun | Jordan & Syria legs: Azraq, Mafraq, Daraa, Damascus, Homs, Tartus, Latakia |
+| Sun | Jordan & Syria legs: the highway between Al-Omari, Azraq, Mafraq, Jaber, the M5 and the Homs–Tartus–Latakia road |
 
 Rules
+- **Only places ON the road between towns** – what a driver passes or stops at on the highway: roadside fuel stations, truck stops, rest areas, highway mosques/musallas, tea stands, tyre shops, checkpoints, toll/weigh stations, Tapline pump stations and pipeline markers, camel crossings and herds beside the road, roadside camel/livestock markets, isolated motels, abandoned buildings, signs, junctions. Nothing inside a town's `urban_km` radius (see `data/waypoints.json`) – city sights are not wanted.
 - Every item needs at least one working reference URL (`refs`). Prefer Wikipedia, Wikimedia Commons, Saudi Aramco/Tapline archives, news, YouTube/documentaries, official tourism sites.
 - Set `"approx": true` unless the coordinates come from a reliable map source.
 - `people` entries are fictional NPC archetypes; never add private real individuals.

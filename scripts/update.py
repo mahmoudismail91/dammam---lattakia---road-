@@ -29,7 +29,7 @@ OVERPASS = ["https://overpass-api.de/api/interpreter", "https://overpass.kumi.sy
 
 CHUNKS = 16           # route split into this many pieces
 CHUNKS_PER_RUN = 4    # pieces scanned per daily run -> full pass every 4 days
-CORRIDOR_M = 2000     # distance from the road to search
+CORRIDOR_M = 600      # only things right beside the road
 MAX_PER_CAT_CHUNK = 80
 
 
@@ -84,6 +84,19 @@ def simplify(points, tol):
     return [p for p, k in zip(points, keep) if k]
 
 
+def in_town(lat, lon, wps=None):
+    """True if the point lies inside a town's urban_km radius (waypoints.json) - those are left out."""
+    for w in wps or load("waypoints.json", {})["waypoints"]:
+        if w.get("urban_km") and haversine([w["lon"], w["lat"]], [lon, lat]) < w["urban_km"]:
+            return True
+    return False
+
+
+def dist_to_line_km(line, lat, lon):
+    c = math.cos(math.radians(lat))
+    return min(math.hypot((p[0] - lon) * c, p[1] - lat) for p in line) * 111.2
+
+
 def build_route():
     wps = load("waypoints.json", {})["waypoints"]
     coords = ";".join(f"{w['lon']},{w['lat']}" for w in wps)
@@ -123,7 +136,13 @@ QUERY = """
   nwr["amenity"="place_of_worship"]["religion"="muslim"]{A};
   nwr["building"="mosque"]{A};
   nwr["amenity"="fuel"]{A};
-  nwr["highway"~"^(rest_area|services)$"]{A};
+  nwr["highway"~"^(rest_area|services|toll_gantry)$"]{A};
+  nwr["barrier"~"^(toll_booth|checkpoint)$"]{A};
+  nwr["amenity"~"^(police|drinking_water|car_wash|toilets)$"]{A};
+  nwr["shop"~"^(car_repair|tyres|car_parts|convenience|kiosk|supermarket)$"]{A};
+  nwr["craft"]{A};
+  nwr["man_made"~"^(water_tower|pumping_station|tower)$"]{A};
+  nwr["tourism"~"^(camp_site|caravan_site|viewpoint)$"]{A};
   nwr["amenity"~"^(restaurant|cafe|fast_food)$"]{A};
   nwr["shop"]["name"]{A};
   nwr["amenity"="marketplace"]{A};
@@ -142,6 +161,12 @@ def classify(t):
         return "camel"
     if t.get("barrier") == "border_control":
         return "border"
+    if t.get("barrier") in ("toll_booth", "checkpoint") or t.get("amenity") == "police":
+        return "rest"
+    if t.get("man_made") in ("water_tower", "pumping_station", "tower"):
+        return "station"
+    if t.get("tourism") in ("camp_site", "caravan_site", "viewpoint"):
+        return "rest"
     if "tourism" in t:
         return "hotel"
     if t.get("amenity") == "place_of_worship" or t.get("building") == "mosque":
@@ -152,8 +177,10 @@ def classify(t):
         return "rest"
     if t.get("amenity") in ("restaurant", "cafe", "fast_food"):
         return "food"
-    if t.get("amenity") == "marketplace" or "shop" in t:
+    if t.get("amenity") == "marketplace" or "shop" in t or "craft" in t:
         return "shop"
+    if t.get("amenity") in ("drinking_water", "car_wash", "toilets"):
+        return "rest"
     if t.get("railway") == "station":
         return "station"
     if "historic" in t:
@@ -190,8 +217,12 @@ def main():
         except Exception as e:
             print(f"route build failed, using waypoint line: {e}", file=sys.stderr)
 
+    wps = load("waypoints.json", {})["waypoints"]
+    road = densify(route_line(), 0.5)
     pois = load("osm_pois.json", {"items": []})
-    by_id = {p["id"]: p for p in pois["items"]}
+    # keep only roadside places outside the towns (also cleans data from older, wider scans)
+    by_id = {p["id"]: p for p in pois["items"]
+             if not in_town(p["lat"], p["lon"], wps) and dist_to_line_km(road, p["lat"], p["lon"]) <= CORRIDOR_M / 1000 + 0.2}
     full = args.full or not by_id
 
     line = densify(route_line())
@@ -225,7 +256,7 @@ def main():
                 continue
             lat = el.get("lat", el.get("center", {}).get("lat"))
             lon = el.get("lon", el.get("center", {}).get("lon"))
-            if lat is None:
+            if lat is None or in_town(lat, lon, wps):
                 continue
             pid = f"osm:{el['type']}/{el['id']}"
             seen += 1
@@ -234,7 +265,7 @@ def main():
                 "name": t.get("name:en") or t.get("name") or "",
                 "name_ar": t.get("name:ar") or (t.get("name") if t.get("name:en") else ""),
                 "lat": round(lat, 6), "lon": round(lon, 6),
-                "tags": {k: v for k, v in t.items() if k in (
+                "tags": {k: v for k, v in t.items() if k in ("man_made", "craft", "tourism",
                     "tourism", "amenity", "shop", "highway", "brand", "operator", "opening_hours",
                     "phone", "website", "wikipedia", "wikidata", "image", "stars", "cuisine", "historic", "barrier")},
             }

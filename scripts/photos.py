@@ -20,9 +20,9 @@ import time
 import urllib.parse
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from update import DATA, densify, haversine, http, load, route_line, save  # noqa: E402
+from update import DATA, densify, haversine, http, in_town, load, route_line, save  # noqa: E402
 
-PHOTO_CORRIDOR_KM = 1.5     # Commons photos must be this close to the road
+PHOTO_CORRIDOR_KM = 0.8     # Commons photos must be this close to the road
 COMMONS_STEP_KM = 15        # Commons query spacing (radius 10 km)
 STREET_STEP_KM = 8          # street-level query spacing
 MAX_COMMONS_PER_SAMPLE = 10
@@ -164,7 +164,8 @@ def main():
     today = dt.date.today().isoformat()
     line = route_line()
     dense = densify(line, 1.0)
-    street_samples = dense[::STREET_STEP_KM]
+    wps = load("waypoints.json", {})["waypoints"]
+    street_samples = [p for p in dense[::STREET_STEP_KM] if not in_town(p[1], p[0], wps)]
     print(f"route ~{len(dense)} km; {len(street_samples)} street-level samples")
 
     found = commons(densify(line, 0.5))
@@ -192,7 +193,10 @@ def main():
         if p["id"] not in old:
             added.append(p["id"])
         old[p["id"]] = p
-    items = sorted(old.values(), key=lambda p: p["id"])
+    # only the road between towns, not photos inside the cities
+    wps = load("waypoints.json", {})["waypoints"]
+    items = sorted((p for p in old.values() if not in_town(p["lat"], p["lon"], wps)), key=lambda p: p["id"])
+    added = [i for i in added if not in_town(old[i]["lat"], old[i]["lon"], wps)]
     save("photos.json", {"updated": today, "items": items})
 
     updates = load("updates.json", {"log": []})

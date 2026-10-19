@@ -25,7 +25,7 @@
 
   const state = {
     cats: new Set(JSON.parse(ls.get("cats") || "null") || Object.keys(CATS)),
-    showOsm: true, onlyNew: false,
+    showOsm: true, onlyNew: false, showTown: ls.get("showTown") === "1",
     all: [], byId: new Map(), route: [], cum: [],
   };
 
@@ -72,8 +72,8 @@
     cur.items.forEach((p) => { p.curated = true; p.isNew = daysAgo(p.added) <= 7; });
     osm.items.forEach((p) => { p.isNew = daysAgo(p.first_seen) <= 2; });
     state.all = [...cur.items, ...osm.items];
-    state.all.forEach((p) => { p.km = kmAlong(p.lat, p.lon); state.byId.set(p.id, p); });
-    state.photos = photos.items.filter((ph) => ph.thumb);
+    state.all.forEach((p) => { p.km = kmAlong(p.lat, p.lon); p.inTown = inTown(p); state.byId.set(p.id, p); });
+    state.photos = photos.items.filter((ph) => ph.thumb && !inTown(ph));
     state.photos.forEach((ph) => { ph.km = kmAlong(ph.lat, ph.lon); ph.isNew = daysAgo(ph.first_seen) <= 2; state.byId.set(ph.id, ph); });
     state.photos.sort((a, b) => a.km - b.km);
     state.updates = upd.log;
@@ -93,6 +93,11 @@
     else map.fitBounds(L.latLngBounds(state.route).pad(0.05));
   });
 
+  // inside a town's urban radius (waypoints.json urban_km) -> not "on the road"
+  function inTown(p) {
+    return state.waypoints.some((w) => w.urban_km && map.distance([w.lat, w.lon], [p.lat, p.lon]) < w.urban_km * 1000);
+  }
+  const ALWAYS = new Set(["city", "border", "station", "people", "camel"]);
   function buildCum() {
     const r = state.route; state.cum = [0];
     for (let i = 1; i < r.length; i++) state.cum.push(state.cum[i - 1] + map.distance(r[i - 1], r[i]) / 1000);
@@ -125,7 +130,8 @@
       iconSize: [size, size], iconAnchor: [size / 2, size / 2],
     });
   }
-  const visible = (p) => state.cats.has(p.cat) && (!state.onlyNew || p.isNew) && (p.curated || state.showOsm);
+  const visible = (p) => state.cats.has(p.cat) && (!state.onlyNew || p.isNew) && (p.curated || state.showOsm)
+    && (state.showTown || !p.inTown || ALWAYS.has(p.cat));
 
   function redraw() {
     curatedLayer.clearLayers(); osmLayer.clearLayers();
@@ -335,7 +341,7 @@
   }
   function renderLayers() {
     const counts = {};
-    state.all.forEach((p) => (counts[p.cat] = (counts[p.cat] || 0) + 1));
+    state.all.filter((p) => state.showTown || !p.inTown || ALWAYS.has(p.cat)).forEach((p) => (counts[p.cat] = (counts[p.cat] || 0) + 1));
     counts.photo = state.photos.length;
     $("#layers").innerHTML = Object.entries(CATS).map(([k, c]) =>
       `<label class="${state.cats.has(k) ? "" : "off"}"><input type="checkbox" value="${k}" ${state.cats.has(k) ? "checked" : ""}>
@@ -395,6 +401,8 @@
   }));
   $("#showOsm").onchange = (e) => { state.showOsm = e.target.checked; redraw(); };
   $("#onlyNew").onchange = (e) => { state.onlyNew = e.target.checked; redraw(); };
+  $("#showTown").checked = state.showTown;
+  $("#showTown").onchange = (e) => { state.showTown = e.target.checked; ls.set("showTown", e.target.checked ? "1" : "0"); renderLayers(); redraw(); };
   $("#sideToggle").onclick = () => $("#side").classList.toggle("hidden");
 
   $("#q").oninput = (e) => {
@@ -402,7 +410,7 @@
     const res = $("#results");
     document.querySelector(".tab.on").style.display = q ? "none" : "";
     if (!q) { res.hidden = true; return; }
-    const hits = state.all.filter((p) => {
+    const hits = state.all.filter((p) => state.showTown || !p.inTown || ALWAYS.has(p.cat)).filter((p) => {
       const c = CATS[p.cat];
       return [p.name, p.name_ar, p.desc, c?.label, p.cat, p.tags?.brand].some((s) => s && String(s).toLowerCase().includes(q));
     }).sort((a, b) => (b.curated - a.curated) || a.km - b.km).slice(0, 150);
