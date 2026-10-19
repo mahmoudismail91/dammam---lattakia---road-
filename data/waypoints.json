@@ -1,0 +1,26 @@
+{
+  "note": "Ordered route stops used to build the road line (OSRM routing is forced through each one). Coordinates are town centres / crossings, approximate.",
+  "waypoints": [
+    {"name": "Dammam", "name_ar": "الدمام", "country": "SA", "lat": 26.4207, "lon": 50.0888},
+    {"name": "Jubail", "name_ar": "الجبيل", "country": "SA", "lat": 27.0046, "lon": 49.6460},
+    {"name": "Nairiyah", "name_ar": "النعيرية", "country": "SA", "lat": 27.4697, "lon": 48.4794},
+    {"name": "Qaisumah", "name_ar": "القيصومة", "country": "SA", "lat": 28.3108, "lon": 46.1275},
+    {"name": "Hafar Al-Batin", "name_ar": "حفر الباطن", "country": "SA", "lat": 28.4328, "lon": 45.9708},
+    {"name": "Rafha", "name_ar": "رفحاء", "country": "SA", "lat": 29.6262, "lon": 43.4937},
+    {"name": "Arar", "name_ar": "عرعر", "country": "SA", "lat": 30.9753, "lon": 41.0381},
+    {"name": "Turaif", "name_ar": "طريف", "country": "SA", "lat": 31.6725, "lon": 38.6637},
+    {"name": "Al-Qurayyat", "name_ar": "القريات", "country": "SA", "lat": 31.3318, "lon": 37.3428},
+    {"name": "Al-Haditha / Al-Omari border", "name_ar": "منفذ الحديثة / العمري", "country": "SA/JO", "lat": 31.4700, "lon": 37.1400},
+    {"name": "Azraq", "name_ar": "الأزرق", "country": "JO", "lat": 31.8340, "lon": 36.8170},
+    {"name": "Mafraq", "name_ar": "المفرق", "country": "JO", "lat": 32.3434, "lon": 36.2080},
+    {"name": "Jaber / Nassib border", "name_ar": "معبر جابر / نصيب", "country": "JO/SY", "lat": 32.5510, "lon": 36.2000},
+    {"name": "Daraa", "name_ar": "درعا", "country": "SY", "lat": 32.6189, "lon": 36.1021},
+    {"name": "Damascus", "name_ar": "دمشق", "country": "SY", "lat": 33.5138, "lon": 36.2765},
+    {"name": "Al-Nabk", "name_ar": "النبك", "country": "SY", "lat": 34.0247, "lon": 36.7286},
+    {"name": "Homs", "name_ar": "حمص", "country": "SY", "lat": 34.7324, "lon": 36.7137},
+    {"name": "Tartus", "name_ar": "طرطوس", "country": "SY", "lat": 34.8890, "lon": 35.8866},
+    {"name": "Baniyas", "name_ar": "بانياس", "country": "SY", "lat": 35.1826, "lon": 35.9402},
+    {"name": "Jableh", "name_ar": "جبلة", "country": "SY", "lat": 35.3610, "lon": 35.9256},
+    {"name": "Latakia", "name_ar": "اللاذقية", "country": "SY", "lat": 35.5317, "lon": 35.7915}
+  ]
+}

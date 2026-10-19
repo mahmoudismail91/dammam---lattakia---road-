@@ -1,0 +1,69 @@
+name: Daily road update
+
+on:
+  schedule:
+    - cron: "17 3 * * *"   # every day 03:17 UTC
+  workflow_dispatch:
+    inputs:
+      full:
+        description: "Scan the whole route (not just today's chunks)"
+        type: boolean
+        default: false
+      route:
+        description: "Rebuild the road line from OSRM"
+        type: boolean
+        default: false
+  push:
+    branches: [main, master, "claude/dammam-latakia-road-map-dl0y0g"]
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: road-update
+  cancel-in-progress: false
+
+jobs:
+  update:
+    if: github.event_name != 'push' || !contains(github.event.head_commit.message, '[skip-scan]')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Scan OpenStreetMap along the road
+        run: |
+          ARGS=""
+          if [ "${{ inputs.full }}" = "true" ]; then ARGS="$ARGS --full"; fi
+          if [ "${{ inputs.route }}" = "true" ]; then ARGS="$ARGS --route"; fi
+          python scripts/update.py $ARGS
+      - name: Commit data
+        run: |
+          git config user.name "road-map-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/
+          if git diff --cached --quiet; then echo "no changes"; exit 0; fi
+          git commit -m "Daily map update $(date -u +%F)"
+          git pull --rebase origin "${GITHUB_REF_NAME}"
+          git push origin "HEAD:${GITHUB_REF_NAME}"
+
+  deploy:
+    needs: update
+    if: always() && needs.update.result != 'failure'
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+      - id: deployment
+        uses: actions/deploy-pages@v4

@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dammam → Latakia Road</title>
+  <meta name="description" content="Interactive map of the road from Dammam, Saudi Arabia to Latakia, Syria: stops, Tapline stations, borders, hotels, mosques, shops, camel areas and NPC references. Updated daily.">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.5.3/MarkerCluster.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Noto+Kufi+Arabic:wght@400;600&display=swap">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <aside id="side">
+    <header>
+      <h1>Dammam <span>→</span> Latakia</h1>
+      <p class="sub">الدمام ← اللاذقية · Tapline Road · Jordan · Syria</p>
+      <div id="stats" class="stats"></div>
+    </header>
+
+    <nav class="tabs">
+      <button data-tab="stops" class="on">Route</button>
+      <button data-tab="layers">Layers</button>
+      <button data-tab="new">New <b id="newCount"></b></button>
+    </nav>
+
+    <div class="search"><input id="q" type="search" placeholder="Search places… (e.g. Arar, hotel, mosque)"></div>
+
+    <section id="tab-stops" class="tab on"><ol id="stops" class="stops"></ol></section>
+    <section id="tab-layers" class="tab"><div id="layers" class="layers"></div>
+      <label class="toggle"><input type="checkbox" id="showOsm" checked> Show OpenStreetMap places (auto-updated)</label>
+      <label class="toggle"><input type="checkbox" id="onlyNew"> Only places added in the last 7 days</label>
+    </section>
+    <section id="tab-new" class="tab"><div id="updates"></div></section>
+    <ul id="results" class="results" hidden></ul>
+
+    <footer>
+      Data: curated refs · <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">© OpenStreetMap</a> · photos <a href="https://commons.wikimedia.org" target="_blank" rel="noopener">Wikimedia Commons</a> / Wikipedia ·
+      <a href="data/curated.json" download>curated.json</a> · <a href="data/osm_pois.json" download>osm_pois.json</a>
+    </footer>
+  </aside>
+
+  <main id="map"></main>
+
+  <article id="detail" hidden>
+    <button class="close" aria-label="Close">×</button>
+    <div id="detailBody"></div>
+  </article>
+
+  <div id="lightbox" hidden><figure><img alt=""><figcaption></figcaption></figure></div>
+
+  <button id="sideToggle" aria-label="Toggle panel">☰</button>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.5.3/leaflet.markercluster.min.js"></script>
+  <script src="assets/app.js"></script>
+</body>
+</html>

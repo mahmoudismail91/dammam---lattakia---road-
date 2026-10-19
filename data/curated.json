@@ -1,0 +1,370 @@
+{
+  "note": "Hand-curated references for the Dammam -> Latakia journey. 'approx': true means the pin is placed roughly and should be checked. 'game' holds ideas for the Unity project (Arar_Station). People entries are fictional NPC archetypes, not real individuals.",
+  "items": [
+    {
+      "id": "dammam", "cat": "city", "country": "SA",
+      "name": "Dammam", "name_ar": "الدمام", "lat": 26.4207, "lon": 50.0888,
+      "desc": "Start of the journey. Capital of the Eastern Province on the Gulf coast; with Khobar and Dhahran it forms the oil-industry metro where the Tapline story begins.",
+      "game": "Opening scene: Gulf humidity, corniche at dawn, loading the truck/car before the long drive north-west.",
+      "wiki": "Dammam",
+      "refs": [{"t": "Wikipedia – Dammam", "u": "https://en.wikipedia.org/wiki/Dammam"}],
+      "added": "2026-10-19"
+    },
+    {
+      "id": "dammam7", "cat": "landmark", "country": "SA", "approx": true,
+      "name": "Dammam No. 7 – 'Prosperity Well'", "name_ar": "بئر الدمام رقم 7 (بئر الخير)", "lat": 26.3186, "lon": 50.1330,
+      "desc": "First commercial oil well in Saudi Arabia (1938), in Dhahran. The oil that later flowed through the Trans-Arabian Pipeline started here.",
+      "game": "Historic prologue location / museum-style flashback.",
+      "wiki": "Dammam No. 7",
+      "refs": [{"t": "Wikipedia – Dammam No. 7", "u": "https://en.wikipedia.org/wiki/Dammam_No._7"}],
+      "added": "2026-10-19"
+    },
+    {
+      "id": "jubail", "cat": "city", "country": "SA",
+      "name": "Jubail", "name_ar": "الجبيل", "lat": 27.0046, "lon": 49.6460,
+      "desc": "Huge industrial city on the coast; the road leaves the Gulf here and turns inland toward Nairiyah.",
+      "game": "Flare stacks and petrochemical skyline on the horizon at night.",
+      "wiki": "Jubail",
+      "refs": [{"t": "Wikipedia – Jubail", "u": "https://en.wikipedia.org/wiki/Jubail"}],
+      "added": "2026-10-19"
+    },
+    {
+      "id": "nariya-station", "cat": "station", "country": "SA", "approx": true,
+      "name": "Nariya (Nairiyah) – Tapline pump station", "name_ar": "محطة النعيرية – التابلاين", "lat": 27.4697, "lon": 48.4794,
+      "desc": "One of the original Trans-Arabian Pipeline (Tapline) pumping stations. Each station was a small company town with housing, clinic and school in the middle of the desert.",
+      "game": "First 'station' archetype – compare with Arar/Badanah station in the game.",
+      "wiki": "Trans-Arabian Pipeline",
+      "refs": [{"t": "Wikipedia – Trans-Arabian Pipeline", "u": "https://en.wikipedia.org/wiki/Trans-Arabian_Pipeline"}],
+      "added": "2026-10-19"
+    },
+    {
+      "id": "qaisumah-station", "cat": "station", "country": "SA", "approx": true,
+      "name": "Qaisumah – Tapline pump station", "name_ar": "محطة القيصومة – التابلاين", "lat": 28.3108, "lon": 46.1275,
+      "desc": "Tapline's eastern head station (pipeline built 1947–1950 to Sidon, Lebanon). From here the 'Tapline Road' (Hwy 85) follows the pipe north-west for ~1,000 km.",
+      "game": "Where the player joins the Tapline Road – pipeline markers run beside the asphalt.",
+      "wiki": "Trans-Arabian Pipeline",
+      "refs": [{"t": "Wikipedia – Trans-Arabian Pipeline", "u": "https://en.wikipedia.org/wiki/Trans-Arabian_Pipeline"}],
+      "added": "2026-10-19"
+    },
+    {
+      "id": "hafar", "cat": "city", "country": "SA",
+      "name": "Hafar Al-Batin", "name_ar": "حفر الباطن", "lat": 28.4328, "lon": 45.9708,
+      "desc": "Big junction town in Wadi al-Batin, near King Khalid Military City. Known for its large livestock / camel trade.",
+      "game": "Busy truck-stop town: workshops, restaurants, shawarma, tyre shops.",
+      "wiki": "Hafar Al-Batin",
+      "refs": [{"t": "Wikipedia – Hafar Al-Batin", "u": "https://en.wikipedia.org/wiki/Hafar_Al-Batin"}],
+      "added": "2026-10-19"
+    },
+    {
+      "id": "hafar-camel-market", "cat": "camel", "country": "SA", "approx": true,
+      "name": "Hafar Al-Batin livestock & camel market", "name_ar": "سوق الإبل والمواشي – حفر الباطن", "lat": 28.4000, "lon": 45.9900,
+      "desc": "Livestock market area for camels, sheep and goats. Pin is approximate – confirm exact market location.",
+      "game": "Camel market scene: haggling NPCs, pickup trucks with camels in the back.",
+      "refs": [{"t": "Wikipedia – Dromedary", "u": "https://en.wikipedia.org/wiki/Dromedary"}],
+      "added": "2026-10-19"
+    },
+    {
+      "id": "dibdibah", "cat": "camel", "country": "SA", "approx": true,
+      "name": "Ad-Dibdibah plain – camel grazing", "name_ar": "سهل الدبدبة – مراعي الإبل", "lat": 28.6500, "lon": 45.3000,
+      "desc": "Flat gravel plain west of Hafar Al-Batin, used by herders for camel grazing, especially after winter rains.",
+      "game": "Open-desert biome: scattered camel herds, water tanker trucks, herders' tents.",
+      "refs": [{"t": "Wikipedia – Bedouin", "u": "https://en.wikipedia.org/wiki/Bedouin"}],
+      "added": "2026-10-19"
+    },
+    {
+      "id": "rafha", "cat": "city", "country": "SA",
+      "name": "Rafha", "name_ar": "رفحاء", "lat": 29.6262, "lon": 43.4937,
+      "desc": "Town that grew around a Tapline pump station. Midpoint of the Saudi leg of the road.",
+      "game": "Overnight stop option; old Tapline housing compound.",
+      "wiki": "Rafha",
+      "refs": [{"t": "Wikipedia – Rafha", "u": "https://en.wikipedia.org/wiki/Rafha"}, {"t": "Wikipedia – Trans-Arabian Pipeline", "u": "https://en.wikipedia.org/wiki/Trans-Arabian_Pipeline"}],
+      "added": "2026-10-19"
+    },
+    {
+      "id": "widyan-camels", "cat": "camel", "country": "SA", "approx": true,
+      "name": "Camel crossings – Tapline Road (Rafha–Arar)", "name_ar": "معابر الإبل – طريق التابلاين", "lat": 30.3000, "lon": 42.3000,
+      "desc": "Long open stretch of Hwy 85 through the Al-Widyan plateau. Free-roaming camels near the road are a known night-driving hazard; fenced sections and camel-crossing signs.",
+      "game": "Night-driving hazard event: camels on the road, hazard lights, warning signs.",
+      "refs": [{"t": "Wikipedia – Northern Borders Province", "u": "https://en.wikipedia.org/wiki/Northern_Borders_Province"}],
+      "added": "2026-10-19"
+    },
+    {
+      "id": "arar", "cat": "city", "country": "SA",
+      "name": "Arar", "name_ar": "عرعر", "lat": 30.9753, "lon": 41.0381,
+      "desc": "Capital of the Northern Borders Province. The town grew up with the Tapline and its Badanah pump station. Core location for the Arar_Station Unity project.",
+      "game": "MAIN HUB – Arar_Station.",
+      "wiki": "Arar, Saudi Arabia",
+      "refs": [{"t": "Wikipedia – Arar", "u": "https://en.wikipedia.org/wiki/Arar,_Saudi_Arabia"}, {"t": "Wikipedia – Northern Borders Province", "u": "https://en.wikipedia.org/wiki/Northern_Borders_Province"}],
+      "added": "2026-10-19"
+    },
+    {
+      "id": "badanah-station", "cat": "station", "country": "SA", "approx": true,
+      "name": "Badanah – Tapline pump station (near Arar)", "name_ar": "محطة بدنة – التابلاين", "lat": 30.9800, "lon": 41.0700,
+      "desc": "Tapline pumping station associated with Arar. Station towns had staff housing, a hospital, schools and an airstrip. Exact site to verify.",
+      "game": "Reference for the station building, fences, water tower, pump halls.",
+      "wiki": "Trans-Arabian Pipeline",
+      "refs": [{"t": "Wikipedia – Trans-Arabian Pipeline", "u": "https://en.wikipedia.org/wiki/Trans-Arabian_Pipeline"}],
+      "added": "2026-10-19"
+    },
+    {
+      "id": "turaif", "cat": "city", "country": "SA",
+      "name": "Turaif", "name_ar": "طريف", "lat": 31.6725, "lon": 38.6637,
+      "desc": "Last Tapline pump station town in Saudi Arabia; known as one of the coldest towns in the Kingdom in winter (snow occasionally).",
+      "game": "Cold-night variant: frost on the windshield, heater in the truck cab.",
+      "wiki": "Turaif",
+      "refs": [{"t": "Wikipedia – Turaif", "u": "https://en.wikipedia.org/wiki/Turaif"}],
+      "added": "2026-10-19"
+    },
+    {
+      "id": "hamad", "cat": "camel", "country": "SA", "approx": true,
+      "name": "Al-Hamad / Syrian Desert edge", "name_ar": "بادية الحماد", "lat": 31.4000, "lon": 39.6000,
+      "desc": "Basalt and gravel desert of the Syrian Desert edge between Turaif and Al-Qurayyat; Bedouin camel and sheep herding.",
+      "game": "Black basalt desert biome – very different look from the sandy east.",
+      "refs": [{"t": "Wikipedia – Syrian Desert", "u": "https://en.wikipedia.org/wiki/Syrian_Desert"}],
+      "added": "2026-10-19"
+    },
+    {
+      "id": "qurayyat", "cat": "city", "country": "SA",
+      "name": "Al-Qurayyat", "name_ar": "القريات", "lat": 31.3318, "lon": 37.3428,
+      "desc": "Last Saudi town before the Al-Haditha border crossing; olive farms and salt flats nearby.",
+      "game": "Final fuel/food stop before border paperwork.",
+      "wiki": "Qurayyat",
+      "refs": [{"t": "Wikipedia – Qurayyat", "u": "https://en.wikipedia.org/wiki/Qurayyat"}],
+      "added": "2026-10-19"
+    },
+    {
+      "id": "haditha-border", "cat": "border", "country": "SA/JO", "approx": true,
+      "name": "Al-Haditha (SA) / Al-Omari (JO) border crossing", "name_ar": "منفذ الحديثة / مركز حدود العمري", "lat": 31.4700, "lon": 37.1400,
+      "desc": "Main Saudi–Jordan crossing for this route. Long truck queues, customs inspection, money changers, insurance offices. Check current opening hours/status before travel.",
+      "game": "Border gameplay: passport, customs search, waiting queue, insurance kiosk.",
+      "refs": [{"t": "Wikipedia – Jordan–Saudi Arabia border", "u": "https://en.wikipedia.org/wiki/Jordan%E2%80%93Saudi_Arabia_border"}],
+      "added": "2026-10-19"
+    },
+    {
+      "id": "jordan-badia", "cat": "camel", "country": "JO", "approx": true,
+      "name": "Jordan Eastern Badia", "name_ar": "البادية الشرقية – الأردن", "lat": 31.6500, "lon": 37.0000,
+      "desc": "Empty desert between Al-Omari and Azraq, Bedouin herders and camel herds, few services.",
+      "refs": [{"t": "Wikipedia – Bedouin", "u": "https://en.wikipedia.org/wiki/Bedouin"}],
+      "added": "2026-10-19"
+    },
+    {
+      "id": "azraq", "cat": "city", "country": "JO",
+      "name": "Azraq", "name_ar": "الأزرق", "lat": 31.8340, "lon": 36.8170,
+      "desc": "Oasis town and key truck junction (roads to Iraq, Saudi Arabia and Amman). Many truck stops, tyre shops and restaurants along the main road.",
+      "game": "Oasis + truck junction hub.",
+      "wiki": "Azraq",
+      "refs": [{"t": "Wikipedia – Azraq", "u": "https://en.wikipedia.org/wiki/Azraq"}],
+      "added": "2026-10-19"
+    },
+    {
+      "id": "qasr-azraq", "cat": "landmark", "country": "JO",
+      "name": "Qasr al-Azraq", "name_ar": "قصر الأزرق", "lat": 31.8796, "lon": 36.8277,
+      "desc": "Black basalt fortress; T.E. Lawrence used it as a base in the winter of 1917–18.",
+      "wiki": "Qasr Azraq",
+      "refs": [{"t": "Wikipedia – Qasr Azraq", "u": "https://en.wikipedia.org/wiki/Qasr_Azraq"}],
+      "added": "2026-10-19"
+    },
+    {
+      "id": "azraq-wetland", "cat": "landmark", "country": "JO", "approx": true,
+      "name": "Azraq Wetland Reserve", "name_ar": "محمية الأزرق المائية", "lat": 31.8336, "lon": 36.8241,
+      "desc": "Remnant of a once huge desert oasis, now a protected wetland with water buffalo and migratory birds.",
+      "wiki": "Azraq Wetland Reserve",
+      "refs": [{"t": "Wikipedia – Azraq Wetland Reserve", "u": "https://en.wikipedia.org/wiki/Azraq_Wetland_Reserve"}],
+      "added": "2026-10-19"
+    },
+    {
+      "id": "mafraq", "cat": "city", "country": "JO",
+      "name": "Mafraq", "name_ar": "المفرق", "lat": 32.3434, "lon": 36.2080,
+      "desc": "Northern Jordan town; once an important stop on the Hejaz Railway. Last big town before Jaber.",
+      "wiki": "Mafraq",
+      "refs": [{"t": "Wikipedia – Mafraq", "u": "https://en.wikipedia.org/wiki/Mafraq"}],
+      "added": "2026-10-19"
+    },
+    {
+      "id": "nassib-border", "cat": "border", "country": "JO/SY", "approx": true,
+      "name": "Jaber (JO) / Nassib (SY) border crossing", "name_ar": "معبر جابر / نصيب", "lat": 32.5510, "lon": 36.2000,
+      "desc": "Main Jordan–Syria crossing on the Amman–Damascus highway. Closed 2015–2018, reopened Oct 2018. Duty-free zone between posts. Check current status before travel.",
+      "game": "Second border: different uniforms, signs, currency (JOD -> SYP).",
+      "wiki": "Nasib Border Crossing",
+      "refs": [{"t": "Wikipedia – Nasib Border Crossing", "u": "https://en.wikipedia.org/wiki/Nasib_Border_Crossing"}],
+      "added": "2026-10-19"
+    },
+    {
+      "id": "daraa", "cat": "city", "country": "SY",
+      "name": "Daraa", "name_ar": "درعا", "lat": 32.6189, "lon": 36.1021,
+      "desc": "First Syrian city after Nassib, in the Hauran plain.",
+      "wiki": "Daraa",
+      "refs": [{"t": "Wikipedia – Daraa", "u": "https://en.wikipedia.org/wiki/Daraa"}],
+      "added": "2026-10-19"
+    },
+    {
+      "id": "daraa-omari", "cat": "mosque", "country": "SY", "approx": true,
+      "name": "Al-Omari Mosque, Daraa", "name_ar": "الجامع العمري – درعا", "lat": 32.6122, "lon": 36.1035,
+      "desc": "Early Islamic-era mosque in old Daraa.",
+      "wiki": "Al-Omari Mosque (Daraa)",
+      "refs": [{"t": "Wikipedia – Al-Omari Mosque (Daraa)", "u": "https://en.wikipedia.org/wiki/Al-Omari_Mosque_(Daraa)"}],
+      "added": "2026-10-19"
+    },
+    {
+      "id": "m5", "cat": "landmark", "country": "SY", "approx": true,
+      "name": "M5 highway (Nassib – Damascus – Homs)", "name_ar": "الطريق الدولي M5", "lat": 33.1000, "lon": 36.2000,
+      "desc": "Syria's main north–south motorway, which the route follows from the border to Homs.",
+      "wiki": "M5 motorway (Syria)",
+      "refs": [{"t": "Wikipedia – M5 motorway (Syria)", "u": "https://en.wikipedia.org/wiki/M5_motorway_(Syria)"}],
+      "added": "2026-10-19"
+    },
+    {
+      "id": "damascus", "cat": "city", "country": "SY",
+      "name": "Damascus", "name_ar": "دمشق", "lat": 33.5138, "lon": 36.2765,
+      "desc": "One of the oldest continuously inhabited cities. Major stop: old city, souqs, Umayyad Mosque.",
+      "wiki": "Damascus",
+      "refs": [{"t": "Wikipedia – Damascus", "u": "https://en.wikipedia.org/wiki/Damascus"}],
+      "added": "2026-10-19"
+    },
+    {
+      "id": "umayyad", "cat": "mosque", "country": "SY",
+      "name": "Umayyad Mosque", "name_ar": "الجامع الأموي", "lat": 33.5116, "lon": 36.3065,
+      "desc": "Great Mosque of Damascus (705–715 CE), one of the largest and oldest mosques in the world.",
+      "wiki": "Umayyad Mosque",
+      "refs": [{"t": "Wikipedia – Umayyad Mosque", "u": "https://en.wikipedia.org/wiki/Umayyad_Mosque"}],
+      "added": "2026-10-19"
+    },
+    {
+      "id": "hamidiyah", "cat": "shop", "country": "SY",
+      "name": "Souq al-Hamidiyah", "name_ar": "سوق الحميدية", "lat": 33.5110, "lon": 36.3030,
+      "desc": "Covered Ottoman-era market leading to the Umayyad Mosque – textiles, sweets, ice-cream (Bakdash), spices.",
+      "game": "Dense shop street reference: metal roof with bullet-hole light shafts, shop signs.",
+      "wiki": "Al-Hamidiyah Souq",
+      "refs": [{"t": "Wikipedia – Al-Hamidiyah Souq", "u": "https://en.wikipedia.org/wiki/Al-Hamidiyah_Souq"}],
+      "added": "2026-10-19"
+    },
+    {
+      "id": "nabk", "cat": "city", "country": "SY",
+      "name": "Al-Nabk", "name_ar": "النبك", "lat": 34.0247, "lon": 36.7286,
+      "desc": "Qalamoun mountain town on the M5; cold high plateau between Damascus and Homs. Monastery of Mar Musa nearby.",
+      "wiki": "Al-Nabk",
+      "refs": [{"t": "Wikipedia – Al-Nabk", "u": "https://en.wikipedia.org/wiki/Al-Nabk"}],
+      "added": "2026-10-19"
+    },
+    {
+      "id": "homs", "cat": "city", "country": "SY",
+      "name": "Homs", "name_ar": "حمص", "lat": 34.7324, "lon": 36.7137,
+      "desc": "Central Syrian city; the route turns west here through the Homs Gap toward the coast.",
+      "wiki": "Homs",
+      "refs": [{"t": "Wikipedia – Homs", "u": "https://en.wikipedia.org/wiki/Homs"}],
+      "added": "2026-10-19"
+    },
+    {
+      "id": "khalid-mosque", "cat": "mosque", "country": "SY", "approx": true,
+      "name": "Khalid ibn al-Walid Mosque", "name_ar": "جامع خالد بن الوليد", "lat": 34.7395, "lon": 36.7170,
+      "desc": "Ottoman-style mosque in Homs with two tall minarets and nine domes.",
+      "wiki": "Khalid ibn al-Walid Mosque",
+      "refs": [{"t": "Wikipedia – Khalid ibn al-Walid Mosque", "u": "https://en.wikipedia.org/wiki/Khalid_ibn_al-Walid_Mosque"}],
+      "added": "2026-10-19"
+    },
+    {
+      "id": "krak", "cat": "landmark", "country": "SY",
+      "name": "Krak des Chevaliers", "name_ar": "قلعة الحصن", "lat": 34.7570, "lon": 36.2944,
+      "desc": "Crusader castle above the Homs Gap, visible from the Homs–Tartus road (short detour).",
+      "wiki": "Krak des Chevaliers",
+      "refs": [{"t": "Wikipedia – Krak des Chevaliers", "u": "https://en.wikipedia.org/wiki/Krak_des_Chevaliers"}],
+      "added": "2026-10-19"
+    },
+    {
+      "id": "tartus", "cat": "city", "country": "SY",
+      "name": "Tartus", "name_ar": "طرطوس", "lat": 34.8890, "lon": 35.8866,
+      "desc": "First view of the Mediterranean. From here the coastal M1 runs north to Latakia.",
+      "wiki": "Tartus",
+      "refs": [{"t": "Wikipedia – Tartus", "u": "https://en.wikipedia.org/wiki/Tartus"}, {"t": "Wikipedia – M1 motorway (Syria)", "u": "https://en.wikipedia.org/wiki/M1_motorway_(Syria)"}],
+      "added": "2026-10-19"
+    },
+    {
+      "id": "arwad", "cat": "landmark", "country": "SY",
+      "name": "Arwad island", "name_ar": "جزيرة أرواد", "lat": 34.8560, "lon": 35.8580,
+      "desc": "Only inhabited island of Syria, short boat ride from Tartus; fishermen and boat builders.",
+      "wiki": "Arwad",
+      "refs": [{"t": "Wikipedia – Arwad", "u": "https://en.wikipedia.org/wiki/Arwad"}],
+      "added": "2026-10-19"
+    },
+    {
+      "id": "baniyas", "cat": "city", "country": "SY",
+      "name": "Baniyas", "name_ar": "بانياس", "lat": 35.1826, "lon": 35.9402,
+      "desc": "Coastal town with an oil refinery and terminal – the Iraqi Kirkuk–Baniyas pipeline ended here (pipeline theme continues).",
+      "wiki": "Baniyas",
+      "refs": [{"t": "Wikipedia – Baniyas", "u": "https://en.wikipedia.org/wiki/Baniyas"}],
+      "added": "2026-10-19"
+    },
+    {
+      "id": "jableh", "cat": "city", "country": "SY",
+      "name": "Jableh", "name_ar": "جبلة", "lat": 35.3610, "lon": 35.9256,
+      "desc": "Small coastal city with a Roman theatre, 25 km before Latakia.",
+      "wiki": "Jableh",
+      "refs": [{"t": "Wikipedia – Jableh", "u": "https://en.wikipedia.org/wiki/Jableh"}],
+      "added": "2026-10-19"
+    },
+    {
+      "id": "ugarit", "cat": "landmark", "country": "SY",
+      "name": "Ugarit (Ras Shamra)", "name_ar": "أوغاريت – رأس شمرا", "lat": 35.6017, "lon": 35.7821,
+      "desc": "Bronze-age port city just north of Latakia, where one of the earliest alphabets was found.",
+      "wiki": "Ugarit",
+      "refs": [{"t": "Wikipedia – Ugarit", "u": "https://en.wikipedia.org/wiki/Ugarit"}],
+      "added": "2026-10-19"
+    },
+    {
+      "id": "latakia", "cat": "city", "country": "SY",
+      "name": "Latakia", "name_ar": "اللاذقية", "lat": 35.5317, "lon": 35.7915,
+      "desc": "End of the journey: Syria's main port city on the Mediterranean.",
+      "game": "Final scene: sea, port cranes, corniche at sunset.",
+      "wiki": "Latakia",
+      "refs": [{"t": "Wikipedia – Latakia", "u": "https://en.wikipedia.org/wiki/Latakia"}],
+      "added": "2026-10-19"
+    },
+
+    {
+      "id": "npc-trucker", "cat": "people", "country": "SA", "approx": true,
+      "name": "NPC: long-haul truck driver", "name_ar": "شخصية: سائق شاحنة", "lat": 29.6500, "lon": 43.4500,
+      "desc": "Archetype: driver hauling goods Gulf -> Jordan/Syria, sleeps in the cab at truck stops, knows every tea stand on Hwy 85.",
+      "game": "Gives rumours about camel crossings and border queue times.",
+      "added": "2026-10-19"
+    },
+    {
+      "id": "npc-herder", "cat": "people", "country": "SA", "approx": true,
+      "name": "NPC: Bedouin camel herder", "name_ar": "شخصية: راعي إبل", "lat": 30.4000, "lon": 42.1000,
+      "desc": "Archetype: herder with a pickup, water tank and herd near the highway; tent, coffee (gahwa) and dates.",
+      "game": "Offers gahwa; quest to find a lost camel near the road.",
+      "added": "2026-10-19"
+    },
+    {
+      "id": "npc-tapline-veteran", "cat": "people", "country": "SA", "approx": true,
+      "name": "NPC: retired Tapline station worker", "name_ar": "شخصية: موظف سابق في التابلاين", "lat": 30.9900, "lon": 41.0500,
+      "desc": "Archetype: old man who worked at the Badanah/Arar pump station in the 1950s–70s; remembers the company houses and the airstrip.",
+      "game": "Story-teller NPC for Arar_Station lore.",
+      "added": "2026-10-19"
+    },
+    {
+      "id": "npc-tea-stand", "cat": "shop", "country": "SA", "approx": true,
+      "name": "Roadside tea stand & bakala", "name_ar": "بسطة شاي وبقالة على الطريق", "lat": 28.3300, "lon": 46.0800,
+      "desc": "Archetype: small kiosk at a fuel station – tea, karak, water, snacks, phone cards, sometimes tyre repair next door.",
+      "game": "Shop prefab template for every stop.",
+      "added": "2026-10-19"
+    },
+    {
+      "id": "npc-border", "cat": "people", "country": "SA/JO", "approx": true,
+      "name": "NPC: customs officer & money changer", "name_ar": "شخصية: موظف جمارك وصرّاف", "lat": 31.4900, "lon": 37.1200,
+      "desc": "Archetypes at the border: customs inspector, insurance seller, money changer, porters.",
+      "added": "2026-10-19"
+    },
+    {
+      "id": "npc-souq", "cat": "people", "country": "SY", "approx": true,
+      "name": "NPC: souq merchant", "name_ar": "شخصية: تاجر في السوق", "lat": 33.5113, "lon": 36.3040,
+      "desc": "Archetype: Damascene shop owner – textiles, sweets, spices; tea for customers.",
+      "added": "2026-10-19"
+    },
+    {
+      "id": "npc-fisher", "cat": "people", "country": "SY", "approx": true,
+      "name": "NPC: Latakia / Arwad fisherman", "name_ar": "شخصية: صياد", "lat": 35.5200, "lon": 35.7700,
+      "desc": "Archetype: fisherman at the port, nets and small wooden boats.",
+      "added": "2026-10-19"
+    }
+  ]
+}
