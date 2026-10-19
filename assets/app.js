@@ -173,13 +173,20 @@
     }));
     redraw();
   }
+  // skip satellite / space-station / aerial shots – only ground-level pictures are useful
+  const NOT_GROUND = /\b(iss\s?-?\d{2,3}|iss\d|international space station|space station|expedition\s?\d+|from space|from orbit|in orbit|satellite|landsat|sentinel[- ]?\d|modis|copernicus|earth observ\w*|earth from|nasa|esa|jaxa|roscosmos|astronaut\w*|cosmonaut\w*|aerial|bird'?s[- ]eye|planet labs|worldview|google earth|airliner|from (an |the )?(aircraft|airplane|plane)|window seat)\b/i;
   function commons(lat, lon, radius = 3000) {
     const u = "https://commons.wikimedia.org/w/api.php?" + new URLSearchParams({
-      action: "query", generator: "geosearch", ggscoord: `${lat}|${lon}`, ggsradius: radius, ggsnamespace: 6, ggslimit: 12,
+      action: "query", generator: "geosearch", ggscoord: `${lat}|${lon}`, ggsradius: radius, ggsnamespace: 6, ggslimit: 50,
       prop: "imageinfo", iiprop: "url|extmetadata", iiurlwidth: 400, format: "json", origin: "*",
     });
     return fetch(u).then((r) => r.json()).then((j) => Object.values(j.query?.pages || {})
       .filter((pg) => /\.(jpe?g|png|webp)$/i.test(pg.title))
+      .filter((pg) => {
+        const m = pg.imageinfo?.[0]?.extmetadata || {};
+        return !NOT_GROUND.test([pg.title, m.Categories?.value, m.Artist?.value, m.ImageDescription?.value, m.Credit?.value].join(" | "));
+      })
+      .slice(0, 15)
       .map((pg) => {
         const ii = pg.imageinfo[0], m = ii.extmetadata || {};
         const strip = (h) => (h || "").replace(/<[^>]+>/g, "").trim();

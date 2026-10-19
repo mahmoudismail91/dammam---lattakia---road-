@@ -28,6 +28,15 @@ STREET_STEP_KM = 8          # street-level query spacing
 MAX_COMMONS_PER_SAMPLE = 10
 
 
+# satellite / space-station / aerial shots are useless as ground references
+NOT_GROUND = re.compile(r"\b(iss\s?-?\d{2,3}|iss\d|international space station|space station|expedition\s?\d+|from space|from orbit|in orbit|satellite|landsat|sentinel[- ]?\d|modis|copernicus|earth observ\w*|earth from|nasa|esa|jaxa|roscosmos|astronaut\w*|cosmonaut\w*|aerial|bird'?s[- ]eye|planet labs|worldview|google earth|airliner|from (an |the )?(aircraft|airplane|plane)|window seat)\b", re.I)
+
+
+def is_ground(title, m):
+    text = " | ".join([title] + [str(m.get(k, {}).get("value", "")) for k in ("Categories", "Artist", "ImageDescription", "Credit")])
+    return not NOT_GROUND.search(text)
+
+
 def strip(h):
     return re.sub(r"<[^>]+>", "", h or "").strip()
 
@@ -56,6 +65,8 @@ def commons(line):
             if min(haversine(p, [c["lon"], c["lat"]]) for p in nearby) > PHOTO_CORRIDOR_KM:
                 continue
             ii, m = pg["imageinfo"][0], pg["imageinfo"][0].get("extmetadata", {})
+            if not is_ground(pg["title"], m):
+                continue
             out.append({
                 "id": f"commons:{pg['pageid']}", "src": "commons", "lat": round(c["lat"], 6), "lon": round(c["lon"], 6),
                 "thumb": ii.get("thumburl"), "full": ii.get("thumburl"), "page": ii.get("descriptionurl"),
@@ -174,6 +185,7 @@ def main():
     # Mapillary thumbnail links expire, so drop old ones that weren't refreshed this run
     if token:
         old = {k: v for k, v in old.items() if v["src"] != "mapillary"}
+    old = {k: v for k, v in old.items() if not NOT_GROUND.search(f"{v.get('title', '')} | {v.get('credit', '')}")}
     added = []
     for p in found:
         p["first_seen"] = old.get(p["id"], {}).get("first_seen", today)
