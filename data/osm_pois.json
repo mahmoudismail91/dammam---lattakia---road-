@@ -1,7 +1,7 @@
 {
  "source": "© OpenStreetMap contributors (ODbL)",
  "updated": "2026-10-20",
- "next_chunk": 75,
+ "next_chunk": 100,
  "items": [
   {
    "id": "osm:node/10059535552",
@@ -131,7 +131,7 @@
     "amenity": "fuel"
    },
    "first_seen": "2026-10-19",
-   "last_seen": "2026-10-19"
+   "last_seen": "2026-10-20"
   },
   {
    "id": "osm:node/10272233709",
@@ -157,7 +157,7 @@
     "amenity": "restaurant"
    },
    "first_seen": "2026-10-19",
-   "last_seen": "2026-10-19"
+   "last_seen": "2026-10-20"
   },
   {
    "id": "osm:node/11019786607",
@@ -354,6 +354,266 @@
    },
    "first_seen": "2026-10-19",
    "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/13180194189",
+   "cat": "rest",
+   "name": "",
+   "name_ar": "",
+   "lat": 33.314624,
+   "lon": 36.269736,
+   "tags": {
+    "amenity": "bench"
+   },
+   "first_seen": "2026-10-20",
+   "last_seen": "2026-10-20"
+  },
+  {
+   "id": "osm:node/13180194190",
+   "cat": "rest",
+   "name": "",
+   "name_ar": "",
+   "lat": 33.314592,
+   "lon": 36.269705,
+   "tags": {
+    "amenity": "bench"
+   },
+   "first_seen": "2026-10-20",
+   "last_seen": "2026-10-20"
+  },
+  {
+   "id": "osm:node/13180194191",
+   "cat": "rest",
+   "name": "",
+   "name_ar": "",
+   "lat": 33.314666,
+   "lon": 36.269527,
+   "tags": {
+    "amenity": "bench"
+   },
+   "first_seen": "2026-10-20",
+   "last_seen": "2026-10-20"
+  },
+  {
+   "id": "osm:node/13180194192",
+   "cat": "rest",
+   "name": "",
+   "name_ar": "",
+   "lat": 33.314623,
+   "lon": 36.269588,
+   "tags": {
+    "amenity": "bench"
+   },
+   "first_seen": "2026-10-20",
+   "last_seen": "2026-10-20"
+  },
+  {
+   "id": "osm:node/13180194193",
+   "cat": "rest",
+   "name": "",
+   "name_ar": "",
+   "lat": 33.31478,
+   "lon": 36.269482,
+   "tags": {
+    "amenity": "bench"
+   },
+   "first_seen": "2026-10-20",
+   "last_seen": "2026-10-20"
+  },
+  {
+   "id": "osm:node/13180194194",
+   "cat": "rest",
+   "name": "",
+   "name_ar": "",
+   "lat": 33.314716,
+   "lon": 36.269495,
+   "tags": {
+    "amenity": "bench"
+   },
+   "first_seen": "2026-10-20",
+   "last_seen": "2026-10-20"
+  },
+  {
+   "id": "osm:node/13180194195",
+   "cat": "rest",
+   "name": "",
+   "name_ar": "",
+   "lat": 33.314755,
+   "lon": 36.269432,
+   "tags": {
+    "amenity": "bench"
+   },
+   "first_seen": "2026-10-20",
+   "last_seen": "2026-10-20"
+  },
+  {
+   "id": "osm:node/13180194196",
+   "cat": "rest",
+   "name": "",
+   "name_ar": "",
+   "lat": 33.314801,
+   "lon": 36.269349,
+   "tags": {
+    "amenity": "bench"
+   },
+   "first_seen": "2026-10-20",
+   "last_seen": "2026-10-20"
+  },
+  {
+   "id": "osm:node/13180194197",
+   "cat": "rest",
+   "name": "",
+   "name_ar": "",
+   "lat": 33.314895,
+   "lon": 36.269434,
+   "tags": {
+    "amenity": "bench"
+   },
+   "first_seen": "2026-10-20",
+   "last_seen": "2026-10-20"
+  },
+  {
+   "id": "osm:node/13180194198",
+   "cat": "rest",
+   "name": "",
+   "name_ar": "",
+   "lat": 33.31494,
+   "lon": 36.269549,
+   "tags": {
+    "amenity": "bench"
+   },
+   "first_seen": "2026-10-20",
+   "last_seen": "2026-10-20"
+  },
+  {
+   "id": "osm:node/13180194199",
+   "cat": "rest",
+   "name": "",
+   "name_ar": "",
+   "lat": 33.314875,
+   "lon": 36.269664,
+   "tags": {
+    "amenity": "bench"
+   },
+   "first_seen": "2026-10-20",
+   "last_seen": "2026-10-20"
+  },
+  {
+   "id": "osm:node/13180194200",
+   "cat": "rest",
+   "name": "",
+   "name_ar": "",
+   "lat": 33.314814,
+   "lon": 36.269759,
+   "tags": {
+    "amenity": "bench"
+   },
+   "first_seen": "2026-10-20",
+   "last_seen": "2026-10-20"
+  },
+  {
+   "id": "osm:node/13180200501",
+   "cat": "rest",
+   "name": "",
+   "name_ar": "",
+   "lat": 33.314759,
+   "lon": 36.269845,
+   "tags": {
+    "amenity": "bench"
+   },
+   "first_seen": "2026-10-20",
+   "last_seen": "2026-10-20"
+  },
+  {
+   "id": "osm:node/13180200502",
+   "cat": "rest",
+   "name": "",
+   "name_ar": "",
+   "lat": 33.314703,
+   "lon": 36.269938,
+   "tags": {
+    "amenity": "bench"
+   },
+   "first_seen": "2026-10-20",
+   "last_seen": "2026-10-20"
+  },
+  {
+   "id": "osm:node/13180200503",
+   "cat": "rest",
+   "name": "",
+   "name_ar": "",
+   "lat": 33.314689,
+   "lon": 36.269765,
+   "tags": {
+    "amenity": "bench"
+   },
+   "first_seen": "2026-10-20",
+   "last_seen": "2026-10-20"
+  },
+  {
+   "id": "osm:node/13180200504",
+   "cat": "rest",
+   "name": "",
+   "name_ar": "",
+   "lat": 33.314729,
+   "lon": 36.269785,
+   "tags": {
+    "amenity": "bench"
+   },
+   "first_seen": "2026-10-20",
+   "last_seen": "2026-10-20"
+  },
+  {
+   "id": "osm:node/13180200505",
+   "cat": "rest",
+   "name": "",
+   "name_ar": "",
+   "lat": 33.314788,
+   "lon": 36.269693,
+   "tags": {
+    "amenity": "bench"
+   },
+   "first_seen": "2026-10-20",
+   "last_seen": "2026-10-20"
+  },
+  {
+   "id": "osm:node/13180200506",
+   "cat": "rest",
+   "name": "",
+   "name_ar": "",
+   "lat": 33.314818,
+   "lon": 36.269647,
+   "tags": {
+    "amenity": "bench"
+   },
+   "first_seen": "2026-10-20",
+   "last_seen": "2026-10-20"
+  },
+  {
+   "id": "osm:node/13180200507",
+   "cat": "rest",
+   "name": "",
+   "name_ar": "",
+   "lat": 33.314899,
+   "lon": 36.269513,
+   "tags": {
+    "amenity": "bench"
+   },
+   "first_seen": "2026-10-20",
+   "last_seen": "2026-10-20"
+  },
+  {
+   "id": "osm:node/13180200508",
+   "cat": "rest",
+   "name": "",
+   "name_ar": "",
+   "lat": 33.314866,
+   "lon": 36.269568,
+   "tags": {
+    "amenity": "bench"
+   },
+   "first_seen": "2026-10-20",
+   "last_seen": "2026-10-20"
   },
   {
    "id": "osm:node/1349263391",
@@ -1650,7 +1910,7 @@
     "amenity": "fuel"
    },
    "first_seen": "2026-10-19",
-   "last_seen": "2026-10-19"
+   "last_seen": "2026-10-20"
   },
   {
    "id": "osm:node/13943974391",
@@ -1705,6 +1965,19 @@
    "last_seen": "2026-10-19"
   },
   {
+   "id": "osm:node/14250117131",
+   "cat": "fuel",
+   "name": "كازية المختار",
+   "name_ar": "",
+   "lat": 32.680285,
+   "lon": 36.210744,
+   "tags": {
+    "amenity": "fuel"
+   },
+   "first_seen": "2026-10-20",
+   "last_seen": "2026-10-20"
+  },
+  {
    "id": "osm:node/1426833314",
    "cat": "fuel",
    "name": "كازية الصياد",
@@ -1715,7 +1988,7 @@
     "amenity": "fuel"
    },
    "first_seen": "2026-10-19",
-   "last_seen": "2026-10-19"
+   "last_seen": "2026-10-20"
   },
   {
    "id": "osm:node/1426833315",
@@ -1728,7 +2001,7 @@
     "amenity": "restaurant"
    },
    "first_seen": "2026-10-19",
-   "last_seen": "2026-10-19"
+   "last_seen": "2026-10-20"
   },
   {
    "id": "osm:node/14279713623",
@@ -1806,7 +2079,7 @@
     "amenity": "fuel"
    },
    "first_seen": "2026-10-19",
-   "last_seen": "2026-10-19"
+   "last_seen": "2026-10-20"
   },
   {
    "id": "osm:node/1824852755",
@@ -1832,7 +2105,7 @@
     "amenity": "fuel"
    },
    "first_seen": "2026-10-19",
-   "last_seen": "2026-10-19"
+   "last_seen": "2026-10-20"
   },
   {
    "id": "osm:node/1827422566",
@@ -1845,7 +2118,7 @@
     "amenity": "restaurant"
    },
    "first_seen": "2026-10-19",
-   "last_seen": "2026-10-19"
+   "last_seen": "2026-10-20"
   },
   {
    "id": "osm:node/1827422953",
@@ -1858,7 +2131,7 @@
     "amenity": "restaurant"
    },
    "first_seen": "2026-10-19",
-   "last_seen": "2026-10-19"
+   "last_seen": "2026-10-20"
   },
   {
    "id": "osm:node/1828048476",
@@ -1962,7 +2235,7 @@
     "amenity": "fuel"
    },
    "first_seen": "2026-10-19",
-   "last_seen": "2026-10-19"
+   "last_seen": "2026-10-20"
   },
   {
    "id": "osm:node/1829226858",
@@ -2001,7 +2274,7 @@
     "amenity": "restaurant"
    },
    "first_seen": "2026-10-19",
-   "last_seen": "2026-10-19"
+   "last_seen": "2026-10-20"
   },
   {
    "id": "osm:node/1829231389",
@@ -2014,7 +2287,7 @@
     "amenity": "fuel"
    },
    "first_seen": "2026-10-19",
-   "last_seen": "2026-10-19"
+   "last_seen": "2026-10-20"
   },
   {
    "id": "osm:node/1829235097",
@@ -2027,7 +2300,7 @@
     "amenity": "restaurant"
    },
    "first_seen": "2026-10-19",
-   "last_seen": "2026-10-19"
+   "last_seen": "2026-10-20"
   },
   {
    "id": "osm:node/1829236768",
@@ -2040,7 +2313,7 @@
     "amenity": "restaurant"
    },
    "first_seen": "2026-10-19",
-   "last_seen": "2026-10-19"
+   "last_seen": "2026-10-20"
   },
   {
    "id": "osm:node/1829236884",
@@ -2053,7 +2326,7 @@
     "amenity": "restaurant"
    },
    "first_seen": "2026-10-19",
-   "last_seen": "2026-10-19"
+   "last_seen": "2026-10-20"
   },
   {
    "id": "osm:node/1829237740",
@@ -2066,7 +2339,7 @@
     "amenity": "restaurant"
    },
    "first_seen": "2026-10-19",
-   "last_seen": "2026-10-19"
+   "last_seen": "2026-10-20"
   },
   {
    "id": "osm:node/1829242660",
@@ -2079,7 +2352,7 @@
     "amenity": "fuel"
    },
    "first_seen": "2026-10-19",
-   "last_seen": "2026-10-19"
+   "last_seen": "2026-10-20"
   },
   {
    "id": "osm:node/1990304089",
@@ -2249,6 +2522,19 @@
    },
    "first_seen": "2026-10-19",
    "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/2158168540",
+   "cat": "station",
+   "name": "",
+   "name_ar": "",
+   "lat": 34.687421,
+   "lon": 36.146074,
+   "tags": {
+    "man_made": "water_tower"
+   },
+   "first_seen": "2026-10-20",
+   "last_seen": "2026-10-20"
   },
   {
    "id": "osm:node/2324226674",
@@ -2654,6 +2940,22 @@
    "last_seen": "2026-10-19"
   },
   {
+   "id": "osm:node/4962958721",
+   "cat": "shop",
+   "name": "Coach B",
+   "name_ar": "كوتش بي",
+   "lat": 34.701505,
+   "lon": 36.233173,
+   "tags": {
+    "opening_hours": "Mo-Su 12:00-00:00",
+    "phone": "+963956858528",
+    "shop": "beverages",
+    "website": "https://www.facebook.com/CoachB.JuiceBar"
+   },
+   "first_seen": "2026-10-20",
+   "last_seen": "2026-10-20"
+  },
+  {
    "id": "osm:node/5371450525",
    "cat": "fuel",
    "name": "",
@@ -2719,6 +3021,32 @@
    },
    "first_seen": "2026-10-19",
    "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/572549819",
+   "cat": "landmark",
+   "name": "Khirbat al Akrad",
+   "name_ar": "خربة الأكراد",
+   "lat": 34.698774,
+   "lon": 36.166667,
+   "tags": {
+    "historic": "ruins"
+   },
+   "first_seen": "2026-10-20",
+   "last_seen": "2026-10-20"
+  },
+  {
+   "id": "osm:node/5807079855",
+   "cat": "rest",
+   "name": "منزل عمي هليل الاردن مغير السرحان",
+   "name_ar": "",
+   "lat": 32.458486,
+   "lon": 36.207033,
+   "tags": {
+    "tourism": "caravan_site"
+   },
+   "first_seen": "2026-10-20",
+   "last_seen": "2026-10-20"
   },
   {
    "id": "osm:node/6054163161",
@@ -2840,6 +3168,19 @@
    "last_seen": "2026-10-19"
   },
   {
+   "id": "osm:node/6373721388",
+   "cat": "food",
+   "name": "مطعم ابو يوسف",
+   "name_ar": "",
+   "lat": 34.685521,
+   "lon": 36.282233,
+   "tags": {
+    "amenity": "restaurant"
+   },
+   "first_seen": "2026-10-20",
+   "last_seen": "2026-10-20"
+  },
+  {
    "id": "osm:node/6423635687",
    "cat": "shop",
    "name": "",
@@ -2851,6 +3192,19 @@
    },
    "first_seen": "2026-10-19",
    "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/6752651385",
+   "cat": "rest",
+   "name": "",
+   "name_ar": "",
+   "lat": 34.69853,
+   "lon": 36.077202,
+   "tags": {
+    "highway": "rest_area"
+   },
+   "first_seen": "2026-10-20",
+   "last_seen": "2026-10-20"
   },
   {
    "id": "osm:node/6859953576",
@@ -2918,6 +3272,51 @@
    "last_seen": "2026-10-19"
   },
   {
+   "id": "osm:node/7055830834",
+   "cat": "fuel",
+   "name": "محطة مغير السرحان Total",
+   "name_ar": "",
+   "lat": 32.476896,
+   "lon": 36.204448,
+   "tags": {
+    "amenity": "fuel",
+    "brand": "Total",
+    "operator": "Total"
+   },
+   "first_seen": "2026-10-20",
+   "last_seen": "2026-10-20"
+  },
+  {
+   "id": "osm:node/7055846156",
+   "cat": "shop",
+   "name": "مخابز روابي السرحان الالية",
+   "name_ar": "",
+   "lat": 32.469473,
+   "lon": 36.201691,
+   "tags": {
+    "opening_hours": "24/7",
+    "operator": "السرحان",
+    "shop": "bakery"
+   },
+   "first_seen": "2026-10-20",
+   "last_seen": "2026-10-20"
+  },
+  {
+   "id": "osm:node/7055865939",
+   "cat": "fuel",
+   "name": "المناصير مغير السرحان",
+   "name_ar": "",
+   "lat": 32.459685,
+   "lon": 36.21148,
+   "tags": {
+    "amenity": "fuel",
+    "brand": "المناصير",
+    "operator": "المناصير"
+   },
+   "first_seen": "2026-10-20",
+   "last_seen": "2026-10-20"
+  },
+  {
    "id": "osm:node/7141473085",
    "cat": "fuel",
    "name": "Qara station",
@@ -2954,7 +3353,7 @@
     "amenity": "fuel"
    },
    "first_seen": "2026-10-19",
-   "last_seen": "2026-10-19"
+   "last_seen": "2026-10-20"
   },
   {
    "id": "osm:node/7279542986",
@@ -3451,6 +3850,19 @@
    "last_seen": "2026-10-19"
   },
   {
+   "id": "osm:node/8300134718",
+   "cat": "rest",
+   "name": "جسر الارزونة",
+   "name_ar": "",
+   "lat": 34.689632,
+   "lon": 36.114924,
+   "tags": {
+    "tourism": "viewpoint"
+   },
+   "first_seen": "2026-10-20",
+   "last_seen": "2026-10-20"
+  },
+  {
    "id": "osm:node/8300134917",
    "cat": "rest",
    "name": "مفرق حسياء",
@@ -3503,6 +3915,19 @@
    "last_seen": "2026-10-20"
   },
   {
+   "id": "osm:node/9358482419",
+   "cat": "mosque",
+   "name": "Zwajeer mosque",
+   "name_ar": "مسجد الزواجير",
+   "lat": 32.266844,
+   "lon": 36.232723,
+   "tags": {
+    "amenity": "place_of_worship"
+   },
+   "first_seen": "2026-10-20",
+   "last_seen": "2026-10-20"
+  },
+  {
    "id": "osm:node/9682307717",
    "cat": "food",
    "name": "مطعم واستراحة اشبيلية (m&h)",
@@ -3513,7 +3938,20 @@
     "amenity": "restaurant"
    },
    "first_seen": "2026-10-19",
-   "last_seen": "2026-10-19"
+   "last_seen": "2026-10-20"
+  },
+  {
+   "id": "osm:node/9952980417",
+   "cat": "fuel",
+   "name": "بنزين ابو حسن",
+   "name_ar": "",
+   "lat": 34.690995,
+   "lon": 36.141897,
+   "tags": {
+    "amenity": "fuel"
+   },
+   "first_seen": "2026-10-20",
+   "last_seen": "2026-10-20"
   },
   {
    "id": "osm:relation/20313291",
@@ -3576,7 +4014,7 @@
     "amenity": "fuel"
    },
    "first_seen": "2026-10-19",
-   "last_seen": "2026-10-19"
+   "last_seen": "2026-10-20"
   },
   {
    "id": "osm:way/1225583144",
@@ -3603,6 +4041,19 @@
    },
    "first_seen": "2026-10-19",
    "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:way/1345100885",
+   "cat": "mosque",
+   "name": "جسر ام جامع الناعورة",
+   "name_ar": "",
+   "lat": 34.688453,
+   "lon": 36.363401,
+   "tags": {
+    "highway": "tertiary"
+   },
+   "first_seen": "2026-10-20",
+   "last_seen": "2026-10-20"
   },
   {
    "id": "osm:way/1487791880",
@@ -3757,7 +4208,7 @@
     "amenity": "fuel"
    },
    "first_seen": "2026-10-19",
-   "last_seen": "2026-10-19"
+   "last_seen": "2026-10-20"
   },
   {
    "id": "osm:way/1527933313",
@@ -3770,7 +4221,7 @@
     "amenity": "fuel"
    },
    "first_seen": "2026-10-19",
-   "last_seen": "2026-10-19"
+   "last_seen": "2026-10-20"
   },
   {
    "id": "osm:way/1529484793",
@@ -3786,6 +4237,70 @@
    "last_seen": "2026-10-19"
   },
   {
+   "id": "osm:way/1553046746",
+   "cat": "mosque",
+   "name": "طريق عام ام جامع ام حارتين المزينة",
+   "name_ar": "",
+   "lat": 34.704733,
+   "lon": 36.367612,
+   "tags": {
+    "highway": "tertiary"
+   },
+   "first_seen": "2026-10-20",
+   "last_seen": "2026-10-20"
+  },
+  {
+   "id": "osm:way/171456931",
+   "cat": "mosque",
+   "name": "Syrian Private University",
+   "name_ar": "الجامعة السورية الخاصة",
+   "lat": 33.315355,
+   "lon": 36.270071,
+   "tags": {
+    "amenity": "university",
+    "phone": "+963 11 6990200",
+    "website": "https://www.spu.edu.sy/",
+    "wikidata": "Q7663241",
+    "wikipedia": "ar:الجامعة السورية الخاصة"
+   },
+   "first_seen": "2026-10-20",
+   "last_seen": "2026-10-20"
+  },
+  {
+   "id": "osm:way/171460959",
+   "cat": "mosque",
+   "name": "International University for Science and Technology",
+   "name_ar": "الجامعة الدولية للعلوم و التكنولوجية",
+   "lat": 33.182311,
+   "lon": 36.293666,
+   "tags": {
+    "amenity": "university",
+    "phone": "0112094;0152094",
+    "website": "https://iust.edu.sy/",
+    "wikidata": "Q6054144",
+    "wikipedia": "ar:الجامعة الدولية الخاصة للعلوم والتكنولوجيا"
+   },
+   "first_seen": "2026-10-20",
+   "last_seen": "2026-10-20"
+  },
+  {
+   "id": "osm:way/171461245",
+   "cat": "mosque",
+   "name": "Arab International University",
+   "name_ar": "الجامعة العربية الدولية الخاصة",
+   "lat": 33.174877,
+   "lon": 36.293347,
+   "tags": {
+    "amenity": "university",
+    "phone": "+963 15 6861386;+963 15 6861384",
+    "website": "https://www.aiu.edu.sy/",
+    "wikidata": "Q4783194",
+    "wikipedia": "ar:الجامعة العربية الدولية الخاصة"
+   },
+   "first_seen": "2026-10-20",
+   "last_seen": "2026-10-20"
+  },
+  {
    "id": "osm:way/171967542",
    "cat": "shop",
    "name": "Trans Mall",
@@ -3797,7 +4312,7 @@
     "shop": "mall"
    },
    "first_seen": "2026-10-19",
-   "last_seen": "2026-10-19"
+   "last_seen": "2026-10-20"
   },
   {
    "id": "osm:way/205957671",
@@ -3810,7 +4325,7 @@
     "amenity": "place_of_worship"
    },
    "first_seen": "2026-10-19",
-   "last_seen": "2026-10-19"
+   "last_seen": "2026-10-20"
   },
   {
    "id": "osm:way/223637584",
@@ -4104,6 +4619,65 @@
    },
    "first_seen": "2026-10-19",
    "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:way/962034572",
+   "cat": "mosque",
+   "name": "كفتريا الجامعة",
+   "name_ar": "",
+   "lat": 33.313645,
+   "lon": 36.270376,
+   "tags": {},
+   "first_seen": "2026-10-20",
+   "last_seen": "2026-10-20"
+  },
+  {
+   "id": "osm:way/964883946",
+   "cat": "fuel",
+   "name": "",
+   "name_ar": "",
+   "lat": 32.288401,
+   "lon": 36.232462,
+   "tags": {
+    "amenity": "fuel",
+    "brand": "Manaseer"
+   },
+   "first_seen": "2026-10-20",
+   "last_seen": "2026-10-20"
+  },
+  {
+   "id": "osm:way/999714361",
+   "cat": "mosque",
+   "name": "Al Rasheed International Private University for Science and Technology",
+   "name_ar": "جامعة الرشيد الدولية الخاصة للعلوم والتكنولوجيا",
+   "lat": 33.172851,
+   "lon": 36.295135,
+   "tags": {
+    "amenity": "university",
+    "phone": "01133117100;0158691200",
+    "website": "https://www.ru.edu.sy/",
+    "wikidata": "Q12204429",
+    "wikipedia": "ar:جامعة الرشيد الدولية الخاصة للعلوم والتكنولوجيا"
+   },
+   "first_seen": "2026-10-20",
+   "last_seen": "2026-10-20"
+  },
+  {
+   "id": "osm:way/999819655",
+   "cat": "mosque",
+   "name": "Al-Jazeera Private University",
+   "name_ar": "جامعة الجزيرة الخاصة",
+   "lat": 33.167026,
+   "lon": 36.298502,
+   "tags": {
+    "amenity": "university",
+    "barrier": "wall",
+    "website": "https://jude.edu.sy/",
+    "wikidata": "Q12204413",
+    "wikipedia": "ar:جامعة الجزيرة الخاصة"
+   },
+   "first_seen": "2026-10-20",
+   "last_seen": "2026-10-20"
   }
  ]
 }
