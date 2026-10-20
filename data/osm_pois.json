@@ -1,7 +1,7 @@
 {
  "source": "© OpenStreetMap contributors (ODbL)",
- "updated": "2026-10-19",
- "next_chunk": 46,
+ "updated": "2026-10-20",
+ "next_chunk": 75,
  "items": [
   {
    "id": "osm:node/10059535552",
@@ -53,7 +53,7 @@
     "amenity": "place_of_worship"
    },
    "first_seen": "2026-10-19",
-   "last_seen": "2026-10-19"
+   "last_seen": "2026-10-20"
   },
   {
    "id": "osm:node/10062266237",
@@ -66,7 +66,7 @@
     "amenity": "place_of_worship"
    },
    "first_seen": "2026-10-19",
-   "last_seen": "2026-10-19"
+   "last_seen": "2026-10-20"
   },
   {
    "id": "osm:node/10062266238",
@@ -79,7 +79,7 @@
     "amenity": "place_of_worship"
    },
    "first_seen": "2026-10-19",
-   "last_seen": "2026-10-19"
+   "last_seen": "2026-10-20"
   },
   {
    "id": "osm:node/10062266239",
@@ -225,6 +225,19 @@
    "last_seen": "2026-10-19"
   },
   {
+   "id": "osm:node/12184715450",
+   "cat": "landmark",
+   "name": "Qasr Kaf",
+   "name_ar": "",
+   "lat": 31.396746,
+   "lon": 37.499584,
+   "tags": {
+    "historic": "castle"
+   },
+   "first_seen": "2026-10-20",
+   "last_seen": "2026-10-20"
+  },
+  {
    "id": "osm:node/12360566897",
    "cat": "fuel",
    "name": "KPS 59",
@@ -278,6 +291,19 @@
    "last_seen": "2026-10-19"
   },
   {
+   "id": "osm:node/12360614605",
+   "cat": "fuel",
+   "name": "اللقاء",
+   "name_ar": "",
+   "lat": 31.468308,
+   "lon": 37.141517,
+   "tags": {
+    "amenity": "fuel"
+   },
+   "first_seen": "2026-10-20",
+   "last_seen": "2026-10-20"
+  },
+  {
    "id": "osm:node/12360616766",
    "cat": "fuel",
    "name": "ارسو السعيرة",
@@ -314,7 +340,7 @@
     "amenity": "police"
    },
    "first_seen": "2026-10-19",
-   "last_seen": "2026-10-19"
+   "last_seen": "2026-10-20"
   },
   {
    "id": "osm:node/12848744597",
@@ -330,6 +356,32 @@
    "last_seen": "2026-10-19"
   },
   {
+   "id": "osm:node/1349263391",
+   "cat": "fuel",
+   "name": "شركة التميز المحدودة",
+   "name_ar": "",
+   "lat": 31.448973,
+   "lon": 37.154544,
+   "tags": {
+    "amenity": "fuel"
+   },
+   "first_seen": "2026-10-20",
+   "last_seen": "2026-10-20"
+  },
+  {
+   "id": "osm:node/1349288354",
+   "cat": "mosque",
+   "name": "",
+   "name_ar": "",
+   "lat": 31.459713,
+   "lon": 37.1469,
+   "tags": {
+    "amenity": "place_of_worship"
+   },
+   "first_seen": "2026-10-20",
+   "last_seen": "2026-10-20"
+  },
+  {
    "id": "osm:node/13639491954",
    "cat": "shop",
    "name": "مكتبة الخطيب",
@@ -341,6 +393,812 @@
    },
    "first_seen": "2026-10-19",
    "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/13639492066",
+   "cat": "rest",
+   "name": "",
+   "name_ar": "",
+   "lat": 32.105095,
+   "lon": 36.184999,
+   "tags": {
+    "amenity": "bench"
+   },
+   "first_seen": "2026-10-20",
+   "last_seen": "2026-10-20"
+  },
+  {
+   "id": "osm:node/13643819499",
+   "cat": "rest",
+   "name": "",
+   "name_ar": "",
+   "lat": 32.106398,
+   "lon": 36.186464,
+   "tags": {
+    "amenity": "bench"
+   },
+   "first_seen": "2026-10-20",
+   "last_seen": "2026-10-20"
+  },
+  {
+   "id": "osm:node/13643819500",
+   "cat": "rest",
+   "name": "",
+   "name_ar": "",
+   "lat": 32.106425,
+   "lon": 36.18643,
+   "tags": {
+    "amenity": "bench"
+   },
+   "first_seen": "2026-10-20",
+   "last_seen": "2026-10-20"
+  },
+  {
+   "id": "osm:node/13643819503",
+   "cat": "rest",
+   "name": "",
+   "name_ar": "",
+   "lat": 32.106655,
+   "lon": 36.18617,
+   "tags": {
+    "amenity": "bench"
+   },
+   "first_seen": "2026-10-20",
+   "last_seen": "2026-10-20"
+  },
+  {
+   "id": "osm:node/13643819504",
+   "cat": "rest",
+   "name": "",
+   "name_ar": "",
+   "lat": 32.106681,
+   "lon": 36.186133,
+   "tags": {
+    "amenity": "bench"
+   },
+   "first_seen": "2026-10-20",
+   "last_seen": "2026-10-20"
+  },
+  {
+   "id": "osm:node/13643819521",
+   "cat": "rest",
+   "name": "",
+   "name_ar": "",
+   "lat": 32.107612,
+   "lon": 36.186751,
+   "tags": {
+    "amenity": "bench"
+   },
+   "first_seen": "2026-10-20",
+   "last_seen": "2026-10-20"
+  },
+  {
+   "id": "osm:node/13643819522",
+   "cat": "rest",
+   "name": "",
+   "name_ar": "",
+   "lat": 32.107585,
+   "lon": 36.186783,
+   "tags": {
+    "amenity": "bench"
+   },
+   "first_seen": "2026-10-20",
+   "last_seen": "2026-10-20"
+  },
+  {
+   "id": "osm:node/13643819523",
+   "cat": "rest",
+   "name": "",
+   "name_ar": "",
+   "lat": 32.107526,
+   "lon": 36.18685,
+   "tags": {
+    "amenity": "bench"
+   },
+   "first_seen": "2026-10-20",
+   "last_seen": "2026-10-20"
+  },
+  {
+   "id": "osm:node/13643819524",
+   "cat": "rest",
+   "name": "",
+   "name_ar": "",
+   "lat": 32.107498,
+   "lon": 36.186883,
+   "tags": {
+    "amenity": "bench"
+   },
+   "first_seen": "2026-10-20",
+   "last_seen": "2026-10-20"
+  },
+  {
+   "id": "osm:node/13643819525",
+   "cat": "rest",
+   "name": "",
+   "name_ar": "",
+   "lat": 32.107436,
+   "lon": 36.186948,
+   "tags": {
+    "amenity": "bench"
+   },
+   "first_seen": "2026-10-20",
+   "last_seen": "2026-10-20"
+  },
+  {
+   "id": "osm:node/13643819526",
+   "cat": "rest",
+   "name": "",
+   "name_ar": "",
+   "lat": 32.107411,
+   "lon": 36.186985,
+   "tags": {
+    "amenity": "bench"
+   },
+   "first_seen": "2026-10-20",
+   "last_seen": "2026-10-20"
+  },
+  {
+   "id": "osm:node/13643819527",
+   "cat": "rest",
+   "name": "",
+   "name_ar": "",
+   "lat": 32.107536,
+   "lon": 36.186773,
+   "tags": {
+    "amenity": "bench"
+   },
+   "first_seen": "2026-10-20",
+   "last_seen": "2026-10-20"
+  },
+  {
+   "id": "osm:node/13643819528",
+   "cat": "rest",
+   "name": "",
+   "name_ar": "",
+   "lat": 32.10752,
+   "lon": 36.186796,
+   "tags": {
+    "amenity": "bench"
+   },
+   "first_seen": "2026-10-20",
+   "last_seen": "2026-10-20"
+  },
+  {
+   "id": "osm:node/13643819529",
+   "cat": "rest",
+   "name": "",
+   "name_ar": "",
+   "lat": 32.10745,
+   "lon": 36.186872,
+   "tags": {
+    "amenity": "bench"
+   },
+   "first_seen": "2026-10-20",
+   "last_seen": "2026-10-20"
+  },
+  {
+   "id": "osm:node/13643819530",
+   "cat": "rest",
+   "name": "",
+   "name_ar": "",
+   "lat": 32.107432,
+   "lon": 36.186895,
+   "tags": {
+    "amenity": "bench"
+   },
+   "first_seen": "2026-10-20",
+   "last_seen": "2026-10-20"
+  },
+  {
+   "id": "osm:node/13643819531",
+   "cat": "rest",
+   "name": "",
+   "name_ar": "",
+   "lat": 32.107354,
+   "lon": 36.18696,
+   "tags": {
+    "amenity": "bench"
+   },
+   "first_seen": "2026-10-20",
+   "last_seen": "2026-10-20"
+  },
+  {
+   "id": "osm:node/13643819532",
+   "cat": "rest",
+   "name": "",
+   "name_ar": "",
+   "lat": 32.107325,
+   "lon": 36.186995,
+   "tags": {
+    "amenity": "bench"
+   },
+   "first_seen": "2026-10-20",
+   "last_seen": "2026-10-20"
+  },
+  {
+   "id": "osm:node/13643819533",
+   "cat": "rest",
+   "name": "",
+   "name_ar": "",
+   "lat": 32.107281,
+   "lon": 36.187043,
+   "tags": {
+    "amenity": "bench"
+   },
+   "first_seen": "2026-10-20",
+   "last_seen": "2026-10-20"
+  },
+  {
+   "id": "osm:node/13643819534",
+   "cat": "rest",
+   "name": "",
+   "name_ar": "",
+   "lat": 32.107251,
+   "lon": 36.187077,
+   "tags": {
+    "amenity": "bench"
+   },
+   "first_seen": "2026-10-20",
+   "last_seen": "2026-10-20"
+  },
+  {
+   "id": "osm:node/13643819535",
+   "cat": "rest",
+   "name": "",
+   "name_ar": "",
+   "lat": 32.107268,
+   "lon": 36.187107,
+   "tags": {
+    "amenity": "bench"
+   },
+   "first_seen": "2026-10-20",
+   "last_seen": "2026-10-20"
+  },
+  {
+   "id": "osm:node/13643819536",
+   "cat": "rest",
+   "name": "",
+   "name_ar": "",
+   "lat": 32.107378,
+   "lon": 36.18698,
+   "tags": {
+    "amenity": "bench"
+   },
+   "first_seen": "2026-10-20",
+   "last_seen": "2026-10-20"
+  },
+  {
+   "id": "osm:node/13643819555",
+   "cat": "rest",
+   "name": "",
+   "name_ar": "",
+   "lat": 32.106881,
+   "lon": 36.186273,
+   "tags": {
+    "amenity": "bench"
+   },
+   "first_seen": "2026-10-20",
+   "last_seen": "2026-10-20"
+  },
+  {
+   "id": "osm:node/13643819556",
+   "cat": "rest",
+   "name": "",
+   "name_ar": "",
+   "lat": 32.106856,
+   "lon": 36.186306,
+   "tags": {
+    "amenity": "bench"
+   },
+   "first_seen": "2026-10-20",
+   "last_seen": "2026-10-20"
+  },
+  {
+   "id": "osm:node/13643819557",
+   "cat": "rest",
+   "name": "",
+   "name_ar": "",
+   "lat": 32.106791,
+   "lon": 36.186374,
+   "tags": {
+    "amenity": "bench"
+   },
+   "first_seen": "2026-10-20",
+   "last_seen": "2026-10-20"
+  },
+  {
+   "id": "osm:node/13643819558",
+   "cat": "rest",
+   "name": "",
+   "name_ar": "",
+   "lat": 32.106771,
+   "lon": 36.186402,
+   "tags": {
+    "amenity": "bench"
+   },
+   "first_seen": "2026-10-20",
+   "last_seen": "2026-10-20"
+  },
+  {
+   "id": "osm:node/13643819559",
+   "cat": "rest",
+   "name": "",
+   "name_ar": "",
+   "lat": 32.106621,
+   "lon": 36.186572,
+   "tags": {
+    "amenity": "bench"
+   },
+   "first_seen": "2026-10-20",
+   "last_seen": "2026-10-20"
+  },
+  {
+   "id": "osm:node/13643819560",
+   "cat": "rest",
+   "name": "",
+   "name_ar": "",
+   "lat": 32.106606,
+   "lon": 36.186596,
+   "tags": {
+    "amenity": "bench"
+   },
+   "first_seen": "2026-10-20",
+   "last_seen": "2026-10-20"
+  },
+  {
+   "id": "osm:node/13643819561",
+   "cat": "rest",
+   "name": "",
+   "name_ar": "",
+   "lat": 32.106533,
+   "lon": 36.186675,
+   "tags": {
+    "amenity": "bench"
+   },
+   "first_seen": "2026-10-20",
+   "last_seen": "2026-10-20"
+  },
+  {
+   "id": "osm:node/13643819562",
+   "cat": "rest",
+   "name": "",
+   "name_ar": "",
+   "lat": 32.106512,
+   "lon": 36.186703,
+   "tags": {
+    "amenity": "bench"
+   },
+   "first_seen": "2026-10-20",
+   "last_seen": "2026-10-20"
+  },
+  {
+   "id": "osm:node/13645541634",
+   "cat": "rest",
+   "name": "",
+   "name_ar": "",
+   "lat": 32.105747,
+   "lon": 36.185624,
+   "tags": {
+    "amenity": "bench"
+   },
+   "first_seen": "2026-10-20",
+   "last_seen": "2026-10-20"
+  },
+  {
+   "id": "osm:node/13645541635",
+   "cat": "rest",
+   "name": "",
+   "name_ar": "",
+   "lat": 32.10573,
+   "lon": 36.185603,
+   "tags": {
+    "amenity": "bench"
+   },
+   "first_seen": "2026-10-20",
+   "last_seen": "2026-10-20"
+  },
+  {
+   "id": "osm:node/13645541636",
+   "cat": "rest",
+   "name": "",
+   "name_ar": "",
+   "lat": 32.105621,
+   "lon": 36.185753,
+   "tags": {
+    "amenity": "bench"
+   },
+   "first_seen": "2026-10-20",
+   "last_seen": "2026-10-20"
+  },
+  {
+   "id": "osm:node/13645541637",
+   "cat": "rest",
+   "name": "",
+   "name_ar": "",
+   "lat": 32.105607,
+   "lon": 36.185736,
+   "tags": {
+    "amenity": "bench"
+   },
+   "first_seen": "2026-10-20",
+   "last_seen": "2026-10-20"
+  },
+  {
+   "id": "osm:node/13645541638",
+   "cat": "rest",
+   "name": "",
+   "name_ar": "",
+   "lat": 32.105646,
+   "lon": 36.185591,
+   "tags": {
+    "amenity": "bench"
+   },
+   "first_seen": "2026-10-20",
+   "last_seen": "2026-10-20"
+  },
+  {
+   "id": "osm:node/13645541639",
+   "cat": "rest",
+   "name": "",
+   "name_ar": "",
+   "lat": 32.105633,
+   "lon": 36.185573,
+   "tags": {
+    "amenity": "bench"
+   },
+   "first_seen": "2026-10-20",
+   "last_seen": "2026-10-20"
+  },
+  {
+   "id": "osm:node/13645541640",
+   "cat": "rest",
+   "name": "",
+   "name_ar": "",
+   "lat": 32.105605,
+   "lon": 36.185572,
+   "tags": {
+    "amenity": "bench"
+   },
+   "first_seen": "2026-10-20",
+   "last_seen": "2026-10-20"
+  },
+  {
+   "id": "osm:node/13645541641",
+   "cat": "rest",
+   "name": "",
+   "name_ar": "",
+   "lat": 32.105587,
+   "lon": 36.185589,
+   "tags": {
+    "amenity": "bench"
+   },
+   "first_seen": "2026-10-20",
+   "last_seen": "2026-10-20"
+  },
+  {
+   "id": "osm:node/13645541642",
+   "cat": "rest",
+   "name": "",
+   "name_ar": "",
+   "lat": 32.105588,
+   "lon": 36.185622,
+   "tags": {
+    "amenity": "bench"
+   },
+   "first_seen": "2026-10-20",
+   "last_seen": "2026-10-20"
+  },
+  {
+   "id": "osm:node/13645541643",
+   "cat": "rest",
+   "name": "",
+   "name_ar": "",
+   "lat": 32.105598,
+   "lon": 36.185641,
+   "tags": {
+    "amenity": "bench"
+   },
+   "first_seen": "2026-10-20",
+   "last_seen": "2026-10-20"
+  },
+  {
+   "id": "osm:node/13645541644",
+   "cat": "rest",
+   "name": "",
+   "name_ar": "",
+   "lat": 32.10563,
+   "lon": 36.185639,
+   "tags": {
+    "amenity": "bench"
+   },
+   "first_seen": "2026-10-20",
+   "last_seen": "2026-10-20"
+  },
+  {
+   "id": "osm:node/13645541645",
+   "cat": "rest",
+   "name": "",
+   "name_ar": "",
+   "lat": 32.105645,
+   "lon": 36.185619,
+   "tags": {
+    "amenity": "bench"
+   },
+   "first_seen": "2026-10-20",
+   "last_seen": "2026-10-20"
+  },
+  {
+   "id": "osm:node/13645541646",
+   "cat": "rest",
+   "name": "",
+   "name_ar": "",
+   "lat": 32.105987,
+   "lon": 36.185197,
+   "tags": {
+    "amenity": "bench"
+   },
+   "first_seen": "2026-10-20",
+   "last_seen": "2026-10-20"
+  },
+  {
+   "id": "osm:node/13645541647",
+   "cat": "rest",
+   "name": "",
+   "name_ar": "",
+   "lat": 32.106011,
+   "lon": 36.185197,
+   "tags": {
+    "amenity": "bench"
+   },
+   "first_seen": "2026-10-20",
+   "last_seen": "2026-10-20"
+  },
+  {
+   "id": "osm:node/13645541648",
+   "cat": "rest",
+   "name": "",
+   "name_ar": "",
+   "lat": 32.10603,
+   "lon": 36.185173,
+   "tags": {
+    "amenity": "bench"
+   },
+   "first_seen": "2026-10-20",
+   "last_seen": "2026-10-20"
+  },
+  {
+   "id": "osm:node/13645541649",
+   "cat": "rest",
+   "name": "",
+   "name_ar": "",
+   "lat": 32.10603,
+   "lon": 36.185152,
+   "tags": {
+    "amenity": "bench"
+   },
+   "first_seen": "2026-10-20",
+   "last_seen": "2026-10-20"
+  },
+  {
+   "id": "osm:node/13645541650",
+   "cat": "rest",
+   "name": "",
+   "name_ar": "",
+   "lat": 32.106012,
+   "lon": 36.185127,
+   "tags": {
+    "amenity": "bench"
+   },
+   "first_seen": "2026-10-20",
+   "last_seen": "2026-10-20"
+  },
+  {
+   "id": "osm:node/13645541651",
+   "cat": "rest",
+   "name": "",
+   "name_ar": "",
+   "lat": 32.105989,
+   "lon": 36.185126,
+   "tags": {
+    "amenity": "bench"
+   },
+   "first_seen": "2026-10-20",
+   "last_seen": "2026-10-20"
+  },
+  {
+   "id": "osm:node/13645541652",
+   "cat": "rest",
+   "name": "",
+   "name_ar": "",
+   "lat": 32.105972,
+   "lon": 36.185146,
+   "tags": {
+    "amenity": "bench"
+   },
+   "first_seen": "2026-10-20",
+   "last_seen": "2026-10-20"
+  },
+  {
+   "id": "osm:node/13645541653",
+   "cat": "rest",
+   "name": "",
+   "name_ar": "",
+   "lat": 32.105972,
+   "lon": 36.185176,
+   "tags": {
+    "amenity": "bench"
+   },
+   "first_seen": "2026-10-20",
+   "last_seen": "2026-10-20"
+  },
+  {
+   "id": "osm:node/13645541654",
+   "cat": "rest",
+   "name": "",
+   "name_ar": "",
+   "lat": 32.106106,
+   "lon": 36.185227,
+   "tags": {
+    "amenity": "bench"
+   },
+   "first_seen": "2026-10-20",
+   "last_seen": "2026-10-20"
+  },
+  {
+   "id": "osm:node/13645541655",
+   "cat": "rest",
+   "name": "",
+   "name_ar": "",
+   "lat": 32.106127,
+   "lon": 36.185202,
+   "tags": {
+    "amenity": "bench"
+   },
+   "first_seen": "2026-10-20",
+   "last_seen": "2026-10-20"
+  },
+  {
+   "id": "osm:node/13645541656",
+   "cat": "rest",
+   "name": "",
+   "name_ar": "",
+   "lat": 32.106054,
+   "lon": 36.185289,
+   "tags": {
+    "amenity": "bench"
+   },
+   "first_seen": "2026-10-20",
+   "last_seen": "2026-10-20"
+  },
+  {
+   "id": "osm:node/13645541657",
+   "cat": "rest",
+   "name": "",
+   "name_ar": "",
+   "lat": 32.106037,
+   "lon": 36.18531,
+   "tags": {
+    "amenity": "bench"
+   },
+   "first_seen": "2026-10-20",
+   "last_seen": "2026-10-20"
+  },
+  {
+   "id": "osm:node/13645541658",
+   "cat": "rest",
+   "name": "",
+   "name_ar": "",
+   "lat": 32.105953,
+   "lon": 36.18503,
+   "tags": {
+    "amenity": "bench"
+   },
+   "first_seen": "2026-10-20",
+   "last_seen": "2026-10-20"
+  },
+  {
+   "id": "osm:node/13645541659",
+   "cat": "rest",
+   "name": "",
+   "name_ar": "",
+   "lat": 32.105969,
+   "lon": 36.185009,
+   "tags": {
+    "amenity": "bench"
+   },
+   "first_seen": "2026-10-20",
+   "last_seen": "2026-10-20"
+  },
+  {
+   "id": "osm:node/13645541660",
+   "cat": "rest",
+   "name": "",
+   "name_ar": "",
+   "lat": 32.106005,
+   "lon": 36.185027,
+   "tags": {
+    "amenity": "bench"
+   },
+   "first_seen": "2026-10-20",
+   "last_seen": "2026-10-20"
+  },
+  {
+   "id": "osm:node/13645541661",
+   "cat": "rest",
+   "name": "",
+   "name_ar": "",
+   "lat": 32.105993,
+   "lon": 36.185013,
+   "tags": {
+    "amenity": "bench"
+   },
+   "first_seen": "2026-10-20",
+   "last_seen": "2026-10-20"
+  },
+  {
+   "id": "osm:node/13645541662",
+   "cat": "rest",
+   "name": "",
+   "name_ar": "",
+   "lat": 32.106124,
+   "lon": 36.18517,
+   "tags": {
+    "amenity": "bench"
+   },
+   "first_seen": "2026-10-20",
+   "last_seen": "2026-10-20"
+  },
+  {
+   "id": "osm:node/13645541663",
+   "cat": "rest",
+   "name": "",
+   "name_ar": "",
+   "lat": 32.105636,
+   "lon": 36.185479,
+   "tags": {
+    "amenity": "bench"
+   },
+   "first_seen": "2026-10-20",
+   "last_seen": "2026-10-20"
+  },
+  {
+   "id": "osm:node/13645541664",
+   "cat": "rest",
+   "name": "",
+   "name_ar": "",
+   "lat": 32.105624,
+   "lon": 36.185465,
+   "tags": {
+    "amenity": "bench"
+   },
+   "first_seen": "2026-10-20",
+   "last_seen": "2026-10-20"
+  },
+  {
+   "id": "osm:node/13645541665",
+   "cat": "rest",
+   "name": "",
+   "name_ar": "",
+   "lat": 32.105599,
+   "lon": 36.185462,
+   "tags": {
+    "amenity": "bench"
+   },
+   "first_seen": "2026-10-20",
+   "last_seen": "2026-10-20"
+  },
+  {
+   "id": "osm:node/13645541666",
+   "cat": "rest",
+   "name": "",
+   "name_ar": "",
+   "lat": 32.105583,
+   "lon": 36.185482,
+   "tags": {
+    "amenity": "bench"
+   },
+   "first_seen": "2026-10-20",
+   "last_seen": "2026-10-20"
   },
   {
    "id": "osm:node/13645681793",
@@ -366,7 +1224,33 @@
     "shop": "stationery"
    },
    "first_seen": "2026-10-19",
-   "last_seen": "2026-10-19"
+   "last_seen": "2026-10-20"
+  },
+  {
+   "id": "osm:node/13645712662",
+   "cat": "rest",
+   "name": "",
+   "name_ar": "",
+   "lat": 32.105198,
+   "lon": 36.183776,
+   "tags": {
+    "amenity": "bench"
+   },
+   "first_seen": "2026-10-20",
+   "last_seen": "2026-10-20"
+  },
+  {
+   "id": "osm:node/13645712663",
+   "cat": "rest",
+   "name": "",
+   "name_ar": "",
+   "lat": 32.105178,
+   "lon": 36.1838,
+   "tags": {
+    "amenity": "bench"
+   },
+   "first_seen": "2026-10-20",
+   "last_seen": "2026-10-20"
   },
   {
    "id": "osm:node/13647497867",
@@ -393,7 +1277,46 @@
     "amenity": "toilets"
    },
    "first_seen": "2026-10-19",
-   "last_seen": "2026-10-19"
+   "last_seen": "2026-10-20"
+  },
+  {
+   "id": "osm:node/13647497871",
+   "cat": "rest",
+   "name": "",
+   "name_ar": "",
+   "lat": 32.10477,
+   "lon": 36.185462,
+   "tags": {
+    "amenity": "bench"
+   },
+   "first_seen": "2026-10-20",
+   "last_seen": "2026-10-20"
+  },
+  {
+   "id": "osm:node/13647497872",
+   "cat": "rest",
+   "name": "",
+   "name_ar": "",
+   "lat": 32.10473,
+   "lon": 36.185415,
+   "tags": {
+    "amenity": "bench"
+   },
+   "first_seen": "2026-10-20",
+   "last_seen": "2026-10-20"
+  },
+  {
+   "id": "osm:node/13647667545",
+   "cat": "rest",
+   "name": "",
+   "name_ar": "",
+   "lat": 32.105094,
+   "lon": 36.185029,
+   "tags": {
+    "amenity": "bench"
+   },
+   "first_seen": "2026-10-20",
+   "last_seen": "2026-10-20"
   },
   {
    "id": "osm:node/13647667548",
@@ -433,6 +1356,84 @@
    },
    "first_seen": "2026-10-19",
    "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/13647919969",
+   "cat": "rest",
+   "name": "",
+   "name_ar": "",
+   "lat": 32.104848,
+   "lon": 36.185944,
+   "tags": {
+    "amenity": "bench"
+   },
+   "first_seen": "2026-10-20",
+   "last_seen": "2026-10-20"
+  },
+  {
+   "id": "osm:node/13647919970",
+   "cat": "rest",
+   "name": "",
+   "name_ar": "",
+   "lat": 32.104807,
+   "lon": 36.185986,
+   "tags": {
+    "amenity": "bench"
+   },
+   "first_seen": "2026-10-20",
+   "last_seen": "2026-10-20"
+  },
+  {
+   "id": "osm:node/13647919973",
+   "cat": "rest",
+   "name": "",
+   "name_ar": "",
+   "lat": 32.105013,
+   "lon": 36.184915,
+   "tags": {
+    "amenity": "bench"
+   },
+   "first_seen": "2026-10-20",
+   "last_seen": "2026-10-20"
+  },
+  {
+   "id": "osm:node/13647919974",
+   "cat": "rest",
+   "name": "",
+   "name_ar": "",
+   "lat": 32.105015,
+   "lon": 36.184949,
+   "tags": {
+    "amenity": "bench"
+   },
+   "first_seen": "2026-10-20",
+   "last_seen": "2026-10-20"
+  },
+  {
+   "id": "osm:node/13647919975",
+   "cat": "rest",
+   "name": "",
+   "name_ar": "",
+   "lat": 32.104944,
+   "lon": 36.185,
+   "tags": {
+    "amenity": "bench"
+   },
+   "first_seen": "2026-10-20",
+   "last_seen": "2026-10-20"
+  },
+  {
+   "id": "osm:node/13647919976",
+   "cat": "rest",
+   "name": "",
+   "name_ar": "",
+   "lat": 32.104943,
+   "lon": 36.185029,
+   "tags": {
+    "amenity": "bench"
+   },
+   "first_seen": "2026-10-20",
+   "last_seen": "2026-10-20"
   },
   {
    "id": "osm:node/13652709650",
@@ -480,6 +1481,19 @@
    "last_seen": "2026-10-19"
   },
   {
+   "id": "osm:node/13652893102",
+   "cat": "rest",
+   "name": "",
+   "name_ar": "",
+   "lat": 32.104564,
+   "lon": 36.185926,
+   "tags": {
+    "amenity": "bench"
+   },
+   "first_seen": "2026-10-20",
+   "last_seen": "2026-10-20"
+  },
+  {
    "id": "osm:node/13652898401",
    "cat": "rest",
    "name": "كولر ماء",
@@ -491,7 +1505,72 @@
     "man_made": "water_tap"
    },
    "first_seen": "2026-10-19",
-   "last_seen": "2026-10-19"
+   "last_seen": "2026-10-20"
+  },
+  {
+   "id": "osm:node/13653161714",
+   "cat": "rest",
+   "name": "",
+   "name_ar": "",
+   "lat": 32.104642,
+   "lon": 36.185609,
+   "tags": {
+    "amenity": "bench"
+   },
+   "first_seen": "2026-10-20",
+   "last_seen": "2026-10-20"
+  },
+  {
+   "id": "osm:node/13653161715",
+   "cat": "rest",
+   "name": "",
+   "name_ar": "",
+   "lat": 32.104691,
+   "lon": 36.185673,
+   "tags": {
+    "amenity": "bench"
+   },
+   "first_seen": "2026-10-20",
+   "last_seen": "2026-10-20"
+  },
+  {
+   "id": "osm:node/13653161716",
+   "cat": "rest",
+   "name": "",
+   "name_ar": "",
+   "lat": 32.104606,
+   "lon": 36.185775,
+   "tags": {
+    "amenity": "bench"
+   },
+   "first_seen": "2026-10-20",
+   "last_seen": "2026-10-20"
+  },
+  {
+   "id": "osm:node/13653161717",
+   "cat": "rest",
+   "name": "",
+   "name_ar": "",
+   "lat": 32.104553,
+   "lon": 36.185721,
+   "tags": {
+    "amenity": "bench"
+   },
+   "first_seen": "2026-10-20",
+   "last_seen": "2026-10-20"
+  },
+  {
+   "id": "osm:node/13653161718",
+   "cat": "rest",
+   "name": "",
+   "name_ar": "",
+   "lat": 32.10446,
+   "lon": 36.185619,
+   "tags": {
+    "amenity": "bench"
+   },
+   "first_seen": "2026-10-20",
+   "last_seen": "2026-10-20"
   },
   {
    "id": "osm:node/13732212208",
@@ -519,7 +1598,7 @@
     "cuisine": "coffee_shop"
    },
    "first_seen": "2026-10-19",
-   "last_seen": "2026-10-19"
+   "last_seen": "2026-10-20"
   },
   {
    "id": "osm:node/13761168877",
@@ -532,7 +1611,7 @@
     "amenity": "place_of_worship"
    },
    "first_seen": "2026-10-19",
-   "last_seen": "2026-10-19"
+   "last_seen": "2026-10-20"
   },
   {
    "id": "osm:node/13808848030",
@@ -702,6 +1781,19 @@
    },
    "first_seen": "2026-10-19",
    "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/1793542863",
+   "cat": "mosque",
+   "name": "البوابة الرئيسية للجامعة الهاشمية",
+   "name_ar": "",
+   "lat": 32.103104,
+   "lon": 36.181423,
+   "tags": {
+    "barrier": "lift_gate"
+   },
+   "first_seen": "2026-10-20",
+   "last_seen": "2026-10-20"
   },
   {
    "id": "osm:node/1824837171",
@@ -1169,7 +2261,7 @@
     "man_made": "water_tower"
    },
    "first_seen": "2026-10-19",
-   "last_seen": "2026-10-19"
+   "last_seen": "2026-10-20"
   },
   {
    "id": "osm:node/2866600066",
@@ -1182,7 +2274,7 @@
     "amenity": "fuel"
    },
    "first_seen": "2026-10-19",
-   "last_seen": "2026-10-19"
+   "last_seen": "2026-10-20"
   },
   {
    "id": "osm:node/2866600067",
@@ -1195,7 +2287,7 @@
     "amenity": "place_of_worship"
    },
    "first_seen": "2026-10-19",
-   "last_seen": "2026-10-19"
+   "last_seen": "2026-10-20"
   },
   {
    "id": "osm:node/2874275549",
@@ -1471,6 +2563,32 @@
    "last_seen": "2026-10-19"
   },
   {
+   "id": "osm:node/4689495201",
+   "cat": "mosque",
+   "name": "",
+   "name_ar": "",
+   "lat": 31.448497,
+   "lon": 37.151036,
+   "tags": {
+    "amenity": "place_of_worship"
+   },
+   "first_seen": "2026-10-20",
+   "last_seen": "2026-10-20"
+  },
+  {
+   "id": "osm:node/4689495202",
+   "cat": "mosque",
+   "name": "",
+   "name_ar": "",
+   "lat": 31.445483,
+   "lon": 37.155164,
+   "tags": {
+    "amenity": "place_of_worship"
+   },
+   "first_seen": "2026-10-20",
+   "last_seen": "2026-10-20"
+  },
+  {
    "id": "osm:node/4689495205",
    "cat": "station",
    "name": "",
@@ -1481,7 +2599,7 @@
     "man_made": "water_tower"
    },
    "first_seen": "2026-10-19",
-   "last_seen": "2026-10-19"
+   "last_seen": "2026-10-20"
   },
   {
    "id": "osm:node/4710587259",
@@ -1549,6 +2667,32 @@
    "last_seen": "2026-10-19"
   },
   {
+   "id": "osm:node/5403741760",
+   "cat": "fuel",
+   "name": "FUELAX",
+   "name_ar": "",
+   "lat": 31.454216,
+   "lon": 37.147051,
+   "tags": {
+    "amenity": "fuel"
+   },
+   "first_seen": "2026-10-20",
+   "last_seen": "2026-10-20"
+  },
+  {
+   "id": "osm:node/5403741802",
+   "cat": "rest",
+   "name": "",
+   "name_ar": "",
+   "lat": 31.467811,
+   "lon": 37.141145,
+   "tags": {
+    "highway": "services"
+   },
+   "first_seen": "2026-10-20",
+   "last_seen": "2026-10-20"
+  },
+  {
    "id": "osm:node/5514040822",
    "cat": "hotel",
    "name": "Elpatio Hotel",
@@ -1588,7 +2732,7 @@
     "operator": "Jo Petrol"
    },
    "first_seen": "2026-10-19",
-   "last_seen": "2026-10-19"
+   "last_seen": "2026-10-20"
   },
   {
    "id": "osm:node/6125746959",
@@ -2203,6 +3347,32 @@
    "last_seen": "2026-10-19"
   },
   {
+   "id": "osm:node/7448327382",
+   "cat": "fuel",
+   "name": "محطة وقود",
+   "name_ar": "",
+   "lat": 31.3767,
+   "lon": 37.5812,
+   "tags": {
+    "amenity": "fuel"
+   },
+   "first_seen": "2026-10-20",
+   "last_seen": "2026-10-20"
+  },
+  {
+   "id": "osm:node/7448401772",
+   "cat": "fuel",
+   "name": "محطة بتر الجلاميد",
+   "name_ar": "",
+   "lat": 31.2158,
+   "lon": 40.3546,
+   "tags": {
+    "amenity": "fuel"
+   },
+   "first_seen": "2026-10-20",
+   "last_seen": "2026-10-20"
+  },
+  {
    "id": "osm:node/7448436016",
    "cat": "food",
    "name": "مطعم بخاري",
@@ -2320,6 +3490,19 @@
    "last_seen": "2026-10-19"
   },
   {
+   "id": "osm:node/9252432446",
+   "cat": "mosque",
+   "name": "",
+   "name_ar": "",
+   "lat": 31.467605,
+   "lon": 37.140866,
+   "tags": {
+    "amenity": "place_of_worship"
+   },
+   "first_seen": "2026-10-20",
+   "last_seen": "2026-10-20"
+  },
+  {
    "id": "osm:node/9682307717",
    "cat": "food",
    "name": "مطعم واستراحة اشبيلية (m&h)",
@@ -2333,6 +3516,17 @@
    "last_seen": "2026-10-19"
   },
   {
+   "id": "osm:relation/20313291",
+   "cat": "mosque",
+   "name": "حاضنة الأعمال الجامعة الهاشمية",
+   "name_ar": "",
+   "lat": 32.104052,
+   "lon": 36.184815,
+   "tags": {},
+   "first_seen": "2026-10-20",
+   "last_seen": "2026-10-20"
+  },
+  {
    "id": "osm:way/1023663864",
    "cat": "rest",
    "name": "",
@@ -2343,7 +3537,7 @@
     "highway": "rest_area"
    },
    "first_seen": "2026-10-19",
-   "last_seen": "2026-10-19"
+   "last_seen": "2026-10-20"
   },
   {
    "id": "osm:way/1023663865",
@@ -2356,7 +3550,7 @@
     "highway": "rest_area"
    },
    "first_seen": "2026-10-19",
-   "last_seen": "2026-10-19"
+   "last_seen": "2026-10-20"
   },
   {
    "id": "osm:way/119102718",
@@ -2447,7 +3641,18 @@
     "shop": "kiosk"
    },
    "first_seen": "2026-10-19",
-   "last_seen": "2026-10-19"
+   "last_seen": "2026-10-20"
+  },
+  {
+   "id": "osm:way/1488818641",
+   "cat": "mosque",
+   "name": "مركز دفاع مدني الجامعة الهاشمية",
+   "name_ar": "",
+   "lat": 32.100559,
+   "lon": 36.177979,
+   "tags": {},
+   "first_seen": "2026-10-20",
+   "last_seen": "2026-10-20"
   },
   {
    "id": "osm:way/1488818643",
@@ -2460,7 +3665,7 @@
     "shop": "kiosk"
    },
    "first_seen": "2026-10-19",
-   "last_seen": "2026-10-19"
+   "last_seen": "2026-10-20"
   },
   {
    "id": "osm:way/1489566522",
@@ -2474,6 +3679,19 @@
    },
    "first_seen": "2026-10-19",
    "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:way/1491849039",
+   "cat": "fuel",
+   "name": "",
+   "name_ar": "",
+   "lat": 31.615841,
+   "lon": 38.901083,
+   "tags": {
+    "amenity": "fuel"
+   },
+   "first_seen": "2026-10-20",
+   "last_seen": "2026-10-20"
   },
   {
    "id": "osm:way/1499597859",
@@ -2513,7 +3731,7 @@
     "cuisine": "burger;coffee_shop;sandwich;cake;fries;shawarma;dessert;pizza"
    },
    "first_seen": "2026-10-19",
-   "last_seen": "2026-10-19"
+   "last_seen": "2026-10-20"
   },
   {
    "id": "osm:way/1511783322",
@@ -2595,6 +3813,58 @@
    "last_seen": "2026-10-19"
   },
   {
+   "id": "osm:way/223637584",
+   "cat": "rest",
+   "name": "",
+   "name_ar": "",
+   "lat": 32.021415,
+   "lon": 36.408638,
+   "tags": {
+    "amenity": "shelter"
+   },
+   "first_seen": "2026-10-20",
+   "last_seen": "2026-10-20"
+  },
+  {
+   "id": "osm:way/223637888",
+   "cat": "rest",
+   "name": "",
+   "name_ar": "",
+   "lat": 32.022951,
+   "lon": 36.405759,
+   "tags": {
+    "amenity": "shelter"
+   },
+   "first_seen": "2026-10-20",
+   "last_seen": "2026-10-20"
+  },
+  {
+   "id": "osm:way/223637889",
+   "cat": "rest",
+   "name": "",
+   "name_ar": "",
+   "lat": 32.024429,
+   "lon": 36.404872,
+   "tags": {
+    "amenity": "shelter"
+   },
+   "first_seen": "2026-10-20",
+   "last_seen": "2026-10-20"
+  },
+  {
+   "id": "osm:way/223637890",
+   "cat": "rest",
+   "name": "",
+   "name_ar": "",
+   "lat": 32.023536,
+   "lon": 36.404778,
+   "tags": {
+    "amenity": "shelter"
+   },
+   "first_seen": "2026-10-20",
+   "last_seen": "2026-10-20"
+  },
+  {
    "id": "osm:way/271264355",
    "cat": "check",
    "name": "Police BASE - SARD",
@@ -2649,6 +3919,23 @@
    "last_seen": "2026-10-19"
   },
   {
+   "id": "osm:way/309900375",
+   "cat": "mosque",
+   "name": "The Hashemite University",
+   "name_ar": "الجامعة الهاشمية",
+   "lat": 32.103065,
+   "lon": 36.186684,
+   "tags": {
+    "amenity": "university",
+    "phone": "+962-5-3903333",
+    "website": "https://hu.edu.jo/",
+    "wikidata": "Q2281564",
+    "wikipedia": "en:Hashemite University"
+   },
+   "first_seen": "2026-10-20",
+   "last_seen": "2026-10-20"
+  },
+  {
    "id": "osm:way/369550995",
    "cat": "rest",
    "name": "",
@@ -2673,6 +3960,20 @@
    },
    "first_seen": "2026-10-19",
    "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:way/409216294",
+   "cat": "food",
+   "name": "Kudu",
+   "name_ar": "",
+   "lat": 31.432935,
+   "lon": 37.184503,
+   "tags": {
+    "amenity": "restaurant",
+    "cuisine": "regional"
+   },
+   "first_seen": "2026-10-20",
+   "last_seen": "2026-10-20"
   },
   {
    "id": "osm:way/453439223",
@@ -2701,6 +4002,58 @@
    "last_seen": "2026-10-19"
   },
   {
+   "id": "osm:way/550250422",
+   "cat": "rest",
+   "name": "",
+   "name_ar": "",
+   "lat": 31.468723,
+   "lon": 38.366049,
+   "tags": {
+    "highway": "rest_area"
+   },
+   "first_seen": "2026-10-20",
+   "last_seen": "2026-10-20"
+  },
+  {
+   "id": "osm:way/550250423",
+   "cat": "rest",
+   "name": "",
+   "name_ar": "",
+   "lat": 31.469125,
+   "lon": 38.365968,
+   "tags": {
+    "highway": "rest_area"
+   },
+   "first_seen": "2026-10-20",
+   "last_seen": "2026-10-20"
+  },
+  {
+   "id": "osm:way/560339449",
+   "cat": "rest",
+   "name": "",
+   "name_ar": "",
+   "lat": 31.433665,
+   "lon": 37.183861,
+   "tags": {
+    "highway": "services"
+   },
+   "first_seen": "2026-10-20",
+   "last_seen": "2026-10-20"
+  },
+  {
+   "id": "osm:way/560339451",
+   "cat": "rest",
+   "name": "",
+   "name_ar": "",
+   "lat": 31.429781,
+   "lon": 37.195357,
+   "tags": {
+    "highway": "services"
+   },
+   "first_seen": "2026-10-20",
+   "last_seen": "2026-10-20"
+  },
+  {
    "id": "osm:way/597076543",
    "cat": "rest",
    "name": "",
@@ -2714,6 +4067,19 @@
    "last_seen": "2026-10-19"
   },
   {
+   "id": "osm:way/614601689",
+   "cat": "rest",
+   "name": "",
+   "name_ar": "",
+   "lat": 31.467792,
+   "lon": 37.140983,
+   "tags": {
+    "highway": "services"
+   },
+   "first_seen": "2026-10-20",
+   "last_seen": "2026-10-20"
+  },
+  {
    "id": "osm:way/628788822",
    "cat": "mosque",
    "name": "مسجد هاشم",
@@ -2724,21 +4090,7 @@
     "amenity": "place_of_worship"
    },
    "first_seen": "2026-10-19",
-   "last_seen": "2026-10-19"
-  },
-  {
-   "id": "osm:way/656798558",
-   "cat": "mosque",
-   "name": "جامعة الحدود الشمالية",
-   "name_ar": "",
-   "lat": 30.851477,
-   "lon": 41.191966,
-   "tags": {
-    "amenity": "university",
-    "barrier": "wall"
-   },
-   "first_seen": "2026-10-19",
-   "last_seen": "2026-10-19"
+   "last_seen": "2026-10-20"
   },
   {
    "id": "osm:way/803414102",
