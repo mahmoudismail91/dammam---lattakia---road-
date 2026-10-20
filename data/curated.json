@@ -19,9 +19,32 @@
         {
           "t": "Wikipedia – Hafar Al-Batin",
           "u": "https://en.wikipedia.org/wiki/Hafar_Al-Batin"
+        },
+        {
+          "t": "AramcoWorld (Mar/Apr 1967) – 'The Desert Road': building and paving the Tapline Road from Qaisumah to Turaif",
+          "u": "https://archive.aramcoworld.com/issue/196702/desert.road.htm"
+        },
+        {
+          "t": "Arab News (30 Mar 2008) – Highway users complain of poor services at rest stops",
+          "u": "https://www.arabnews.com/node/310411"
         }
       ],
-      "added": "2026-10-19"
+      "added": "2026-10-19",
+      "images": [
+        {
+          "u": "https://commons.wikimedia.org/wiki/Special:FilePath/Hafar_Al-Batin_in_Spring_001.JPG?width=1024",
+          "thumb": "https://commons.wikimedia.org/wiki/Special:FilePath/Hafar_Al-Batin_in_Spring_001.JPG?width=400",
+          "page": "https://commons.wikimedia.org/wiki/File:Hafar_Al-Batin_in_Spring_001.JPG",
+          "t": "Spring desert around Hafar Al-Batin (uploaded Oct 2007) – ground colour and vegetation reference for the level's surroundings",
+          "credit": "Drh104 (en.wikipedia) · CC BY-SA 3.0 · Wikimedia Commons",
+          "year": 2007
+        }
+      ],
+      "notes": [
+        "2000s highway stops in Saudi Arabia were often criticised in the press for poor food, unclean toilets and weak security (Arab News, 2008) – good mood for a worn, slightly neglected Level 1 station.",
+        "Spring around Hafar Al-Batin turns the desert floor green with short grass and flowers (the city is nicknamed 'capital of the spring') – an alternative seasonal look for the level."
+      ],
+      "updated": "2026-10-20"
     },
     {
       "id": "dammam",
@@ -117,6 +140,10 @@
         {
           "t": "Wikipedia – Trans-Arabian Pipeline",
           "u": "https://en.wikipedia.org/wiki/Trans-Arabian_Pipeline"
+        },
+        {
+          "t": "AramcoWorld (Mar/Apr 1967) – 'The Desert Road': building and paving the Tapline Road from Qaisumah to Turaif",
+          "u": "https://archive.aramcoworld.com/issue/196702/desert.road.htm"
         }
       ],
       "added": "2026-10-19"
@@ -835,6 +862,29 @@
       "lon": 35.77,
       "desc": "Archetype: fisherman at the port, nets and small wooden boats.",
       "added": "2026-10-19"
+    },
+    {
+      "id": "sasco-rafha-road",
+      "cat": "fuel",
+      "country": "SA",
+      "approx": true,
+      "name": "SASCO station – Hafar Al-Batin/Rafha road",
+      "name_ar": "محطة ساسكو – طريق حفر الباطن/رفحاء",
+      "lat": 29.6,
+      "lon": 43.57,
+      "desc": "SASCO roadside service station near Rafha on the Hafar Al-Batin–Rafha international road: fuel, catering (تموين) and lodging (إيواء) on a 15,000 m² site. SASCO announced a 5.5 million riyal redevelopment in August 2017, so a station was already operating here before. Pin placed roughly at Rafha's eastern approach – exact site to verify.",
+      "game": "Template for a bigger 'full-service' stop: fuel + mini-market + restaurant + rooms for truckers and families.",
+      "refs": [
+        {
+          "t": "FX News Today – 'SASCO reveals development of a new station for 5.5 million riyals' (2017)",
+          "u": "https://www.fxnewstoday.ae/stocks/saudi-arabia-news/\"ساسكو\"-تكشف-عن-تطوير-محطة-جديدة-بـ-5.5-مليون-ريال-182335"
+        },
+        {
+          "t": "Saudipedia – Rafha Governorate (roads)",
+          "u": "https://saudipedia.com/%D9%85%D8%AD%D8%A7%D9%81%D8%B8%D8%A9-%D8%B1%D9%81%D8%AD%D8%A7%D8%A1"
+        }
+      ],
+      "added": "2026-10-20"
     }
   ]
 }

@@ -181,9 +181,25 @@
         "Sleep: truck drivers sleep in the cab or on a mat next to the truck; families use simple roadside rooms ('furnished apartments' / motels) or push on to the next town; some rest on carpets in the open at rest areas.",
         "Eat: cheap restaurants with rice & chicken, kabsa, ful, bread, tea in small glasses and Arabic coffee; plastic chairs, fluorescent tubes, a TV on the wall.",
         "Restrooms: basic, often behind the mosque or station building, separate for men and women.",
-        "Checkpoints: police/army checkpoints on the highways and before borders – slow down, show ID (iqama/passport), car papers checked."
+        "Checkpoints: police/army checkpoints on the highways and before borders – slow down, show ID (iqama/passport), car papers checked.",
+        "Press in 2008 described many highway service stations as having poor food, dirty toilets and little security; families often avoided the toilets (Arab News, 30 Mar 2008).",
+        "Later (2010s) the government launched a programme to upgrade thousands of rest stops – so the 2000s look is the older, more basic one."
       ],
-      "added": "2026-10-19"
+      "added": "2026-10-19",
+      "refs": [
+        {
+          "t": "Arab News (30 Mar 2008) – Highway users complain of poor services at rest stops",
+          "u": "https://www.arabnews.com/node/310411"
+        },
+        {
+          "t": "Arab News – Revamp of highway rest stops under way (government upgrade programme)",
+          "u": "https://www.arabnews.com/news/496216"
+        },
+        {
+          "t": "KFCRIS study – 'استراحات الطرق' (road rest stops in Saudi Arabia)",
+          "u": "https://kfcris.com/pdf/b8538d0d3094c6d30bab3fdc3229fd035ffd93b82e836.pdf"
+        }
+      ]
     },
     {
       "id": "fuel-stations",
@@ -322,7 +338,13 @@
         "By the 2000s the pipeline had stopped pumping (Saudi part shut down in the 1980s–1990), so station compounds were partly abandoned or reused – good mood for Arar_Station.",
         "Fenced compounds, staff houses, water towers, rusting pipe segments along the road."
       ],
-      "added": "2026-10-19"
+      "added": "2026-10-19",
+      "refs": [
+        {
+          "t": "AramcoWorld (Mar/Apr 1967) – 'The Desert Road': building and paving the Tapline Road from Qaisumah to Turaif",
+          "u": "https://archive.aramcoworld.com/issue/196702/desert.road.htm"
+        }
+      ]
     },
     {
       "id": "borders-era",

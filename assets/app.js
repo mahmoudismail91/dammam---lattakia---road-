@@ -309,6 +309,7 @@
           a small musalla (prayer room) with washing taps; a cheap restaurant (rice & chicken, tea in small glasses); a bakala; basic restrooms behind the building; tyre-repair shop next door.</div>` : ""}
         <div id="wikiExtract"></div>
         ${p.game ? `<div class="game"><b>Game idea:</b> ${esc(p.game)}</div>` : ""}
+        ${p.notes?.length ? `<h3>Research notes</h3><ul class="refs">${p.notes.map((n) => `<li>${esc(n)}</li>`).join("")}</ul>` : ""}
         ${tagLine ? `<p class="tags">${tagLine}</p>` : ""}
         <div class="links">
           <a href="https://www.google.com/maps/search/?api=1&query=${p.lat},${p.lon}" target="_blank" rel="noopener">Google Maps</a>
@@ -336,7 +337,7 @@
     } else if (heroSrc) setHero(heroSrc, heroSrc, "", "");
 
     // own reference images -> road photos within 5 km -> live Commons search
-    const own = (p.images || []).map((im) => ({ thumb: im.thumb || im.u, full: im.u, page: im.page || im.u, title: im.t || p.name, credit: im.credit || "", src: "curated" }));
+    const own = (p.images || []).map((im) => ({ thumb: im.thumb || im.u, full: im.u, page: im.page || im.u, title: im.t || p.name, credit: im.credit || "", year: im.year || 0, src: "curated" }));
     const road = state.photos.map((ph) => [ph, map.distance([p.lat, p.lon], [ph.lat, ph.lon])])
       .filter(([, d]) => d < 5000).sort((a, b) => a[1] - b[1]).slice(0, 12).map(([ph]) => ph);
     const live = (await commons(p.lat, p.lon, p.cat === "city" ? 8000 : 3000)).map((ph) => ({ ...ph, src: "live" }));
@@ -489,6 +490,7 @@
         <div class="ar">${esc(b.title_ar || "")}</div>
         <div class="chips"><span class="chip">${esc(b.group)}</span><span class="chip">${esc(b.region)}</span><span class="chip warn">2000s</span></div>
         ${b.notes?.length ? `<div class="game"><b>Era notes for the game</b><ul>${b.notes.map((n) => `<li>${esc(n)}</li>`).join("")}</ul></div>` : ""}
+        ${b.refs?.length ? `<h3>Sources</h3><ol class="refs">${b.refs.map((r) => `<li><a href="${esc(r.u)}" target="_blank" rel="noopener">${esc(r.t)}</a></li>`).join("")}</ol>` : ""}
         <h3>Search more pictures</h3>
         <div class="links">
           <a href="${flickr(b.search)}" target="_blank" rel="noopener">Flickr (taken 2000–2009)</a>
@@ -505,7 +507,8 @@
     history.replaceState(null, "", "#ref:" + encodeURIComponent(b.id));
     if (!b._pics) {
       const seen = new Set();
-      b._pics = (await Promise.all(b.commons.map((q) => commonsSearch(q)))).flat().filter((ph) => !seen.has(ph.page) && seen.add(ph.page));
+      const own = (b.images || []).map((im) => ({ thumb: im.thumb || im.u, full: im.u, page: im.page || im.u, title: im.t || "", credit: im.credit || "", year: im.year || 0 }));
+      b._pics = [...own, ...(await Promise.all(b.commons.map((q) => commonsSearch(q)))).flat()].filter((ph) => !seen.has(ph.page) && seen.add(ph.page));
     }
     const pics = b._pics.filter((ph) => !state.era || is2000s(ph));
     const g = $("#gallery"); if (!g) return;

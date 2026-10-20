@@ -1,6 +1,15 @@
 {
  "log": [
   {
+   "date": "2026-10-20",
+   "kind": "curated",
+   "note": "Level 1: 2007 Hafar Al-Batin photo, 1967 Tapline Road article, 2008 report on highway rest stops. New stop: SASCO station on the Hafar–Rafha road. Roadside-stops board: era notes + sources.",
+   "added": [
+    "level1-muhaiya",
+    "sasco-rafha-road"
+   ]
+  },
+  {
    "date": "2026-10-19",
    "kind": "photos",
    "added": [
