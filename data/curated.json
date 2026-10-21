@@ -27,6 +27,14 @@
         {
           "t": "Arab News (30 Mar 2008) – Highway users complain of poor services at rest stops",
           "u": "https://www.arabnews.com/node/310411"
+        },
+        {
+          "t": "Saudipedia – Stations of the Basra–Makkah pilgrim route (Hafar Al-Batin was a water stop on it)",
+          "u": "https://saudipedia.com/en/stations-of-the-basra-makkah-route-in-qassim"
+        },
+        {
+          "t": "Wikipedia – Qaisumah (Tapline company town ~20 km east of Level 1)",
+          "u": "https://en.wikipedia.org/wiki/Qaisumah"
         }
       ],
       "added": "2026-10-19",
@@ -42,9 +50,11 @@
       ],
       "notes": [
         "2000s highway stops in Saudi Arabia were often criticised in the press for poor food, unclean toilets and weak security (Arab News, 2008) – good mood for a worn, slightly neglected Level 1 station.",
-        "Spring around Hafar Al-Batin turns the desert floor green with short grass and flowers (the city is nicknamed 'capital of the spring') – an alternative seasonal look for the level."
+        "Spring around Hafar Al-Batin turns the desert floor green with short grass and flowers (the city is nicknamed 'capital of the spring') – an alternative seasonal look for the level.",
+        "Lore hook: Hafar Al-Batin began as a water stop for caravans and pilgrims on the old Basra–Makkah route – Level 1 sits on a road travellers have rested on for centuries.",
+        "Qaisumah, the next settlement east, grew as a Tapline company town around its pumping station; its name comes from a native desert herb (Achillea, القيصوم) – a plant you can scatter around the level."
       ],
-      "updated": "2026-10-20"
+      "updated": "2026-10-21"
     },
     {
       "id": "dammam",
@@ -144,6 +154,10 @@
         {
           "t": "AramcoWorld (Mar/Apr 1967) – 'The Desert Road': building and paving the Tapline Road from Qaisumah to Turaif",
           "u": "https://archive.aramcoworld.com/issue/196702/desert.road.htm"
+        },
+        {
+          "t": "Wikipedia – Qaisumah",
+          "u": "https://en.wikipedia.org/wiki/Qaisumah"
         }
       ],
       "added": "2026-10-19"

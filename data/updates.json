@@ -1,6 +1,14 @@
 {
  "log": [
   {
+   "date": "2026-10-21",
+   "kind": "curated",
+   "note": "Level 1: lore notes (Basra–Makkah pilgrim route, Qaisumah Tapline town). Truckers board: long-haul driver life + truck-stop directory. Small-shops board: petrol-station mini markets. No new verified stops today.",
+   "added": [
+    "level1-muhaiya"
+   ]
+  },
+  {
    "date": "2026-10-20",
    "kind": "osm",
    "chunks": [

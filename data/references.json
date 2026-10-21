@@ -155,9 +155,21 @@
       "notes": [
         "Many drivers from Syria, Jordan, Egypt, Pakistan, India; sleeping in the cab or on a mat beside the truck.",
         "Trucks: Mercedes-Benz (Actros and older), Volvo, MAN, Scania; decorated cabs with curtains, stickers, fringe.",
-        "Truck stops = gravel lots + workshop + restaurant + mosque/musalla + tea."
+        "Truck stops = gravel lots + workshop + restaurant + mosque/musalla + tea.",
+        "A trucking magazine's feature on long-haul drivers in Saudi Arabia describes Syrian-origin drivers resting in the shade of their trucks and drinking tea together at a roadside stop, long working days, low pay and old trucks.",
+        "Summer cab temperatures near 50 °C – drivers stop in the hottest hours and drive at night."
       ],
-      "added": "2026-10-19"
+      "added": "2026-10-19",
+      "refs": [
+        {
+          "t": "eurotransport.de – 'Kings of the desert': the hard daily life of long-haul truck drivers in Saudi Arabia (German)",
+          "u": "https://www.eurotransport.de/fahrer/abenteuer/koenige-der-wueste-der-harte-fahreralltag-von-fernfahrern-aus-saudi-arabien/"
+        },
+        {
+          "t": "Truckfly – directory of truck stops, parkings and fuel stations in Saudi Arabia",
+          "u": "https://www.truckfly.com/en/truck-stops-parkings-gas-stations/sa/"
+        }
+      ]
     },
     {
       "id": "roadside-stops",
@@ -242,9 +254,16 @@
       "notes": [
         "Bakala: shelves of Pepsi/Mirinda cans, chips, phone cards (Sawa cards), cigarettes, water bottles; fridges with glass doors.",
         "'Bneshar' (tyre repair) shops with stacks of tyres outside.",
-        "Restaurants: plastic chairs, fluorescent lights, menu boards with photos; kabsa, chicken, ful, tea in small glasses."
+        "Restaurants: plastic chairs, fluorescent lights, menu boards with photos; kabsa, chicken, ful, tea in small glasses.",
+        "Travellers' blogs describe a mini market attached to almost every local petrol station – the main place to buy tea, water and basic food on the highway."
       ],
-      "added": "2026-10-19"
+      "added": "2026-10-19",
+      "refs": [
+        {
+          "t": "Nick Sanders blog – riding Saudi highways, stopping at petrol-station mini markets",
+          "u": "https://www.nicksanders.com/post/blog-44-al-kharg-to-77kms-before-haradah"
+        }
+      ]
     },
     {
       "id": "souqs-syria",
