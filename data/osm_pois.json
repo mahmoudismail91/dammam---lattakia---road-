@@ -1,7 +1,7 @@
 {
  "source": "© OpenStreetMap contributors (ODbL)",
- "updated": "2026-10-20",
- "next_chunk": 100,
+ "updated": "2026-10-21",
+ "next_chunk": 12,
  "items": [
   {
    "id": "osm:node/10059535552",
@@ -248,7 +248,7 @@
     "amenity": "fuel"
    },
    "first_seen": "2026-10-19",
-   "last_seen": "2026-10-19"
+   "last_seen": "2026-10-21"
   },
   {
    "id": "osm:node/12360590897",
@@ -1939,6 +1939,19 @@
    "last_seen": "2026-10-19"
   },
   {
+   "id": "osm:node/14014520192",
+   "cat": "shop",
+   "name": "مفرق النقاير 906",
+   "name_ar": "",
+   "lat": 27.527472,
+   "lon": 48.312259,
+   "tags": {
+    "amenity": "marketplace"
+   },
+   "first_seen": "2026-10-21",
+   "last_seen": "2026-10-21"
+  },
+  {
    "id": "osm:node/14076351299",
    "cat": "mosque",
    "name": "",
@@ -2522,6 +2535,32 @@
    },
    "first_seen": "2026-10-19",
    "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:node/1992471411",
+   "cat": "fuel",
+   "name": "",
+   "name_ar": "",
+   "lat": 27.065202,
+   "lon": 49.261407,
+   "tags": {
+    "amenity": "fuel"
+   },
+   "first_seen": "2026-10-21",
+   "last_seen": "2026-10-21"
+  },
+  {
+   "id": "osm:node/1992471413",
+   "cat": "mosque",
+   "name": "",
+   "name_ar": "",
+   "lat": 27.065445,
+   "lon": 49.261366,
+   "tags": {
+    "amenity": "place_of_worship"
+   },
+   "first_seen": "2026-10-21",
+   "last_seen": "2026-10-21"
   },
   {
    "id": "osm:node/2158168540",
@@ -3850,6 +3889,20 @@
    "last_seen": "2026-10-19"
   },
   {
+   "id": "osm:node/7637608230",
+   "cat": "fuel",
+   "name": "الخنيني",
+   "name_ar": "الخنيني",
+   "lat": 27.1031,
+   "lon": 49.2058,
+   "tags": {
+    "amenity": "fuel",
+    "brand": "الخنيني"
+   },
+   "first_seen": "2026-10-21",
+   "last_seen": "2026-10-21"
+  },
+  {
    "id": "osm:node/8300134718",
    "cat": "rest",
    "name": "جسر الارزونة",
@@ -3989,6 +4042,19 @@
    },
    "first_seen": "2026-10-19",
    "last_seen": "2026-10-20"
+  },
+  {
+   "id": "osm:way/1041975799",
+   "cat": "fuel",
+   "name": "محطة الخنيني",
+   "name_ar": "",
+   "lat": 27.103021,
+   "lon": 49.205826,
+   "tags": {
+    "highway": "services"
+   },
+   "first_seen": "2026-10-21",
+   "last_seen": "2026-10-21"
   },
   {
    "id": "osm:way/119102718",
@@ -4235,19 +4301,6 @@
    },
    "first_seen": "2026-10-19",
    "last_seen": "2026-10-19"
-  },
-  {
-   "id": "osm:way/1553046746",
-   "cat": "mosque",
-   "name": "طريق عام ام جامع ام حارتين المزينة",
-   "name_ar": "",
-   "lat": 34.704733,
-   "lon": 36.367612,
-   "tags": {
-    "highway": "tertiary"
-   },
-   "first_seen": "2026-10-20",
-   "last_seen": "2026-10-20"
   },
   {
    "id": "osm:way/171456931",
@@ -4619,6 +4672,32 @@
    },
    "first_seen": "2026-10-19",
    "last_seen": "2026-10-19"
+  },
+  {
+   "id": "osm:way/908587820",
+   "cat": "rest",
+   "name": "",
+   "name_ar": "",
+   "lat": 27.130937,
+   "lon": 49.175426,
+   "tags": {
+    "highway": "services"
+   },
+   "first_seen": "2026-10-21",
+   "last_seen": "2026-10-21"
+  },
+  {
+   "id": "osm:way/908587919",
+   "cat": "rest",
+   "name": "",
+   "name_ar": "",
+   "lat": 27.064891,
+   "lon": 49.260868,
+   "tags": {
+    "highway": "services"
+   },
+   "first_seen": "2026-10-21",
+   "last_seen": "2026-10-21"
   },
   {
    "id": "osm:way/962034572",

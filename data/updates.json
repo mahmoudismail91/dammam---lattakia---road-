@@ -2,6 +2,45 @@
  "log": [
   {
    "date": "2026-10-21",
+   "kind": "osm",
+   "chunks": [
+    103,
+    104,
+    108,
+    2,
+    5,
+    6,
+    7,
+    8,
+    12
+   ],
+   "seen": 8,
+   "added": [
+    "osm:node/7637608230",
+    "osm:way/1041975799",
+    "osm:node/1992471411",
+    "osm:node/1992471413",
+    "osm:way/908587820",
+    "osm:way/908587919",
+    "osm:node/14014520192"
+   ],
+   "added_count": 7,
+   "totals": {
+    "fuel": 89,
+    "mosque": 60,
+    "shop": 22,
+    "rest": 131,
+    "food": 32,
+    "border": 3,
+    "landmark": 4,
+    "check": 5,
+    "wc": 2,
+    "station": 11,
+    "hotel": 3
+   }
+  },
+  {
+   "date": "2026-10-21",
    "kind": "curated",
    "note": "Level 1: lore notes (Basra–Makkah pilgrim route, Qaisumah Tapline town). Truckers board: long-haul driver life + truck-stop directory. Small-shops board: petrol-station mini markets. No new verified stops today.",
    "added": [
