@@ -2,6 +2,38 @@
  "log": [
   {
    "date": "2026-10-22",
+   "kind": "osm",
+   "chunks": [
+    14,
+    15,
+    16,
+    17,
+    19,
+    20,
+    21,
+    22,
+    25,
+    26
+   ],
+   "seen": 0,
+   "added": [],
+   "added_count": 0,
+   "totals": {
+    "fuel": 89,
+    "mosque": 60,
+    "shop": 22,
+    "rest": 131,
+    "food": 32,
+    "border": 3,
+    "landmark": 4,
+    "check": 5,
+    "wc": 2,
+    "station": 11,
+    "hotel": 3
+   }
+  },
+  {
+   "date": "2026-10-22",
    "kind": "curated",
    "note": "Camels: new 'Camel culture' board (Umm Ruqaibah festival, camel markets, camels on the road, 2004–2008 news). Level 1: Umm Ruqaibah lore note. Camel market and Tapline camel-crossing places: new sources. No new verified stops today.",
    "added": [
