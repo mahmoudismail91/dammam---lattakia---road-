@@ -9,10 +9,12 @@ Rotate the focus by weekday:
 | Mon | Highway motels / rest houses (استراحات) on the Tapline Road between towns |
 | Tue | Roadside mosques and prayer stops at fuel stations |
 | Wed | Fuel & rest stations, truck stops, tea stands, small shops (bakala, tyre repair) |
-| Thu | Camel areas, camel markets, herding regions, camel-crossing zones |
+| Thu | Photo hunt: traveller stops on the Hafar Al-Batin – Rafha – Arar stretch with no photos |
 | Fri | Borders: Al-Haditha/Al-Omari, Jaber/Nassib – current status, procedures, photos |
 | Sat | People & NPC references for the 2000s: clothing (men, women, Bedouin), travellers, drivers, shop keepers – update `data/references.json` |
 | Sun | Jordan & Syria legs: the highway between Al-Omari, Azraq, Mafraq, Jaber, the M5 and the Homs–Tartus–Latakia road |
+
+**Top priority: photos for traveller stops that have none** – the site's Route tab lists them ("no photos yet"; `data/photo_status.json` shows stops whose automatic search found nothing). Camels are covered enough – skip them.
 
 **Main focus: traveller stops** – the places travellers actually stopped at to **pray, sleep, fuel, eat, rest, use restrooms, and pass checkpoints/borders**. Prefer these over everything else, and add photos of them.
 

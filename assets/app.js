@@ -89,7 +89,9 @@
     state.all = [...cur.items, ...osm.items];
     state.all.forEach((p) => { p.km = kmAlong(p.lat, p.lon); p.inTown = inTown(p); state.byId.set(p.id, p); });
     buildStops();
-    state.photos = photos.items.filter((ph) => ph.thumb && !inTown(ph));
+    const levels = cur.items.filter((c) => c.cat === "level");
+    const nearLevel = (ph) => levels.some((l) => map.distance([l.lat, l.lon], [ph.lat, ph.lon]) < 2000);
+    state.photos = photos.items.filter((ph) => ph.thumb && (!inTown(ph) || nearLevel(ph)));
     state.photos.forEach((ph) => { ph.km = kmAlong(ph.lat, ph.lon); ph.year = ph.year || yearOf(ph.date); ph.isNew = daysAgo(ph.first_seen) <= 2; state.byId.set(ph.id, ph); });
     state.photos.sort((a, b) => a.km - b.km);
     state.updates = upd.log;
@@ -420,8 +422,18 @@
   }
   function renderStops() {
     const showStops = ls.get("routeStops") !== "0";
-    const stops = state.all.filter((p) => (p.curated && (p.cat === "city" || p.cat === "border")) || (showStops && p.cat === "stop")).sort((a, b) => a.km - b.km);
+    const noPhotoOnly = ls.get("noPhotoOnly") === "1";
+    state.stops.forEach((st) => {
+      if (st.photoCount != null) return;
+      const own = st.members.reduce((a, m) => a + (m.images?.length || 0), 0);
+      st.photoCount = own + state.photos.filter((ph) => map.distance([st.lat, st.lon], [ph.lat, ph.lon]) < 1500).length;
+    });
+    const missing = state.stops.filter((st) => !st.photoCount).length;
+    const stops = state.all.filter((p) => (p.curated && (p.cat === "city" || p.cat === "border")) ||
+      (showStops && p.cat === "stop" && (!noPhotoOnly || !p.photoCount))).sort((a, b) => a.km - b.km);
     $("#stopsToggle").checked = showStops;
+    $("#noPhotoToggle").checked = noPhotoOnly;
+    $("#photoStat").textContent = `${state.stops.length - missing} of ${state.stops.length} stops have photos · ${missing} still need photos`;
     let lastFuel = 0;
     const townKm = state.waypoints.filter((w) => w.urban_km).map((w) => kmAlong(w.lat, w.lon));
     $("#stops").innerHTML = stops.map((p) => {
@@ -431,7 +443,8 @@
         const gap = p.services.includes("fuel") ? p.km - lastFuel : 0;
         if (p.services.includes("fuel")) lastFuel = p.km;
         return `${gap > 150 ? `<li class="gap">⚠️ ${gap} km with no fuel stop on the map</li>` : ""}<li data-id="${esc(p.id)}" class="stop-row"><span class="dot small" style="background:${c.color}">🛑</span>
-          <span>${esc(p.name.replace(/^Stop: /, ""))}<br><span class="svc">${serviceIcons(p)}</span></span><span class="km">${p.km} km</span></li>`;
+          <span>${esc(p.name.replace(/^Stop: /, ""))}<br><span class="svc">${serviceIcons(p)}</span>
+          ${p.photoCount ? `<span class="pc" title="photos nearby">📷 ${p.photoCount}</span>` : `<span class="pc none">no photos yet</span>`}</span><span class="km">${p.km} km</span></li>`;
       }
       if (p.cat === "city") lastFuel = p.km;
       return `<li data-id="${esc(p.id)}" class="${p.cat === "border" ? "border-row" : ""}"><span class="dot" style="background:${c.color}">${c.icon}</span>
@@ -562,6 +575,7 @@
   }));
   $("#showOsm").onchange = (e) => { state.showOsm = e.target.checked; redraw(); };
   $("#stopsToggle").onchange = (e) => { ls.set("routeStops", e.target.checked ? "1" : "0"); renderStops(); };
+  $("#noPhotoToggle").onchange = (e) => { ls.set("noPhotoOnly", e.target.checked ? "1" : "0"); renderStops(); };
   $("#onlyNew").onchange = (e) => { state.onlyNew = e.target.checked; redraw(); };
   $("#showTown").checked = state.showTown;
   $("#showTown").onchange = (e) => { state.showTown = e.target.checked; ls.set("showTown", e.target.checked ? "1" : "0"); renderLayers(); redraw(); };

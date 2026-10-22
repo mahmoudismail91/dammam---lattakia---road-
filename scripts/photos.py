@@ -130,11 +130,11 @@ def panoramax(samples):
     return out
 
 
-def kartaview(samples):
+def kartaview(samples, radius=600, per_point=1):
     out = []
     for lon, lat in samples:
         try:
-            res = http(f"https://api.openstreetcam.org/2.0/photo/?lat={lat}&lng={lon}&radius=600&itemsPerPage=1", timeout=30)
+            res = http(f"https://api.openstreetcam.org/2.0/photo/?lat={lat}&lng={lon}&radius={radius}&itemsPerPage={per_point}", timeout=30)
         except Exception as e:
             print(f"  kartaview: {e}", file=sys.stderr)
             return out
@@ -150,6 +150,81 @@ def kartaview(samples):
                 "date": (p.get("shotDate") or p.get("dateAdded") or "")[:10],
             })
         time.sleep(0.3)
+    return out
+
+
+STOP_CATS = {"fuel", "mosque", "food", "hotel", "rest", "wc", "shop", "check", "border"}
+STOPS_PER_RUN = 90          # traveller stops searched individually per run
+RECHECK_DAYS = 14
+
+
+def traveller_stops(wps):
+    """Group roadside places into stops (same idea as the site) + curated levels/stops. Returns [(key, lat, lon, priority)]."""
+    pois = [p for p in load("osm_pois.json", {"items": []})["items"] if p["cat"] in STOP_CATS]
+    pois.sort(key=lambda p: (p["lat"], p["lon"]))
+    groups = []
+    for p in pois:
+        for g in groups:
+            if any(haversine([m["lon"], m["lat"]], [p["lon"], p["lat"]]) < 0.6 for m in g):
+                g.append(p)
+                break
+        else:
+            groups.append([p])
+    stops = []
+    for g in groups:
+        lat = sum(m["lat"] for m in g) / len(g)
+        lon = sum(m["lon"] for m in g) / len(g)
+        stops.append((f"{lat:.3f},{lon:.3f}", lat, lon, len({m["cat"] for m in g})))
+    for c in load("curated.json", {"items": []})["items"]:
+        if c["cat"] in STOP_CATS | {"level", "station"}:
+            prio = 100 if c["cat"] == "level" else 3
+            stops.append((f"{c['lat']:.3f},{c['lon']:.3f}", c["lat"], c["lon"], prio))
+    return stops
+
+
+def stop_photos(stops, token, today):
+    """Search right at each stop (KartaView 300 m, Commons 1 km, Mapillary 300 m) – rotating, so all stops get covered."""
+    status = load("photo_status.json", {"stops": {}})
+    st = status["stops"]
+    def due(k):
+        last = st.get(k, {}).get("checked")
+        return not last or (dt.date.fromisoformat(today) - dt.date.fromisoformat(last)).days >= RECHECK_DAYS
+    todo = sorted((s for s in stops if due(s[0])), key=lambda s: (-s[3], st.get(s[0], {}).get("checked", "")))[:STOPS_PER_RUN]
+    print(f"traveller stops: {len(stops)}, searching {len(todo)} this run")
+    out = []
+    for key, lat, lon, _ in todo:
+        found = []
+        q = urllib.parse.urlencode({
+            "action": "query", "generator": "geosearch", "ggscoord": f"{lat}|{lon}", "ggsradius": 1000,
+            "ggsnamespace": 6, "ggslimit": 20, "prop": "imageinfo|coordinates",
+            "iiprop": "url|extmetadata", "iiurlwidth": 640, "format": "json"})
+        try:
+            pages = commons_get("https://commons.wikimedia.org/w/api.php?" + q).get("query", {}).get("pages", {})
+            for pg in pages.values():
+                if not re.search(r"\.(jpe?g|png|webp)$", pg["title"], re.I) or "coordinates" not in pg or not pg.get("imageinfo"):
+                    continue
+                ii, m = pg["imageinfo"][0], pg["imageinfo"][0].get("extmetadata", {})
+                if not is_ground(pg["title"], m):
+                    continue
+                c = pg["coordinates"][0]
+                found.append({
+                    "id": f"commons:{pg['pageid']}", "src": "commons", "lat": round(c["lat"], 6), "lon": round(c["lon"], 6),
+                    "thumb": ii.get("thumburl"), "full": ii.get("thumburl"), "page": ii.get("descriptionurl"),
+                    "title": pg["title"][5:].rsplit(".", 1)[0],
+                    "credit": f"{strip(m.get('Artist', {}).get('value')) or 'Unknown'} · {strip(m.get('LicenseShortName', {}).get('value'))} · Wikimedia Commons",
+                    "date": strip(m.get("DateTimeOriginal", {}).get("value"))[:40],
+                    "year": year_of(strip(m.get("DateTimeOriginal", {}).get("value"))),
+                })
+        except Exception as e:
+            print(f"  commons @ {key}: {e}", file=sys.stderr)
+        time.sleep(2)
+        found += kartaview([(lon, lat)], radius=300, per_point=3)
+        if token:
+            found += mapillary([(lon, lat)], token)
+        st[key] = {"checked": today, "found": len(found)}
+        out += found
+    save("photo_status.json", status)
+    print(f"  stop photos found: {len(out)}; stops still without any: {sum(1 for v in st.values() if not v['found'])}")
     return out
 
 
@@ -194,6 +269,7 @@ def main():
         print(f"{name}: {len(got)}")
         found += got
     token = os.environ.get("MAPILLARY_TOKEN", "").strip()
+    found += stop_photos(traveller_stops(wps), token, today)
     if token:
         got = mapillary(street_samples, token)
         print(f"mapillary: {len(got)}")
@@ -226,8 +302,11 @@ def main():
 
     # only the road between towns, not photos inside the cities
     wps = load("waypoints.json", {})["waypoints"]
-    items = sorted((p for p in old.values() if not in_town(p["lat"], p["lon"], wps)), key=lambda p: p["id"])
-    added = [i for i in added if not in_town(old[i]["lat"], old[i]["lon"], wps)]
+    levels = [(c["lat"], c["lon"]) for c in load("curated.json", {"items": []})["items"] if c["cat"] == "level"]
+    def keep(p):  # roadside only – but always keep photos around a game level
+        return not in_town(p["lat"], p["lon"], wps) or any(haversine([lo, la], [p["lon"], p["lat"]]) < 2 for la, lo in levels)
+    items = sorted((p for p in old.values() if keep(p)), key=lambda p: p["id"])
+    added = [i for i in added if keep(old[i])]
     save("photos.json", {"updated": today, "items": items})
 
     updates = load("updates.json", {"log": []})
