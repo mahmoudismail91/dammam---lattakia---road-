@@ -20,7 +20,11 @@ Click any marker → photo, description, game idea, references, nearby photos (c
 
 Right-click (long-press on phones) anywhere on the map → **Research this spot as a game level**, or use 🎮 in any place panel. You get the OpenStreetMap layout within 500 m (buildings with size/area/heading, roads, fences, POIs), a **Unity blockout JSON in metres** (x = east, z = north, origin = spot) and GeoJSON, satellite/aerial links, Google Earth Pro historical-imagery steps for the 2000s, dashcam links, nearby photos and a 2000s highway-stop build checklist. Level 1 (Muhaiya station, Hafar Al-Batin) is on the map. Deep link: `#level:lat,lon`.
 
-## Daily updates
+## Updates (paused)
+
+Automatic daily updates are switched off. Run a scan by hand any time: *Actions → Daily road update → Run workflow*.
+
+### How it worked
 
 - **GitHub Action** `.github/workflows/daily-update.yml` runs every day: scans a few chunks of the road on OpenStreetMap (whole road every 4 days), commits new places; GitHub Pages republishes automatically. New places pulse on the map and appear in the **New** tab.
 - **Claude research task** (scheduled from Claude Code) adds curated references following `docs/DAILY_TASK.md`.

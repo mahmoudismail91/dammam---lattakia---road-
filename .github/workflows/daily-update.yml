@@ -1,8 +1,9 @@
 name: Daily road update
 
 on:
-  schedule:
-    - cron: "17 3 * * *"   # every day 03:17 UTC; GitHub Pages (deploy from branch) republishes after the commit
+  # Daily schedule switched off on request. To turn it back on, add:
+  # schedule:
+  #   - cron: "17 3 * * *"
   workflow_dispatch:
     inputs:
       full:
