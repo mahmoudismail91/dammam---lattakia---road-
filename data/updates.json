@@ -1,6 +1,16 @@
 {
  "log": [
   {
+   "date": "2026-10-22",
+   "kind": "curated",
+   "note": "Camels: new 'Camel culture' board (Umm Ruqaibah festival, camel markets, camels on the road, 2004–2008 news). Level 1: Umm Ruqaibah lore note. Camel market and Tapline camel-crossing places: new sources. No new verified stops today.",
+   "added": [
+    "level1-muhaiya",
+    "hafar-camel-market",
+    "widyan-camels"
+   ]
+  },
+  {
    "date": "2026-10-21",
    "kind": "osm",
    "chunks": [

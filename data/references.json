@@ -70,6 +70,52 @@
       "added": "2026-10-19"
     },
     {
+      "id": "camel-culture",
+      "group": "People & clothing",
+      "icon": "🐪",
+      "region": "Hafar Al-Batin / northern Saudi Arabia",
+      "title": "Camel culture – markets, festivals, camels on the road",
+      "title_ar": "ثقافة الإبل – أسواق ومزاين وإبل على الطريق",
+      "commons": [
+        "camel market Saudi Arabia",
+        "camel beauty contest Saudi",
+        "camels road sign Saudi Arabia",
+        "camels truck Saudi Arabia",
+        "Bedouin camels herd desert"
+      ],
+      "search": "Umm Ruqaibah camel festival Hafar Al-Batin",
+      "ar": "مزاين أم رقيبة حفر الباطن إبل",
+      "notes": [
+        "Umm Ruqaibah (أم رقيبة) camel festival is held in the sands of Hafar Al-Batin governorate between autumn and winter for about 40 days; it was already a big event in the mid-2000s with large camel sales.",
+        "Camel owners move animals by pickup and lorry – camels standing in the back of a Hilux or a high-sided truck are a typical road sight.",
+        "On the highway, stray camels are a night hazard: research says over 90% of camel–vehicle crashes are at night. Countermeasures: fences along highways, underpasses, reflective camel signs, luminous straps on camels.",
+        "Hafar Al-Batin has its own camel auction/market (مزاد/حراج) – crowds of men in thobes and shemaghs, pickups parked in rows, haggling."
+      ],
+      "refs": [
+        {
+          "t": "Al-Jazirah (21 Dec 2004) – local news, Hafar Al-Batin",
+          "u": "https://al-jazirah.com/2004/20041221/ln1t.htm"
+        },
+        {
+          "t": "Al-Jazirah (7 Dec 2006) – camel beauty festival coverage",
+          "u": "https://al-jazirah.com/2006/20061207/rv5.htm"
+        },
+        {
+          "t": "Al-Eqtisadiah (20 Dec 2008) – camel market at Umm Ruqaibah",
+          "u": "https://www.aleqt.com/2008/12/20/article_175259.html"
+        },
+        {
+          "t": "Al Jazeera Net (2014) – camel beauty contests in Saudi Arabia: heritage with deals in the millions",
+          "u": "https://www.ajnet.me/misc/2014/1/3/مزاين-الإبل-بالسعودية-موروث-صفقاته"
+        },
+        {
+          "t": "Arabian Business – camels involved in a very large share of Saudi traffic accidents",
+          "u": "https://www.arabianbusiness.com/gcc/camels-involved-in-97-of-saudi-traffic-accidents-587265"
+        }
+      ],
+      "added": "2026-10-22"
+    },
+    {
       "id": "jordan-people",
       "group": "People & clothing",
       "icon": "🧑",

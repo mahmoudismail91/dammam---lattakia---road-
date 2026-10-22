@@ -35,6 +35,10 @@
         {
           "t": "Wikipedia – Qaisumah (Tapline company town ~20 km east of Level 1)",
           "u": "https://en.wikipedia.org/wiki/Qaisumah"
+        },
+        {
+          "t": "Al-Eqtisadiah (20 Dec 2008) – camel market (حراج) at the Umm Ruqaibah festival",
+          "u": "https://www.aleqt.com/2008/12/20/article_175259.html"
         }
       ],
       "added": "2026-10-19",
@@ -52,9 +56,10 @@
         "2000s highway stops in Saudi Arabia were often criticised in the press for poor food, unclean toilets and weak security (Arab News, 2008) – good mood for a worn, slightly neglected Level 1 station.",
         "Spring around Hafar Al-Batin turns the desert floor green with short grass and flowers (the city is nicknamed 'capital of the spring') – an alternative seasonal look for the level.",
         "Lore hook: Hafar Al-Batin began as a water stop for caravans and pilgrims on the old Basra–Makkah route – Level 1 sits on a road travellers have rested on for centuries.",
-        "Qaisumah, the next settlement east, grew as a Tapline company town around its pumping station; its name comes from a native desert herb (Achillea, القيصوم) – a plant you can scatter around the level."
+        "Qaisumah, the next settlement east, grew as a Tapline company town around its pumping station; its name comes from a native desert herb (Achillea, القيصوم) – a plant you can scatter around the level.",
+        "Hafar Al-Batin governorate hosts the Umm Ruqaibah camel festival (مزاين أم رقيبة) in its sands every autumn–winter for about 40 days; in the 2000s it already drew big camel auctions (Al-Eqtisadiah, Dec 2008). Good reason for camel trucks, Bedouin pickups and visitors passing Level 1 in winter."
       ],
-      "updated": "2026-10-21"
+      "updated": "2026-10-22"
     },
     {
       "id": "dammam",
@@ -196,6 +201,10 @@
         {
           "t": "Wikipedia – Dromedary",
           "u": "https://en.wikipedia.org/wiki/Dromedary"
+        },
+        {
+          "t": "Al-Madina – Hafar Al-Batin camel auction: over 20 million riyals in sales, 1,000+ participants",
+          "u": "https://www.al-madina.com/article/758078/اقتصاد/20-مليون-ريال-مبيعات-مزاد-حفرالباطن-للإبل"
         }
       ],
       "added": "2026-10-19"
@@ -251,12 +260,24 @@
       "name_ar": "معابر الإبل – طريق التابلاين",
       "lat": 30.3,
       "lon": 42.3,
-      "desc": "Long open stretch of Hwy 85 through the Al-Widyan plateau. Free-roaming camels near the road are a known night-driving hazard; fenced sections and camel-crossing signs.",
+      "desc": "Long open stretch of Hwy 85 through the Al-Widyan plateau. Free-roaming camels near the road are a known night-driving hazard; fenced sections and camel-crossing signs. Research: over 90% of camel–vehicle crashes happen at night; mitigation has included highway fences, underpasses, reflective signs and luminous straps on camels.",
       "game": "Night-driving hazard event: camels on the road, hazard lights, warning signs.",
       "refs": [
         {
           "t": "Wikipedia – Northern Borders Province",
           "u": "https://en.wikipedia.org/wiki/Northern_Borders_Province"
+        },
+        {
+          "t": "Okaz – most camel-related road accidents happen at night (KACST research)",
+          "u": "https://www.okaz.com.sa/local/saudi-arabia/2242104"
+        },
+        {
+          "t": "Gulf News – camels fitted with luminous straps to reduce road accidents",
+          "u": "https://gulfnews.com/amp/story/world%2Fgulf%2Fsaudi%2Fcamels-get-luminous-straps-in-effort-to-help-reduce-road-accidents-1.1874896"
+        },
+        {
+          "t": "JEMTAC (2012) – review of camel–vehicle collisions: fences, underpasses, reflective signs",
+          "u": "https://qscience.com/content/journals/10.5339/jemtac.2012.21"
         }
       ],
       "added": "2026-10-19"
