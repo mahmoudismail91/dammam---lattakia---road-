@@ -59,11 +59,16 @@ def commons_get(url):
     raise RuntimeError("commons still rate-limited")
 
 
-def commons(line):
-    """line: route densified to ~0.5 km. Query every COMMONS_STEP_KM, keep photos close to the road."""
+def commons(line, start=0, count=None):
+    """line: route densified to ~0.5 km. Query every COMMONS_STEP_KM, keep photos close to the road.
+    Only `count` samples from sample number `start` (wrapping), so the sweep is spread over several runs."""
     out = []
     step = COMMONS_STEP_KM * 2
-    for i in range(0, len(line), step):
+    idx = list(range(0, len(line), step))
+    count = count or len(idx)
+    for i in [idx[(start + k) % len(idx)] for k in range(min(count, len(idx)))]:
+        if out_of_time():
+            break
         lon, lat = line[i]
         nearby = line[max(0, i - 50):i + 50]  # ~±25 km of road around the sample
         q = urllib.parse.urlencode({
@@ -153,6 +158,15 @@ def kartaview(samples, radius=600, per_point=1):
     return out
 
 
+TIME_BUDGET_S = 20 * 60   # stop cleanly before the workflow's 25-minute step limit
+SWEEP_SAMPLES_PER_RUN = 40   # general Commons sweep: this many samples per run, continuing next run
+_T0 = time.time()
+
+
+def out_of_time():
+    return time.time() - _T0 > TIME_BUDGET_S
+
+
 STOP_CATS = {"fuel", "mosque", "food", "hotel", "rest", "wc", "shop", "check", "border"}
 STOPS_PER_RUN = 90          # traveller stops searched individually per run
 RECHECK_DAYS = 14
@@ -192,7 +206,10 @@ def stop_photos(stops, token, today):
     todo = sorted((s for s in stops if due(s[0])), key=lambda s: (-s[3], st.get(s[0], {}).get("checked", "")))[:STOPS_PER_RUN]
     print(f"traveller stops: {len(stops)}, searching {len(todo)} this run")
     out = []
-    for key, lat, lon, _ in todo:
+    for n, (key, lat, lon, _) in enumerate(todo):
+        if out_of_time():
+            print(f"  time budget reached after {n} stops – the next run continues")
+            break
         found = []
         q = urllib.parse.urlencode({
             "action": "query", "generator": "geosearch", "ggscoord": f"{lat}|{lon}", "ggsradius": 1000,
@@ -223,6 +240,8 @@ def stop_photos(stops, token, today):
             found += mapillary([(lon, lat)], token)
         st[key] = {"checked": today, "found": len(found)}
         out += found
+        if n % 10 == 9:
+            save("photo_status.json", status)
     save("photo_status.json", status)
     print(f"  stop photos found: {len(out)}; stops still without any: {sum(1 for v in st.values() if not v['found'])}")
     return out
@@ -261,30 +280,45 @@ def main():
     wps = load("waypoints.json", {})["waypoints"]
     street_samples = [p for p in dense[::STREET_STEP_KM] if not in_town(p[1], p[0], wps)]
     print(f"route ~{len(dense)} km; {len(street_samples)} street-level samples")
+    token = os.environ.get("MAPILLARY_TOKEN", "").strip()
 
-    found = commons(densify(line, 0.5))
-    print(f"commons: {len(found)}")
+    # 1) priority: photos right at traveller stops (saved immediately)
+    save_found(stop_photos(traveller_stops(wps), token, today), today, token)
+
+    # 2) general sweep along the road, a slice per run
+    status = load("photo_status.json", {"stops": {}})
+    start = status.get("sweep_next", 0)
+    found = commons(densify(line, 0.5), start, SWEEP_SAMPLES_PER_RUN)
+    status = load("photo_status.json", {"stops": {}})
+    status["sweep_next"] = start + SWEEP_SAMPLES_PER_RUN
+    save("photo_status.json", status)
+    print(f"commons sweep (samples {start}–{start + SWEEP_SAMPLES_PER_RUN}): {len(found)}")
     for name, fn in (("panoramax", panoramax), ("kartaview", kartaview)):
+        if out_of_time():
+            break
         got = fn(street_samples)
         print(f"{name}: {len(got)}")
         found += got
-    token = os.environ.get("MAPILLARY_TOKEN", "").strip()
-    found += stop_photos(traveller_stops(wps), token, today)
-    if token:
+    if token and not out_of_time():
         got = mapillary(street_samples, token)
         print(f"mapillary: {len(got)}")
         found += got
-    else:
+    elif not token:
         print("mapillary: skipped (no MAPILLARY_TOKEN secret)")
+    save_found(found, today, token)
 
+
+def save_found(found, today, token):
+    """Merge newly found photos into data/photos.json (thinned, roadside only) and log them in updates.json."""
     old = {p["id"]: p for p in load("photos.json", {"items": []})["items"]}
-    # Mapillary thumbnail links expire, so drop old ones that weren't refreshed this run
-    if token:
-        old = {k: v for k, v in old.items() if v["src"] != "mapillary"}
+    # Mapillary thumbnail links expire: keep only ones refreshed within the last 14 days
+    old = {k: v for k, v in old.items() if v["src"] != "mapillary" or
+           (dt.date.fromisoformat(today) - dt.date.fromisoformat(v.get("last_seen", today))).days <= 14}
     old = {k: v for k, v in old.items() if not NOT_GROUND.search(f"{v.get('title', '')} | {v.get('credit', '')}")}
     added = []
     for p in found:
         p["first_seen"] = old.get(p["id"], {}).get("first_seen", today)
+        p["last_seen"] = today
         if p["id"] not in old:
             added.append(p["id"])
         old[p["id"]] = p
@@ -310,7 +344,10 @@ def main():
     save("photos.json", {"updated": today, "items": items})
 
     updates = load("updates.json", {"log": []})
-    updates["log"] = [u for u in updates["log"] if not (u.get("date") == today and u.get("kind") == "photos")]
+    prev = next((u for u in updates["log"] if u.get("date") == today and u.get("kind") == "photos"), None)
+    if prev:  # second save of the same run/day: extend today's entry
+        added = list(dict.fromkeys(prev.get("added", []) + added))
+    updates["log"] = [u for u in updates["log"] if u is not prev]
     if added:
         updates["log"].insert(0, {"date": today, "kind": "photos", "added": added[:400], "added_count": len(added),
                                   "note": f"{len(added)} new road photos"})
