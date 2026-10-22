@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-20",
+ "updated": "2026-10-22",
  "items": [
   {
    "id": "commons:35652618",
@@ -41,7 +41,8 @@
    "credit": "Suresh Babunair · CC BY 3.0 · Wikimedia Commons",
    "date": "Taken on 7 November 2012",
    "year": 2012,
-   "first_seen": "2026-10-19"
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-22"
   },
   {
    "id": "commons:55231775",
@@ -55,7 +56,8 @@
    "credit": "Suresh Babunair · CC BY 3.0 · Wikimedia Commons",
    "date": "Taken on 31 October 2012",
    "year": 2012,
-   "first_seen": "2026-10-19"
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-22"
   },
   {
    "id": "commons:55232552",
@@ -69,7 +71,8 @@
    "credit": "Suresh Babunair · CC BY 3.0 · Wikimedia Commons",
    "date": "Taken on 31 October 2012",
    "year": 2012,
-   "first_seen": "2026-10-19"
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-22"
   },
   {
    "id": "commons:55232663",
@@ -83,7 +86,8 @@
    "credit": "Suresh Babunair · CC BY 3.0 · Wikimedia Commons",
    "date": "Taken on 31 October 2012",
    "year": 2012,
-   "first_seen": "2026-10-19"
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-22"
   },
   {
    "id": "commons:55233234",
@@ -97,7 +101,8 @@
    "credit": "Suresh Babunair · CC BY 3.0 · Wikimedia Commons",
    "date": "Taken on 31 October 2012",
    "year": 2012,
-   "first_seen": "2026-10-19"
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-22"
   },
   {
    "id": "commons:55292571",
@@ -111,7 +116,23 @@
    "credit": "Suresh Babunair · CC BY 3.0 · Wikimedia Commons",
    "date": "Taken on 11 November 2012",
    "year": 2012,
-   "first_seen": "2026-10-19"
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-22"
+  },
+  {
+   "id": "commons:55299827",
+   "src": "commons",
+   "lat": 27.001823,
+   "lon": 49.446974,
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f0/Total_satorp_refinery_flare_-_panoramio.jpg/960px-Total_satorp_refinery_flare_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "full": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f0/Total_satorp_refinery_flare_-_panoramio.jpg/960px-Total_satorp_refinery_flare_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "page": "https://commons.wikimedia.org/wiki/File:Total_satorp_refinery_flare_-_panoramio.jpg",
+   "title": "Total satorp refinery flare - panoramio",
+   "credit": "Suresh Babunair · CC BY 3.0 · Wikimedia Commons",
+   "date": "Taken on 13 November 2012",
+   "year": 2012,
+   "first_seen": "2026-10-22",
+   "last_seen": "2026-10-22"
   },
   {
    "id": "commons:55307923",
@@ -125,7 +146,8 @@
    "credit": "Suresh Babunair · CC BY 3.0 · Wikimedia Commons",
    "date": "Taken on 14 November 2012",
    "year": 2012,
-   "first_seen": "2026-10-19"
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-22"
   },
   {
    "id": "commons:57236094",
@@ -139,7 +161,8 @@
    "credit": "AAlsaiad · CC BY 3.0 · Wikimedia Commons",
    "date": "Taken on 23 February 2014",
    "year": 2014,
-   "first_seen": "2026-10-19"
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-22"
   },
   {
    "id": "commons:59127566",
@@ -181,7 +204,8 @@
    "credit": "Philweb · CC BY-SA 3.0 · Wikimedia Commons",
    "date": "2018-05-18 11:06:57",
    "year": 2018,
-   "first_seen": "2026-10-19"
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-22"
   },
   {
    "id": "commons:73156376",
@@ -195,7 +219,8 @@
    "credit": "محمد العمري · CC BY-SA 3.0 · Wikimedia Commons",
    "date": "2018-09-27",
    "year": 2018,
-   "first_seen": "2026-10-19"
+   "first_seen": "2026-10-19",
+   "last_seen": "2026-10-22"
   },
   {
    "id": "commons:97494489",

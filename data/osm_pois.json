@@ -1,7 +1,7 @@
 {
  "source": "© OpenStreetMap contributors (ODbL)",
  "updated": "2026-10-22",
- "next_chunk": 34,
+ "next_chunk": 53,
  "items": [
   {
    "id": "osm:node/10059535552",
@@ -262,7 +262,7 @@
     "brand": "نفط"
    },
    "first_seen": "2026-10-19",
-   "last_seen": "2026-10-19"
+   "last_seen": "2026-10-22"
   },
   {
    "id": "osm:node/12360590898",
@@ -275,7 +275,7 @@
     "amenity": "fuel"
    },
    "first_seen": "2026-10-19",
-   "last_seen": "2026-10-19"
+   "last_seen": "2026-10-22"
   },
   {
    "id": "osm:node/12360590899",
@@ -2599,7 +2599,7 @@
     "amenity": "fuel"
    },
    "first_seen": "2026-10-19",
-   "last_seen": "2026-10-20"
+   "last_seen": "2026-10-22"
   },
   {
    "id": "osm:node/2866600067",
@@ -2612,7 +2612,7 @@
     "amenity": "place_of_worship"
    },
    "first_seen": "2026-10-19",
-   "last_seen": "2026-10-20"
+   "last_seen": "2026-10-22"
   },
   {
    "id": "osm:node/2874275549",
@@ -2755,7 +2755,7 @@
     "amenity": "fuel"
    },
    "first_seen": "2026-10-19",
-   "last_seen": "2026-10-19"
+   "last_seen": "2026-10-22"
   },
   {
    "id": "osm:node/4624080720",
@@ -2820,7 +2820,7 @@
     "amenity": "place_of_worship"
    },
    "first_seen": "2026-10-19",
-   "last_seen": "2026-10-19"
+   "last_seen": "2026-10-22"
   },
   {
    "id": "osm:node/4688141630",
@@ -2833,7 +2833,7 @@
     "amenity": "place_of_worship"
    },
    "first_seen": "2026-10-19",
-   "last_seen": "2026-10-19"
+   "last_seen": "2026-10-22"
   },
   {
    "id": "osm:node/4688913542",
@@ -2846,7 +2846,7 @@
     "amenity": "place_of_worship"
    },
    "first_seen": "2026-10-19",
-   "last_seen": "2026-10-19"
+   "last_seen": "2026-10-22"
   },
   {
    "id": "osm:node/4688913543",
@@ -2859,7 +2859,7 @@
     "amenity": "place_of_worship"
    },
    "first_seen": "2026-10-19",
-   "last_seen": "2026-10-19"
+   "last_seen": "2026-10-22"
   },
   {
    "id": "osm:node/4688915081",
@@ -2872,7 +2872,7 @@
     "amenity": "place_of_worship"
    },
    "first_seen": "2026-10-19",
-   "last_seen": "2026-10-19"
+   "last_seen": "2026-10-22"
   },
   {
    "id": "osm:node/4689090086",
@@ -2924,7 +2924,7 @@
     "man_made": "water_tower"
    },
    "first_seen": "2026-10-19",
-   "last_seen": "2026-10-20"
+   "last_seen": "2026-10-22"
   },
   {
    "id": "osm:node/4710587259",
@@ -3125,7 +3125,7 @@
     "amenity": "fuel"
    },
    "first_seen": "2026-10-19",
-   "last_seen": "2026-10-19"
+   "last_seen": "2026-10-22"
   },
   {
    "id": "osm:node/6267429886",
@@ -3138,7 +3138,7 @@
     "amenity": "fuel"
    },
    "first_seen": "2026-10-19",
-   "last_seen": "2026-10-19"
+   "last_seen": "2026-10-22"
   },
   {
    "id": "osm:node/6267430086",
@@ -3151,7 +3151,7 @@
     "amenity": "fuel"
    },
    "first_seen": "2026-10-19",
-   "last_seen": "2026-10-19"
+   "last_seen": "2026-10-22"
   },
   {
    "id": "osm:node/6267463185",
@@ -3164,7 +3164,7 @@
     "amenity": "fuel"
    },
    "first_seen": "2026-10-19",
-   "last_seen": "2026-10-19"
+   "last_seen": "2026-10-22"
   },
   {
    "id": "osm:node/6289890886",
@@ -3704,7 +3704,7 @@
     "amenity": "fuel"
    },
    "first_seen": "2026-10-19",
-   "last_seen": "2026-10-19"
+   "last_seen": "2026-10-22"
   },
   {
    "id": "osm:node/7350177317",
@@ -3717,7 +3717,7 @@
     "shop": "supermarket"
    },
    "first_seen": "2026-10-19",
-   "last_seen": "2026-10-19"
+   "last_seen": "2026-10-22"
   },
   {
    "id": "osm:node/7350187893",
@@ -3730,7 +3730,7 @@
     "tourism": "apartment"
    },
    "first_seen": "2026-10-19",
-   "last_seen": "2026-10-19"
+   "last_seen": "2026-10-22"
   },
   {
    "id": "osm:node/7350191288",
@@ -3743,7 +3743,7 @@
     "amenity": "restaurant"
    },
    "first_seen": "2026-10-19",
-   "last_seen": "2026-10-19"
+   "last_seen": "2026-10-22"
   },
   {
    "id": "osm:node/7350194955",
@@ -3769,7 +3769,7 @@
     "amenity": "fuel"
    },
    "first_seen": "2026-10-19",
-   "last_seen": "2026-10-19"
+   "last_seen": "2026-10-22"
   },
   {
    "id": "osm:node/7350239685",
@@ -3782,7 +3782,7 @@
     "amenity": "fuel"
    },
    "first_seen": "2026-10-19",
-   "last_seen": "2026-10-19"
+   "last_seen": "2026-10-22"
   },
   {
    "id": "osm:node/7448327382",
@@ -3821,7 +3821,7 @@
     "amenity": "restaurant"
    },
    "first_seen": "2026-10-19",
-   "last_seen": "2026-10-19"
+   "last_seen": "2026-10-22"
   },
   {
    "id": "osm:node/7501337854",
@@ -4671,7 +4671,7 @@
     "amenity": "place_of_worship"
    },
    "first_seen": "2026-10-19",
-   "last_seen": "2026-10-19"
+   "last_seen": "2026-10-22"
   },
   {
    "id": "osm:way/908587820",
